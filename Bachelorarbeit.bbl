@@ -1,0 +1,953 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{6633643}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=18ec2245faac312d97815cfcac41abf2}{%
+           family={{Churchill}},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c7a2e9eca5a54f324c1707055f9faec1}{%
+           family={{Buro}},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2fb64d806ed7cd6844c2088eb5427899}
+      \strng{fullhash}{2fb64d806ed7cd6844c2088eb5427899}
+      \strng{bibnamehash}{2fb64d806ed7cd6844c2088eb5427899}
+      \strng{authorbibnamehash}{2fb64d806ed7cd6844c2088eb5427899}
+      \strng{authornamehash}{2fb64d806ed7cd6844c2088eb5427899}
+      \strng{authorfullhash}{2fb64d806ed7cd6844c2088eb5427899}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 IEEE Conference on Computational Inteligence in Games (CIG)}
+      \field{issn}{2325-4289}
+      \field{month}{8}
+      \field{title}{Portfolio greedy search and simulation for large-scale combat in starcraft}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CIG.2013.6633643
+      \endverb
+      \keyw{computer games;greedy algorithms;multi-agent systems;search problems;real-time search constraint;StarCraft combat scenario;UCT search method;Alpha-Beta;playout-based evaluation;hill climbing;greedy search algorithm;durative actions;simultaneous actions;UCT algorithm;visualization;commercial RTS game combat;RTS AI system;human players;real-time constraint;action space;state space;artificial intelligence;real-time strategy video games;large-scale combat;portfolio simulation;portfolio greedy search;Games;Artificial intelligence;Portfolios;Real-time systems;Planning;Approximation methods;Weapons}
+    \endentry
+    \entry{AIIDE125469}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=8f679796bc8ce5a51a1d1f0c66fde935}{%
+           family={Churchill},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=af389dea78ab6e4bace0a86e38c08c65}{%
+           family={Saffidine},
+           familyi={S\bibinitperiod},
+           given={Abdallah},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1d5c128ae3ff1819ea0c2f845dd76536}{%
+           family={Buro},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ffb81b28d2cc1b88fda924f2b5c62f6}
+      \strng{fullhash}{1ffb81b28d2cc1b88fda924f2b5c62f6}
+      \strng{bibnamehash}{1ffb81b28d2cc1b88fda924f2b5c62f6}
+      \strng{authorbibnamehash}{1ffb81b28d2cc1b88fda924f2b5c62f6}
+      \strng{authornamehash}{1ffb81b28d2cc1b88fda924f2b5c62f6}
+      \strng{authorfullhash}{1ffb81b28d2cc1b88fda924f2b5c62f6}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Heuristic search has been very successful in abstract game domains such as Chess and Go. In video games, however, adoption has been slow due to the fact that state and move spaces are much larger, real-time constraints are harsher, and constraints on computational resources are tighter. In this paper we present a fast search method — Alpha-Beta search for durative moves— that can defeat commonly used AI scripts in RTS game combat scenarios of up to 8 vs. 8 units running on a single core in under 5ms per search episode. This performance is achieved by using standard search enhancements such as transposition tables and iterative deepening, and novel usage of combat AI scripts for sorting moves and state evaluation via playouts. We also present evidence that commonly used combat scripts are highly exploitable — opening the door for a promising line of research on opponent combat modelling.}
+      \field{title}{Fast Heuristic Search for RTS Game Combat Scenarios}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE12/paper/view/5469
+      \endverb
+      \verb{url}
+      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE12/paper/view/5469
+      \endverb
+      \keyw{Heuristic Search; Durative Actions; Real-Time Strategy Games;}
+    \endentry
+    \entry{Goodfellow-et-al-2016}{book}{}
+      \name{author}{3}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{fullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{bibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deep Learning}
+      \field{year}{2016}
+    \endentry
+    \entry{He_2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5e72bc22dbcf0984c6d113d280e36990}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiangyu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{bibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorbibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781467388511}
+      \field{journaltitle}{2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{month}{6}
+      \field{title}{Deep Residual Learning for Image Recognition}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1109/cvpr.2016.90
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/CVPR.2016.90
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/CVPR.2016.90
+      \endverb
+    \endentry
+    \entry{DBLP:journals/corr/HelmkeKW14}{article}{}
+      \name{author}{3}{}{%
+        {{hash=572e2c2746a456beff7c22b747c4c178}{%
+           family={Helmke},
+           familyi={H\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=df2d84aa0d9f71306f386f2e0ba4a56e}{%
+           family={Kreymer},
+           familyi={K\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=66f0a9ef664c604c51f130d9773b54aa}{%
+           family={Wiegand},
+           familyi={W\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0d39989b0d80dfb136696f2c80756b7}
+      \strng{fullhash}{d0d39989b0d80dfb136696f2c80756b7}
+      \strng{bibnamehash}{d0d39989b0d80dfb136696f2c80756b7}
+      \strng{authorbibnamehash}{d0d39989b0d80dfb136696f2c80756b7}
+      \strng{authornamehash}{d0d39989b0d80dfb136696f2c80756b7}
+      \strng{authorfullhash}{d0d39989b0d80dfb136696f2c80756b7}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Approximation Models of Combat in StarCraft 2}
+      \field{volume}{abs/1403.1521}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1403.1521
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1403.1521
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1403.1521
+      \endverb
+    \endentry
+    \entry{DBLP:journals/corr/abs-1709-01507}{article}{}
+      \name{author}{3}{}{%
+        {{hash=346b88b16d5e70356b573f350a9165aa}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f1625e69dd01e4d86402e9815bebb102}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7c01a1c103bd601c5a256e9f1425f9d8}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9bec677974ec98229fc30290681f1fea}
+      \strng{fullhash}{9bec677974ec98229fc30290681f1fea}
+      \strng{bibnamehash}{9bec677974ec98229fc30290681f1fea}
+      \strng{authorbibnamehash}{9bec677974ec98229fc30290681f1fea}
+      \strng{authornamehash}{9bec677974ec98229fc30290681f1fea}
+      \strng{authorfullhash}{9bec677974ec98229fc30290681f1fea}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{Squeeze-and-Excitation Networks}
+      \field{volume}{abs/1709.01507}
+      \field{year}{2017}
+    \endentry
+    \entry{DBLP:conf/icml/IoffeS15}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=5543e82359e26b035efc009cb3efff9d}{%
+           family={Ioffe},
+           familyi={I\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ed568d9c3bb059e6bf22899fbf170f86}{%
+           family={Szegedy},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{fullhash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{bibnamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authorbibnamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authornamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authorfullhash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 32nd International Conference on Machine Learning, {ICML} 2015, Lille, France, 6-11 July 2015}
+      \field{title}{Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift}
+      \field{year}{2015}
+      \field{pages}{448\bibrangedash 456}
+      \range{pages}{9}
+    \endentry
+    \entry{Kilmer.1996}{article}{}
+      \name{author}{1}{}{%
+        {{hash=67b3690ccfe5dc2bfceccd7127f16498}{%
+           family={Kilmer},
+           familyi={K\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{67b3690ccfe5dc2bfceccd7127f16498}
+      \strng{fullhash}{67b3690ccfe5dc2bfceccd7127f16498}
+      \strng{bibnamehash}{67b3690ccfe5dc2bfceccd7127f16498}
+      \strng{authorbibnamehash}{67b3690ccfe5dc2bfceccd7127f16498}
+      \strng{authornamehash}{67b3690ccfe5dc2bfceccd7127f16498}
+      \strng{authorfullhash}{67b3690ccfe5dc2bfceccd7127f16498}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As a result of reduced budgets and personnel levels, the Department of Defense has increased reliance on combat simulations for such diverse areas as training, testing, planning, and analysis. Each area has its own set of needs, goals, and objectives for designing future generations of combat simulation models. However, budget constraints alone mandate the development of multipleuse combat models. The bottom line is that future generations of combat models need to be faster, have higher fidelity and larger scale than current models. Research into emerging technologies for approaches to make computer simulations more effective and efficient is an essential ingredient to developing successful future generations of combat models. One emerging technology that has such potential is Artificial Neural Networks (ANN). Potential applications of ANN to combat simulation modeling are discussed. The main results of the author’s dissertation Artificial Neural Network Metamodels of Stochastic Computer Simulations [1] are discussed along with the ramifications on combat modeling and recommendations for future research.}
+      \field{issn}{0895-7177}
+      \field{journaltitle}{Mathematical and Computer Modelling}
+      \field{number}{1}
+      \field{title}{Applications of Artificial Neural Networks to combat simulations}
+      \field{volume}{23}
+      \field{year}{1996}
+      \field{pages}{91\bibrangedash 99}
+      \range{pages}{9}
+      \verb{doi}
+      \verb \url{10.1016/0895-7177(95)00220-0}
+      \endverb
+      \verb{urlraw}
+      \verb \url{http://www.sciencedirect.com/science/article/pii/0895717795002200}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttp://www.sciencedirect.com/science/article/pii/0895717795002200%7D
+      \endverb
+      \keyw{Combat;Computer;Metamodel;Neural network;Simulation}
+    \endentry
+    \entry{DBLP:journals/corr/OSheaN15}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f92af5765968c6de4c1e42d397224c9c}{%
+           family={O'Shea},
+           familyi={O\bibinitperiod},
+           given={Keiron},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b5da23fc726b6d32ee9a3247fa6663fc}{%
+           family={Nash},
+           familyi={N\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{fullhash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{bibnamehash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{authorbibnamehash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{authornamehash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{authorfullhash}{1e0b31097f3d41e61dd78e46b147642a}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{An Introduction to Convolutional Neural Networks}
+      \field{volume}{abs/1511.08458}
+      \field{year}{2015}
+    \endentry
+    \entry{AAAI:aimag/Robertson14}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9a03d86368214aa00bd50fcb57ba7327}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Glen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5dcab082ad3f13c7b1af8618b9dfe341}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e71517d1a6aaff5307471c86f17e75c}
+      \strng{fullhash}{5e71517d1a6aaff5307471c86f17e75c}
+      \strng{bibnamehash}{5e71517d1a6aaff5307471c86f17e75c}
+      \strng{authorbibnamehash}{5e71517d1a6aaff5307471c86f17e75c}
+      \strng{authornamehash}{5e71517d1a6aaff5307471c86f17e75c}
+      \strng{authorfullhash}{5e71517d1a6aaff5307471c86f17e75c}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AI magazine}
+      \field{title}{A Review of Real-Time Strategy Game AI}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://aaai.org/ojs/index.php/aimagazine/article/view/2478
+      \endverb
+      \verb{url}
+      \verb https://aaai.org/ojs/index.php/aimagazine/article/view/2478
+      \endverb
+    \endentry
+    \entry{samvelyan2019starcraft}{misc}{}
+      \name{author}{10}{}{%
+        {{hash=c76172ee0c2ebda81796624b4a81ae54}{%
+           family={Samvelyan},
+           familyi={S\bibinitperiod},
+           given={Mikayel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8eb7df23daba9c7bf22402026effdae7}{%
+           family={Rashid},
+           familyi={R\bibinitperiod},
+           given={Tabish},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6f1601d873902309bd691e8ce9f04c58}{%
+           family={Witt},
+           familyi={W\bibinitperiod},
+           given={Christian\bibnamedelima Schroeder},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=de7fc27bb6e6105440cd3039a5c9b684}{%
+           family={Farquhar},
+           familyi={F\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a07891d2d6d3da5f1827c01269cc6da6}{%
+           family={Nardelli},
+           familyi={N\bibinitperiod},
+           given={Nantas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=03e78bec6fe742674bc42552dfd4fdc4}{%
+           family={Rudner},
+           familyi={R\bibinitperiod},
+           given={Tim\bibnamedelimb G.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ca083f59b63a6ee2837027775301af6b}{%
+           family={Hung},
+           familyi={H\bibinitperiod},
+           given={Chia-Man},
+           giveni={C\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=d76cd9ac847163e992ddb1c39e744459}{%
+           family={Torr},
+           familyi={T\bibinitperiod},
+           given={Philip\bibnamedelimb H.\bibnamedelimi S.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d62c75690ab7c754f6e7217a242a4318}{%
+           family={Foerster},
+           familyi={F\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0d05819cf2b4fe22ba972c9b2b5d8c9d}{%
+           family={Whiteson},
+           familyi={W\bibinitperiod},
+           given={Shimon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{db017d19c7fbc59e66933da4bbd4deeb}
+      \strng{fullhash}{d8c8601a9287b064d58798af67f8e8b9}
+      \strng{bibnamehash}{db017d19c7fbc59e66933da4bbd4deeb}
+      \strng{authorbibnamehash}{db017d19c7fbc59e66933da4bbd4deeb}
+      \strng{authornamehash}{db017d19c7fbc59e66933da4bbd4deeb}
+      \strng{authorfullhash}{d8c8601a9287b064d58798af67f8e8b9}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{The StarCraft Multi-Agent Challenge}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1902.04043
+      \endverb
+    \endentry
+    \entry{SnchezRuizGranados2015PredictingTO}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=09b43c5820f780a525c16f0e06c450c2}{%
+           family={S{á}nchez-Ruiz-Granados},
+           familyi={S\bibinithyphendelim R\bibinithyphendelim G\bibinitperiod},
+           given={Antonio\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{09b43c5820f780a525c16f0e06c450c2}
+      \strng{fullhash}{09b43c5820f780a525c16f0e06c450c2}
+      \strng{bibnamehash}{09b43c5820f780a525c16f0e06c450c2}
+      \strng{authorbibnamehash}{09b43c5820f780a525c16f0e06c450c2}
+      \strng{authornamehash}{09b43c5820f780a525c16f0e06c450c2}
+      \strng{authorfullhash}{09b43c5820f780a525c16f0e06c450c2}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICCBR}
+      \field{title}{Predicting the Outcome of Small Battles in StarCraft}
+      \field{year}{2015}
+    \endentry
+    \entry{DBLP:journals/corr/SpringenbergDBR14}{article}{}
+      \name{author}{4}{}{%
+        {{hash=de7de1a4d295b5756e14ea54090af136}{%
+           family={Springenberg},
+           familyi={S\bibinitperiod},
+           given={Jost\bibnamedelima Tobias},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=72308762399d6ab62bbd9391c64c7bfd}{%
+           family={Dosovitskiy},
+           familyi={D\bibinitperiod},
+           given={Alexey},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b452a32296958371572717940f900884}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=441c4d54d1985a0e56a9c0716fc39927}{%
+           family={Riedmiller},
+           familyi={R\bibinitperiod},
+           given={Martin\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f18bb2773fd34a925cb863f218d3c84b}
+      \strng{fullhash}{17dcbb23e6456220b2f3539dc576be57}
+      \strng{bibnamehash}{f18bb2773fd34a925cb863f218d3c84b}
+      \strng{authorbibnamehash}{f18bb2773fd34a925cb863f218d3c84b}
+      \strng{authornamehash}{f18bb2773fd34a925cb863f218d3c84b}
+      \strng{authorfullhash}{17dcbb23e6456220b2f3539dc576be57}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{Striving for Simplicity: The All Convolutional Net}
+      \field{volume}{abs/1412.6806}
+      \field{year}{2014}
+    \endentry
+    \entry{AIIDE1511531}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=1028f902b3924433048dbb6f56521004}{%
+           family={Stanescu},
+           familyi={S\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f64594f17a19346da42a2f45d60dd7a7}{%
+           family={Barriga},
+           familyi={B\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1d5c128ae3ff1819ea0c2f845dd76536}{%
+           family={Buro},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbc2856975992914a7305a62ceea8e68}
+      \strng{fullhash}{dbc2856975992914a7305a62ceea8e68}
+      \strng{bibnamehash}{dbc2856975992914a7305a62ceea8e68}
+      \strng{authorbibnamehash}{dbc2856975992914a7305a62ceea8e68}
+      \strng{authornamehash}{dbc2856975992914a7305a62ceea8e68}
+      \strng{authorfullhash}{dbc2856975992914a7305a62ceea8e68}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Smart decision making at the tactical level is important for Artificial Intelligence (AI) agents to perform well in the domain of real-time strategy (RTS) games. Winning battles is crucial in RTS games, and while humans can decide when and how to attack based on their experience, it is challenging for AI agents to estimate combat outcomes accurately.A few existing models address this problem in the game of StarCraft but present many restrictions, such as not modeling injured units, supporting only a small number of unit types, or being able to predict the winner of a fight but not the remaining army. Prediction using simulations is a popular method, but generally slow and requires extensive coding to model the game engine accurately.This paper introduces a model based on Lanchester's attrition laws which addresses the mentioned limitations while being faster than running simulations. Unit strength values are learned using maximum likelihood estimation from past recorded battles. We present experiments that use a StarCraft simulator for generating battles for both training and testing, and show that the model is capable of making accurate predictions. Furthermore, we implemented our method in a StarCraft bot that uses either this or traditional simulations to decide when to attack or to retreat. We present tournament results (against top bots from 2014 AIIDE competition) comparing the performances of the two versions, and show increased winning percentages for our method.}
+      \field{title}{Using Lanchester Attrition Laws for Combat Prediction in StarCraft}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE15/paper/view/11531
+      \endverb
+      \verb{url}
+      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE15/paper/view/11531
+      \endverb
+      \keyw{Artificia Intelligence; Real-Time Strategy; StarCraft; RTS; Lanchester; Games}
+    \endentry
+    \entry{AIIDE137381}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=1028f902b3924433048dbb6f56521004}{%
+           family={Stanescu},
+           familyi={S\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7031ac32b8b35559ec3f4deeb6d3711d}{%
+           family={Hernandez},
+           familyi={H\bibinitperiod},
+           given={Sergio\bibnamedelima Poo},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=f05e797402da437a628eae92385f31cc}{%
+           family={Erickson},
+           familyi={E\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f51464b118bc7bb0da4524cddf3a5cfa}{%
+           family={Greiner},
+           familyi={G\bibinitperiod},
+           given={Russel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1d5c128ae3ff1819ea0c2f845dd76536}{%
+           family={Buro},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f0d624408d6acc59471eb0e606c0f5b}
+      \strng{fullhash}{67e1b5aa2cee0866ba8188fee9864cf9}
+      \strng{bibnamehash}{9f0d624408d6acc59471eb0e606c0f5b}
+      \strng{authorbibnamehash}{9f0d624408d6acc59471eb0e606c0f5b}
+      \strng{authornamehash}{9f0d624408d6acc59471eb0e606c0f5b}
+      \strng{authorfullhash}{67e1b5aa2cee0866ba8188fee9864cf9}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Smart decision making at the tactical level is important for Artificial Intelligence (AI) agents to perform well in the domain of real-time strategy (RTS) games. This paper presents a Bayesian model that can be used to predict the outcomes of isolated battles, as well as predict what units are needed to defeat a given army. Model parameters are learned from simulated battles, in order to minimize the dependency on player skill. We apply our model to the game of StarCraft, with the end-goal of using the predictor as a module for making high-level combat decisions, and show that the model is capable of making accurate predictions.}
+      \field{title}{Predicting Army Combat Outcomes in StarCraft}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7381
+      \endverb
+      \verb{url}
+      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7381
+      \endverb
+      \keyw{AI,RTS,StarCraft,Combat}
+    \endentry
+    \entry{DBLP:journals/corr/SzegedyIV16}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ed568d9c3bb059e6bf22899fbf170f86}{%
+           family={Szegedy},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5543e82359e26b035efc009cb3efff9d}{%
+           family={Ioffe},
+           familyi={I\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8051922e7bd286f884bfbd1023ef62f5}{%
+           family={Vanhoucke},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{24f3bd9754b1ef0bffd1eb9a5e440a1a}
+      \strng{fullhash}{24f3bd9754b1ef0bffd1eb9a5e440a1a}
+      \strng{bibnamehash}{24f3bd9754b1ef0bffd1eb9a5e440a1a}
+      \strng{authorbibnamehash}{24f3bd9754b1ef0bffd1eb9a5e440a1a}
+      \strng{authornamehash}{24f3bd9754b1ef0bffd1eb9a5e440a1a}
+      \strng{authorfullhash}{24f3bd9754b1ef0bffd1eb9a5e440a1a}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning}
+      \field{volume}{abs/1602.07261}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1602.07261
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1602.07261
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1602.07261
+      \endverb
+    \endentry
+    \entry{DBLP:journals/corr/SzegedyLJSRAEVR14}{article}{}
+      \name{author}{9}{}{%
+        {{hash=ed568d9c3bb059e6bf22899fbf170f86}{%
+           family={Szegedy},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c0e0d23e2d09e45e6f51cc2bcea6d9f9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9fce03efe6b3331a1b93ed2e7c0da9d5}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Yangqing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=15f5333df96deaf51c72d065bded37d8}{%
+           family={Sermanet},
+           familyi={S\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=13c41fd9f9e67d13ab8f84a738c2b898}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={Scott\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=c1826f3465579186aff299a9b0e16ed7}{%
+           family={Anguelov},
+           familyi={A\bibinitperiod},
+           given={Dragomir},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8bbc4c5d96f205bada839e74e0202146}{%
+           family={Erhan},
+           familyi={E\bibinitperiod},
+           given={Dumitru},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8051922e7bd286f884bfbd1023ef62f5}{%
+           family={Vanhoucke},
+           familyi={V\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=aa04c4d6213a1e867b1650e298cb2668}{%
+           family={Rabinovich},
+           familyi={R\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{80f8e6bfc3aff3e75b2807a6f6962740}
+      \strng{fullhash}{3535bb975be4dbc8985b2004d9714344}
+      \strng{bibnamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
+      \strng{authorbibnamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
+      \strng{authornamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
+      \strng{authorfullhash}{3535bb975be4dbc8985b2004d9714344}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{Going Deeper with Convolutions}
+      \field{volume}{abs/1409.4842}
+      \field{year}{2014}
+    \endentry
+    \entry{DBLP:journals/corr/abs-1708-04782}{article}{}
+      \name{author}{25}{}{%
+        {{hash=494b568c5dc85ba8f3f409635f9c5f25}{%
+           family={Vinyals},
+           familyi={V\bibinitperiod},
+           given={Oriol},
+           giveni={O\bibinitperiod}}}%
+        {{hash=2687d58e59afed22249974d723704f56}{%
+           family={Ewalds},
+           familyi={E\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7896fad6d0ebd9548ae7f08eb947c431}{%
+           family={Bartunov},
+           familyi={B\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1c5b83cefd7033a528994276b9c00e87}{%
+           family={Georgiev},
+           familyi={G\bibinitperiod},
+           given={Petko},
+           giveni={P\bibinitperiod}}}%
+        {{hash=57e6a2c1bfb4da63783464ca78008aaa}{%
+           family={Vezhnevets},
+           familyi={V\bibinitperiod},
+           given={Alexander\bibnamedelima Sasha},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b3d8def8985901e47c12ba944ec4e9b4}{%
+           family={Yeo},
+           familyi={Y\bibinitperiod},
+           given={Michelle},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9d8b4e8b7224f41ba985f7dbc8896258}{%
+           family={Makhzani},
+           familyi={M\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3f560a7a176b95729d40a00fecb08c9e}{%
+           family={K{ü}ttler},
+           familyi={K\bibinitperiod},
+           given={Heinrich},
+           giveni={H\bibinitperiod}}}%
+        {{hash=333bf32d39a38f126d82c78d782e93ba}{%
+           family={Agapiou},
+           familyi={A\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8fad8df927bc0014c0bd6a9feb7aa71d}{%
+           family={Schrittwieser},
+           familyi={S\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d1c6b8444cb95e400ca38d5ae5c5afd3}{%
+           family={Quan},
+           familyi={Q\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d8308a9ad7b60797ff263ee04d6071bb}{%
+           family={Gaffney},
+           familyi={G\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4e381e44037009b1cd834d794735c311}{%
+           family={Petersen},
+           familyi={P\bibinitperiod},
+           given={Stig},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9d16b7284df92c9adaee86c37ab992df}{%
+           family={Simonyan},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a56e72b23778a835bdade7d0511e43a3}{%
+           family={Schaul},
+           familyi={S\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f5a8983bab24d2cd5670100e485fc883}{%
+           family={Hasselt},
+           familyi={H\bibinitperiod},
+           given={Hado},
+           giveni={H\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=89dbd30410c2085cd059f32c57d4593e}{%
+           family={Silver},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2e52abe1ebb8cb0b74c78afc7eaa3d4d}{%
+           family={Lillicrap},
+           familyi={L\bibinitperiod},
+           given={Timothy\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=9dce9c2ec3c46b83a5bea0ff2cfba0a7}{%
+           family={Calderone},
+           familyi={C\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=242fb86709e080be7c6ae88136dd9353}{%
+           family={Keet},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=988d9bf170d1becb16f79103eaae5e23}{%
+           family={Brunasso},
+           familyi={B\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d9d8a82c6bc1092b207a2c7b4cd7611c}{%
+           family={Lawrence},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3678dacdda8e161d3b0d6e33255e34f1}{%
+           family={Ekermo},
+           familyi={E\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod}}}%
+        {{hash=18b32c718bca32a3d51b2e05b530518f}{%
+           family={Repp},
+           familyi={R\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=514b0b53011a598d392a5e6c13652624}{%
+           family={Tsing},
+           familyi={T\bibinitperiod},
+           given={Rodney},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{832d19b6ecbaa1d465342fe676ffb29a}
+      \strng{fullhash}{ff9e6ecf2295d0a34c4dacc6fe269ba7}
+      \strng{bibnamehash}{832d19b6ecbaa1d465342fe676ffb29a}
+      \strng{authorbibnamehash}{832d19b6ecbaa1d465342fe676ffb29a}
+      \strng{authornamehash}{832d19b6ecbaa1d465342fe676ffb29a}
+      \strng{authorfullhash}{ff9e6ecf2295d0a34c4dacc6fe269ba7}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{StarCraft {II:} {A} New Challenge for Reinforcement Learning}
+      \field{volume}{abs/1708.04782}
+      \field{year}{2017}
+    \endentry
+    \entry{DBLP:journals/corr/WallachDH15}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7ccffcd38759d7007337667679a4281f}{%
+           family={Wallach},
+           familyi={W\bibinitperiod},
+           given={Izhar},
+           giveni={I\bibinitperiod}}}%
+        {{hash=354e85389cd3e6cb6b0d5b3d04a4d915}{%
+           family={Dzamba},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=70a6603ba69fc00cdc314c3028bf9e3f}{%
+           family={Heifets},
+           familyi={H\bibinitperiod},
+           given={Abraham},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab049a90217065cb5ae9198254d980e8}
+      \strng{fullhash}{ab049a90217065cb5ae9198254d980e8}
+      \strng{bibnamehash}{ab049a90217065cb5ae9198254d980e8}
+      \strng{authorbibnamehash}{ab049a90217065cb5ae9198254d980e8}
+      \strng{authornamehash}{ab049a90217065cb5ae9198254d980e8}
+      \strng{authorfullhash}{ab049a90217065cb5ae9198254d980e8}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{AtomNet: {A} Deep Convolutional Neural Network for Bioactivity Prediction in Structure-based Drug Discovery}
+      \field{volume}{abs/1510.02855}
+      \field{year}{2015}
+    \endentry
+    \entry{6374183}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1b688c13e77d870c72444e94b0f86528}{%
+           family={{Wender}},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a526ec7e627c47ebf152ed2e613a65f4}{%
+           family={{Watson}},
+           familyi={W\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2988df4378c75ffa7e3e2e0731176ff}
+      \strng{fullhash}{f2988df4378c75ffa7e3e2e0731176ff}
+      \strng{bibnamehash}{f2988df4378c75ffa7e3e2e0731176ff}
+      \strng{authorbibnamehash}{f2988df4378c75ffa7e3e2e0731176ff}
+      \strng{authornamehash}{f2988df4378c75ffa7e3e2e0731176ff}
+      \strng{authorfullhash}{f2988df4378c75ffa7e3e2e0731176ff}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 IEEE Conference on Computational Intelligence and Games (CIG)}
+      \field{issn}{2325-4270}
+      \field{month}{9}
+      \field{title}{Applying reinforcement learning to small scale combat in the real-time strategy game StarCraft:Broodwar}
+      \field{year}{2012}
+      \field{pages}{402\bibrangedash 408}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/CIG.2012.6374183
+      \endverb
+      \keyw{computer games;software agents;unsupervised learning;small scale combat;real-time strategy game StarCraft:Broodwar;reinforcement learning algorithms;micro-managing combat units;RTS game SC:BW;complex environment;unsupervised learning;nonadaptive deterministic game AI;RL algorithms;one-step Q-learning;Sarsa(λ) algorithm;Games;Learning systems;Learning;Planning;Machine learning;Machine learning algorithms}
+    \endentry
+    \entry{Wu.2017}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=5859faec0505aedcd37cd60aab5ac500}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jianxin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5859faec0505aedcd37cd60aab5ac500}
+      \strng{fullhash}{5859faec0505aedcd37cd60aab5ac500}
+      \strng{bibnamehash}{5859faec0505aedcd37cd60aab5ac500}
+      \strng{authorbibnamehash}{5859faec0505aedcd37cd60aab5ac500}
+      \strng{authornamehash}{5859faec0505aedcd37cd60aab5ac500}
+      \strng{authorfullhash}{5859faec0505aedcd37cd60aab5ac500}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{National Key Lab for Novel Software Technology Nanjing University, China.}
+      \field{pagination}{page}
+      \field{title}{Introduction to Convolutional Neural Networks}
+      \field{year}{2017}
+      \field{pages}{5}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

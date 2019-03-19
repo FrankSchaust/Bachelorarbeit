@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.10
+[0] Config.pm:305> INFO - Logfile is 'TheoretischerHintergrund.blg'
+[31] biber-MSWIN32:313> INFO - === 
+[401] Utils.pm:209> ERROR - Cannot find control file 'TheoretischerHintergrund.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[401] Biber.pm:114> INFO - ERRORS: 1

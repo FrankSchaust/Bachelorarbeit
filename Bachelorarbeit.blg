@@ -1,0 +1,20 @@
+[0] Config.pm:302> INFO - This is Biber 2.10
+[0] Config.pm:305> INFO - Logfile is 'Bachelorarbeit.blg'
+[45] biber-MSWIN32:313> INFO - === 
+[191] Biber.pm:371> INFO - Reading 'Bachelorarbeit.bcf'
+[362] Biber.pm:857> INFO - Found 21 citekeys in bib section 0
+[389] Biber.pm:3976> INFO - Processing section 0
+[427] Biber.pm:4136> INFO - Looking for bibtex format file 'BAZitate.bib' for section 0
+[455] bibtex.pm:1490> INFO - LaTeX decoding ...
+[556] bibtex.pm:1306> INFO - Found BibTeX data source 'BAZitate.bib'
+[1771] Utils.pm:193> WARN - month field 'Aug' in entry '6633643' is not an integer - this will probably not sort properly.
+[1803] Utils.pm:193> WARN - month field 'Sep.' in entry '6374183' is not an integer - this will probably not sort properly.
+[2233] Utils.pm:193> WARN - month field 'Jun' in entry 'He_2016' is not an integer - this will probably not sort properly.
+[2259] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/icml/2015' in entry 'DBLP:conf/icml/IoffeS15' - ignoring (section 0)
+[2299] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2299] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2299] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[2299] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[2387] bbl.pm:617> INFO - Writing 'Bachelorarbeit.bbl' with encoding 'UTF-8'
+[2401] bbl.pm:720> INFO - Output to Bachelorarbeit.bbl
+[2411] Biber.pm:110> INFO - WARNINGS: 4

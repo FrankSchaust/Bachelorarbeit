@@ -1,0 +1,54 @@
+\documentclass[m,bachelor,binding,twoside,palatino]{WeSTthesis}
+
+  \usepackage[
+    backend=biber,
+    style=numeric-comp,
+    url=false,
+    doi=false,
+    isbn=false
+  ]{biblatex}
+  \usepackage{graphicx}
+  \usepackage{mathtools}
+  \usepackage{float}
+  \usepackage{amssymb}
+  \usepackage{amsmath}
+  \usepackage{rotating}
+  \usepackage[ngerman,english]{babel}
+  \usepackage[utf8]{inputenc}           % correct input encoding
+  \usepackage[T1]{fontenc} 				% correct output encoding
+  \usepackage{booktabs}
+
+  \selectlanguage{\ngerman}
+  \addbibresource{BAZitate.bib}
+  
+  \newcommand{\vect}[1]{\textbf{#1}} 
+  \newcommand{\mat}[1]{\textbf{\MakeUppercase{#1}}}
+
+  \renewcommand{\arraystretch}{1.3}
+  \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\begin{document}
+
+
+\title{\textbf{Vorhersage von Gefechts-Ausgängen im Echtzeit-Strategiespiel StarCraft II mittels Convolutional Neural Networks}}
+
+\author{Frank Schaust}
+
+\degreecourse{Informatik}
+
+\firstreviewer{Prof.\ Dr.\ Steffen Staab}
+\firstreviewerinfo{Institute for Web Science and Technologies}
+
+\secondreviewer{}
+\secondreviewerinfo{Institute for Web Science and Technologies}
+
+\maketitle
+
+\include{Motivation}
+\include{TheoretischerHintergrund}
+\include{VerwandteArbeiten}
+\include{Architekturen}
+\include{Evaluation}
+\include{Konklusion}
+
+\printbibliography
+\end{document}

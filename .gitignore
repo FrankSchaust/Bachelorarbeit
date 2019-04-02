@@ -1,0 +1,22 @@
+
+*.log
+*.aux
+*.bcf
+*.blg
+*.gz
+*.svg
+
+hardcoded/
+pictures/*.pdf
+pictures/AllConvCNN\.pdf
+
+pictures/ANN\.pdf
+
+pictures/Generierung_2\.pdf
+
+pictures/Generierung\.pdf
+
+
+pictures/Accunndf1_full modell__\.png
+
+pictures/Accunndf1_full_modell\.png

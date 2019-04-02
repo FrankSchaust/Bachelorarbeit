@@ -16,7 +16,7 @@ Neuronen in ANNs haben einen Bias und jede Verbindung zu anderen Neuronen ist mi
 
 
 
-Bild \ref{fig:basictop} zeigt eine einfache Topologie eines ANNs. Eine Eingabe wird vom Input Layer (zu Deutsch: \textit{Eingabeschicht}) in den Hidden Layer (zu Deutsch: \textit{Versteckte Schicht}) gegeben und von diesem in die letzte Schicht, welche als Output Layer (zu Deutsch: \textit{Ausgabeschicht}) funktioniert weitergereicht. 
+Abbildung \ref{fig:basictop} zeigt eine einfache Topologie eines ANNs. Eine Eingabe wird vom Input Layer (zu Deutsch: \textit{Eingabeschicht}) in den Hidden Layer (zu Deutsch: \textit{Versteckte Schicht}) gegeben und von diesem in die letzte Schicht, welche als Output Layer (zu Deutsch: \textit{Ausgabeschicht}) funktioniert weitergereicht. 
 
 \begin{figure}[ht]
 \centering
@@ -27,7 +27,7 @@ Bild \ref{fig:basictop} zeigt eine einfache Topologie eines ANNs. Eine Eingabe w
 
 Neural Networks (zu Deutsch: \textit{Neuronale Netze}) können als mathematische Modelle verstanden werden, welche eine Funktion $f : X \rightarrow Y$ definieren. In einem Neural Network wendet jedes Neuron eine Funktion auf seine Eingangswerte an, bevor es diese zur n\"achsten Schicht sendet. Somit kann die Funktion eines Neural Networks als eine Komposition aus jeder sich im Networks befindlichen Funktion definiert werden. 
 
-Bezogen auf Bild \ref{fig:composedGraph}, sieht die zusammengesetzte Funktion des Networks wie folgt aus: 
+Bezogen auf Abbildung \ref{fig:composedGraph}, sieht die zusammengesetzte Funktion des Networks wie folgt aus: 
 \begin{equation}
 \label{eq:compf}
 f(g_1(h_1(x), h_2(x)),g_2(h_2(x), h_3(x)))
@@ -105,7 +105,7 @@ softmax(\vect{z})_j = \frac{\mathrm{e}^{z_j}}{\sum_{k=1}^K \mathrm{e}^{z_k}}
 \end{equation}
 \\
 
-Eine vollständige Funktion f\"ur das in Bild \ref{fig:basictop} gezeigte ANN w\"are:
+Eine vollständige Funktion f\"ur das in Abbildung \ref{fig:basictop} gezeigte ANN w\"are:
 \begin{multline*}
 f(\mathbf{x}) = softmax(\mathbf{W_2} \cdot relu(\mathbf{W_1} \cdot \mathbf{x} + \mathbf{b_1}) + \mathbf{b_2} )
 \end{multline*}
@@ -152,7 +152,7 @@ Im Bezug auf hoch dimensionierte Eingabewerte k\"onnen fully-connected neural ne
 
 \paragraph{Pooling layers}
 
-Pooling Layer (zu Deutsch etwa: \textit{bündelnde Schicht}) werden auch als downsampling Layer bezeichnet. Ihre Aufgabe besteht darin die Ausgabewerte der vorherigen Layers in einen Wert zu kombinieren und somit die Dimensionen der weitergereichten Daten zu reduzieren. Bild \ref{fig:maxpool} zeigt eine bildliche Erkl\"arung des maxpool Layers.
+Pooling Layer (zu Deutsch etwa: \textit{bündelnde Schicht}) werden auch als downsampling Layer bezeichnet. Ihre Aufgabe besteht darin die Ausgabewerte der vorherigen Layers in einen Wert zu kombinieren und somit die Dimensionen der weitergereichten Daten zu reduzieren. Abbildung \ref{fig:maxpool} zeigt eine bildliche Erkl\"arung des maxpool Layers.
 
 \begin{figure}[H]
 \centering

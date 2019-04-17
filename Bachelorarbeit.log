@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.2.12)  19 MAR 2019 08:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.2.12)  17 APR 2019 09:24
 entering extended mode
 **./Bachelorarbeit.tex
 (Bachelorarbeit.tex
@@ -430,30 +430,6 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 cfg"
 File: biblatex.cfg 
 ))
-("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
-sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
-sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
-ics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-
-("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
-x.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen111
-\Gin@req@width=\dimen112
-)
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtool
 s.sty"
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
@@ -462,8 +438,8 @@ Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count282
 \calc@Bcount=\count283
-\calc@Adimen=\dimen113
-\calc@Bdimen=\dimen114
+\calc@Adimen=\dimen111
+\calc@Bdimen=\dimen112
 \calc@Askip=\skip72
 \calc@Bskip=\skip73
 LaTeX Info: Redefining \setlength on input line 80.
@@ -490,12 +466,12 @@ Package: amstext 2000/06/29 v2.01 AMS text
 "
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
-\ex@=\dimen115
+\ex@=\dimen113
 ))
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
 "
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen116
+\pmbraise@=\dimen114
 )
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
 "
@@ -513,7 +489,7 @@ LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen117
+\big@size=\dimen115
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count290
@@ -526,12 +502,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \column@=\count295
 \maxfields@=\count296
 \andhelp@=\toks18
-\eqnshift@=\dimen118
-\alignsep@=\dimen119
-\tagshift@=\dimen120
-\tagwidth@=\dimen121
-\totwidth@=\dimen122
-\lineht@=\dimen123
+\eqnshift@=\dimen116
+\alignsep@=\dimen117
+\tagshift@=\dimen118
+\tagwidth@=\dimen119
+\totwidth@=\dimen120
+\lineht@=\dimen121
 \@envbody=\toks19
 \multlinegap=\skip76
 \multlinetaggap=\skip77
@@ -544,14 +520,14 @@ LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count297
-\l_MT_multwidth_dim=\dimen124
+\l_MT_multwidth_dim=\dimen122
 \origjot=\skip78
-\l_MT_shortvdotswithinadjustabove_dim=\dimen125
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen126
-\l_MT_above_intertext_sep=\dimen127
-\l_MT_below_intertext_sep=\dimen128
-\l_MT_above_shortintertext_sep=\dimen129
-\l_MT_below_shortintertext_sep=\dimen130
+\l_MT_shortvdotswithinadjustabove_dim=\dimen123
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen124
+\l_MT_above_intertext_sep=\dimen125
+\l_MT_below_intertext_sep=\dimen126
+\l_MT_above_shortintertext_sep=\dimen127
+\l_MT_below_shortintertext_sep=\dimen128
 )
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -576,6 +552,31 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rotating.
 sty"
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
+)
 \c@r@tfl@t=\count299
 \rotFPtop=\skip79
 \rotFPbot=\skip80
@@ -969,6 +970,381 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count305
 \@thisrulewidth=\dimen144
 )
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algps
+eudocode.sty"
+Package: algpseudocode 
+
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algor
+ithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count306
+\c@ALG@rem=\count307
+\c@ALG@nested=\count308
+\ALG@tlm=\skip81
+\ALG@thistlm=\skip82
+\c@ALG@Lnr=\count309
+\c@ALG@blocknr=\count310
+\c@ALG@storecount=\count311
+\c@ALG@tmpcounter=\count312
+\ALG@tmplength=\skip83
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+hm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks26
+\c@algorithm=\count313
+)
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\siunitx\siunitx.st
+y"
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+"
+Package: expl3 2017/12/16 L3 programming layer (loader) 
+
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-cod
+e.tex"
+Package: expl3 2017/12/16 L3 programming layer (code)
+\c_max_int=\count314
+\l_tmpa_int=\count315
+\l_tmpb_int=\count316
+\g_tmpa_int=\count317
+\g_tmpb_int=\count318
+\g__intarray_font_int=\count319
+\g__prg_map_int=\count320
+\c_log_iow=\count321
+\l_iow_line_count_int=\count322
+\l__iow_line_target_int=\count323
+\l__iow_one_indent_int=\count324
+\l__iow_indent_int=\count325
+\c_zero_dim=\dimen145
+\c_max_dim=\dimen146
+\l_tmpa_dim=\dimen147
+\l_tmpb_dim=\dimen148
+\g_tmpa_dim=\dimen149
+\g_tmpb_dim=\dimen150
+\c_zero_skip=\skip84
+\c_max_skip=\skip85
+\l_tmpa_skip=\skip86
+\l_tmpb_skip=\skip87
+\g_tmpa_skip=\skip88
+\g_tmpb_skip=\skip89
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count326
+\c__fp_leading_shift_int=\count327
+\c__fp_middle_shift_int=\count328
+\c__fp_trailing_shift_int=\count329
+\c__fp_big_leading_shift_int=\count330
+\c__fp_big_middle_shift_int=\count331
+\c__fp_big_trailing_shift_int=\count332
+\c__fp_Bigg_leading_shift_int=\count333
+\c__fp_Bigg_middle_shift_int=\count334
+\c__fp_Bigg_trailing_shift_int=\count335
+\c__fp_rand_size_int=\count336
+\c__fp_rand_four_int=\count337
+\c__fp_rand_eight_int=\count338
+\l__sort_length_int=\count339
+\l__sort_min_int=\count340
+\l__sort_top_int=\count341
+\l__sort_max_int=\count342
+\l__sort_true_max_int=\count343
+\l__sort_block_int=\count344
+\l__sort_begin_int=\count345
+\l__sort_end_int=\count346
+\l__sort_A_int=\count347
+\l__sort_B_int=\count348
+\l__sort_C_int=\count349
+\l__tl_build_start_index_int=\count350
+\l__tl_build_index_int=\count351
+\l__tl_analysis_normal_int=\count352
+\l__tl_analysis_index_int=\count353
+\l__tl_analysis_nesting_int=\count354
+\l__tl_analysis_type_int=\count355
+\l__regex_internal_a_int=\count356
+\l__regex_internal_b_int=\count357
+\l__regex_internal_c_int=\count358
+\l__regex_balance_int=\count359
+\l__regex_group_level_int=\count360
+\l__regex_mode_int=\count361
+\c__regex_cs_in_class_mode_int=\count362
+\c__regex_cs_mode_int=\count363
+\l__regex_catcodes_int=\count364
+\l__regex_default_catcodes_int=\count365
+\c__regex_catcode_D_int=\count366
+\c__regex_catcode_S_int=\count367
+\c__regex_catcode_L_int=\count368
+\c__regex_catcode_O_int=\count369
+\c__regex_catcode_A_int=\count370
+\c__regex_all_catcodes_int=\count371
+\l__regex_show_lines_int=\count372
+\l__regex_min_state_int=\count373
+\l__regex_max_state_int=\count374
+\l__regex_left_state_int=\count375
+\l__regex_right_state_int=\count376
+\l__regex_capturing_group_int=\count377
+\l__regex_min_pos_int=\count378
+\l__regex_max_pos_int=\count379
+\l__regex_curr_pos_int=\count380
+\l__regex_start_pos_int=\count381
+\l__regex_success_pos_int=\count382
+\l__regex_curr_char_int=\count383
+\l__regex_curr_catcode_int=\count384
+\l__regex_last_char_int=\count385
+\l__regex_case_changed_char_int=\count386
+\l__regex_curr_state_int=\count387
+\l__regex_step_int=\count388
+\l__regex_min_active_int=\count389
+\l__regex_max_active_int=\count390
+\l__regex_replacement_csnames_int=\count391
+\l__regex_match_count_int=\count392
+\l__regex_min_submatch_int=\count393
+\l__regex_submatch_int=\count394
+\l__regex_zeroth_submatch_int=\count395
+\g__debug_trace_regex_int=\count396
+\c_empty_box=\box33
+\l_tmpa_box=\box34
+\l_tmpb_box=\box35
+\g_tmpa_box=\box36
+\g_tmpb_box=\box37
+\l__box_top_dim=\dimen151
+\l__box_bottom_dim=\dimen152
+\l__box_left_dim=\dimen153
+\l__box_right_dim=\dimen154
+\l__box_top_new_dim=\dimen155
+\l__box_bottom_new_dim=\dimen156
+\l__box_left_new_dim=\dimen157
+\l__box_right_new_dim=\dimen158
+\l__box_internal_box=\box38
+\l__coffin_internal_box=\box39
+\l__coffin_internal_dim=\dimen159
+\l__coffin_offset_x_dim=\dimen160
+\l__coffin_offset_y_dim=\dimen161
+\l__coffin_x_dim=\dimen162
+\l__coffin_y_dim=\dimen163
+\l__coffin_x_prime_dim=\dimen164
+\l__coffin_y_prime_dim=\dimen165
+\c_empty_coffin=\box40
+\l__coffin_aligned_coffin=\box41
+\l__coffin_aligned_internal_coffin=\box42
+\l_tmpa_coffin=\box43
+\l_tmpb_coffin=\box44
+\l__coffin_display_coffin=\box45
+\l__coffin_display_coord_coffin=\box46
+\l__coffin_display_pole_coffin=\box47
+\l__coffin_display_offset_dim=\dimen166
+\l__coffin_display_x_dim=\dimen167
+\l__coffin_display_y_dim=\dimen168
+\l__coffin_bounding_shift_dim=\dimen169
+\l__coffin_left_corner_dim=\dimen170
+\l__coffin_right_corner_dim=\dimen171
+\l__coffin_bottom_corner_dim=\dimen172
+\l__coffin_top_corner_dim=\dimen173
+\l__coffin_scaled_total_height_dim=\dimen174
+\l__coffin_scaled_width_dim=\dimen175
+)
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode
+.def"
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count397
+\l__driver_tmp_box=\box48
+))
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\
+xparse.sty"
+Package: xparse 2017/12/16 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count398
+\g__xparse_grabber_int=\count399
+\l__xparse_m_args_int=\count400
+\l__xparse_mandatory_args_int=\count401
+\l__xparse_v_nesting_int=\count402
+)
+Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
+
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen176
+\extrarowheight=\dimen177
+\NC@list=\toks27
+\extratabsurround=\skip90
+\backup@length=\skip91
+)
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\l3keys2
+e\l3keys2e.sty"
+Package: l3keys2e 2017/12/16 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box49
+\l__siunitx_tmp_dim=\dimen178
+\l__siunitx_tmp_int=\count403
+\l__siunitx_number_mantissa_length_int=\count404
+\l__siunitx_number_uncert_length_int=\count405
+\l__siunitx_round_int=\count406
+\l__siunitx_process_decimal_int=\count407
+\l__siunitx_process_uncertainty_int=\count408
+\l__siunitx_process_fixed_int=\count409
+\l__siunitx_process_integer_min_int=\count410
+\l__siunitx_process_precision_int=\count411
+\l__siunitx_group_min_int=\count412
+\l__siunitx_angle_marker_box=\box50
+\l__siunitx_angle_unit_box=\box51
+\l__siunitx_angle_marker_dim=\dimen179
+\l__siunitx_angle_unit_dim=\dimen180
+\l__siunitx_unit_int=\count413
+\l__siunitx_unit_denominator_int=\count414
+\l__siunitx_unit_numerator_int=\count415
+\l__siunitx_unit_prefix_int=\count416
+\l__siunitx_unit_prefix_base_int=\count417
+\l__siunitx_unit_prefix_gram_int=\count418
+\l__siunitx_number_product_int=\count419
+\c__siunitx_one_fill_skip=\skip92
+\l__siunitx_table_unit_align_skip=\skip93
+\l__siunitx_table_exponent_dim=\dimen181
+\l__siunitx_table_integer_dim=\dimen182
+\l__siunitx_table_mantissa_dim=\dimen183
+\l__siunitx_table_marker_dim=\dimen184
+\l__siunitx_table_result_dim=\dimen185
+\l__siunitx_table_uncert_dim=\dimen186
+\l__siunitx_table_fill_pre_dim=\dimen187
+\l__siunitx_table_fill_post_dim=\dimen188
+\l__siunitx_table_fill_mid_dim=\dimen189
+\l__siunitx_table_pre_box=\box52
+\l__siunitx_table_post_box=\box53
+\l__siunitx_table_mantissa_box=\box54
+\l__siunitx_table_result_box=\box55
+\l__siunitx_table_number_align_skip=\skip94
+\l__siunitx_table_text_align_skip=\skip95
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7237.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7240.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7243.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7246.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7249.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7252.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7255.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7270.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7279.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7288.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7297.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7309.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7321.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7333.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7336.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7351.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7363.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numInBookmark with sig. 'om' on line 7410.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrangeInBookmark with sig. 'omm' on line 7412.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIInBookmark with sig. 'omom' on line 7414.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlistInBookmark with sig. 'omm' on line 7416.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrangeInBookmark with sig. 'ommm' on line 7418.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \siInBookmark with sig. 'om' on line 7419.
+.................................................
+\g__file_internal_ior=\read2
+
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
+tor.sty"
+Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \LeftComment with sig. 's m' on line 34.
+.................................................
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -993,25 +1369,25 @@ File: german.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count306
-\@quotereset=\count307
+\@quotelevel=\count420
+\@quotereset=\count421
 (Bachelorarbeit.aux (Motivation.aux) (TheoretischerHintergrund.aux)
 (VerwandteArbeiten.aux) (Architekturen.aux) (Evaluation.aux) (Konklusion.aux))
 \openout1 = `Bachelorarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 37.
 
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1059,23 +1435,23 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Bachelorarbeit.bbl' found.
 (Bachelorarbeit.bbl)
-Package biblatex Info: Reference section=0 on input line 29.
-Package biblatex Info: Reference segment=0 on input line 29.
+Package biblatex Info: Reference section=0 on input line 37.
+Package biblatex Info: Reference segment=0 on input line 37.
 
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
-\scratchdimen=\dimen145
-\scratchbox=\box33
-\nofMPsegments=\count309
-\nofMParguments=\count310
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count311
-\MPscratchDim=\dimen146
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count422
+\scratchdimen=\dimen190
+\scratchbox=\box56
+\nofMPsegments=\count423
+\nofMParguments=\count424
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count425
+\MPscratchDim=\dimen191
+\MPnumerator=\count426
+\makeMPintoPDFobject=\count427
+\everyMPtoPDFconversion=\toks29
 )
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -1096,33 +1472,116 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 44.
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+)
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\transla
+tor-basic-dictionary-English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+)
+("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\siunitx\siunitx-ab
+breviations.cfg"
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
 
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 44.
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <logos/uni-logo-color.pdf, id=1, 282.05376pt x 46.1725pt>
 File: logos/uni-logo-color.pdf Graphic file (type pdf)
 <use logos/uni-logo-color.pdf>
-Package pdftex.def Info: logos/uni-logo-color.pdf  used on input line 44.
+Package pdftex.def Info: logos/uni-logo-color.pdf  used on input line 52.
 (pdftex.def)             Requested size: 156.42548pt x 25.6073pt.
 <logos/institute-logo-color.pdf, id=2, 759.83875pt x 208.78pt>
 File: logos/institute-logo-color.pdf Graphic file (type pdf)
 <use logos/institute-logo-color.pdf>
-Package pdftex.def Info: logos/institute-logo-color.pdf  used on input line 44.
+Package pdftex.def Info: logos/institute-logo-color.pdf  used on input line 52.
 
 (pdftex.def)             Requested size: 93.19409pt x 25.6073pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 44.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
 [1
 
 {C:/Users/Frank/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logos/uni
 -logo-color.pdf> <./logos/institute-logo-color.pdf>] [2]
-\c@AuthorNumber=\count314
+\c@AuthorNumber=\count428
  [3
 
 
@@ -1130,19 +1589,19 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 52.
 
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
 [5] [6
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 44.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
  [7]
 \openout2 = `Motivation.aux'.
 
@@ -1157,95 +1616,25 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 
-Overfull \hbox (11.47498pt too wide) in paragraph at lines 5--6
-\T1/ppl/m/n/10.95 Ver-gan-gen-heit er-fol-gre-ich An-wen-dung in an-deren Forsc
-hungs-ge-bi-eten, welche keinen
- []
-
-
-Overfull \hbox (11.05809pt too wide) in paragraph at lines 7--8
-\T1/ppl/m/n/10.95 von einem un-ter-schiedlichen Spieler kon-trol-liert, dessen 
-Ziel es ist mit den Fähigkeiten
- []
-
-
-Overfull \hbox (5.2667pt too wide) in paragraph at lines 9--10
-[]\T1/ppl/m/n/10.95 Um den Zu-s-tand des Spiels darzustellen wer-den Matrix-Rep
-räsentationen genutzt.
- []
-
-
-Overfull \hbox (22.1288pt too wide) in paragraph at lines 9--10
-\T1/ppl/m/n/10.95 Jede Ma-trix repräsen-tiert einen an-deren As-pekt (wie zum B
-eispiel Einheiten-Gesundheit,
- []
-
-
-Overfull \hbox (6.09885pt too wide) in paragraph at lines 9--10
-\T1/ppl/m/n/10.95 Einheiten-Typ, usw.) des Spiel-Zustandes in Bezug auf die Po-
-si-tion auf dem Spielfeld.
- []
-
-
-Overfull \hbox (10.69733pt too wide) in paragraph at lines 11--12
-\T1/ppl/m/n/10.95 chine Learn-ing Meth-o-den zu testen. Sie stellen eine kon-tr
-ol-lier-bare Menge an Umwelt-
- []
-
 [8
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 15.
- [9]
-Overfull \hbox (2.02463pt too wide) in paragraph at lines 30--31
-\T1/ppl/m/n/10.95 timmt wie schnell sich eine Ein-heit über die Spielka-rte be-
-we-gen kann. Die Sichtweite
- []
-
-
-Overfull \hbox (5.44165pt too wide) in paragraph at lines 30--31
-\T1/ppl/m/n/10.95 bes-timmt den Ra-dius um eine fre-undliche Ein-heit herum in 
-dem die Karte aufgedeckt
- []
-
-
-Overfull \hbox (3.09901pt too wide) in paragraph at lines 32--33
-\T1/ppl/m/n/10.95 greifen, während an-dere nur Luftein-heiten an-greifen kön-ne
-n. Da-her kann die Menge
- []
-
-) [10] [11]
+ [9]) [10] [11]
 \openout2 = `TheoretischerHintergrund.aux'.
 
  (TheoretischerHintergrund.tex
-Overfull \hbox (18.06671pt too wide) in paragraph at lines 7--8
-\T1/ppl/m/n/10.95 Artificial Neu-ral Net-works (ANNs) sind im Ma-chine Learn-in
-g (zu Deutsch: \T1/ppl/m/it/10.95 Maschinelles
- []
-
-
-Overfull \hbox (2.7478pt too wide) in paragraph at lines 9--10
-\T1/ppl/m/n/10.95 go-rith-men lösen möchte, welche keinen statisch pro-gram-mie
-rten Lö-sung-weg benöti-
- []
-
-
-Overfull \hbox (8.60646pt too wide) in paragraph at lines 11--12
-\T1/ppl/m/n/10.95 Menge an Knoten mit einer Menge an Kan-ten als Verbindun-gen 
-zwis-chen den Knoten,
- []
-
-<pictures/grafiken/Folie3.png, id=62, 437.38406pt x 507.39563pt>
+<pictures/grafiken/Folie3.png, id=62, 671.50874pt x 686.565pt>
 File: pictures/grafiken/Folie3.png Graphic file (type png)
 <use pictures/grafiken/Folie3.png>
 Package pdftex.def Info: pictures/grafiken/Folie3.png  used on input line 23.
-(pdftex.def)             Requested size: 218.69148pt x 253.69719pt.
-[12
+(pdftex.def)             Requested size: 335.75356pt x 343.28166pt.
+ [12
 
 
 ]
-<pictures/grafiken/Folie4.png, id=67, 557.83406pt x 357.58594pt>
+<pictures/grafiken/Folie4.png, id=66, 557.83406pt x 357.58594pt>
 File: pictures/grafiken/Folie4.png Graphic file (type png)
 <use pictures/grafiken/Folie4.png>
 Package pdftex.def Info: pictures/grafiken/Folie4.png  used on input line 38.
@@ -1254,27 +1643,21 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 45.
 
 Overfull \hbox (12.0769pt too wide) in paragraph at lines 45--46
- \T1/phv/b/n/10.95 Fully-connected layer[] \T1/ppl/m/n/10.95 Jeder Layer in ein
-em klas-sis-chen ANN ist ein fully-connected
- []
-
-
-Overfull \hbox (1.74043pt too wide) in paragraph at lines 45--46
-\T1/ppl/m/n/10.95 Layer (zu Deutsch etwa: \T1/ppl/m/it/10.95 voll-ständig ver-b
-un-dene Schicht\T1/ppl/m/n/10.95 ). Neu-ro-nen in fully-connected
+ \T1/phv/b/n/10.95 Fully-connected layer[] \T1/ppl/m/n/10.95 Je-der Layer in ei
+-nem klas-si-schen ANN ist ein fully-connected
  []
 
 [13 <./pictures/grafiken/Folie3.png>]
-Overfull \hbox (4.68625pt too wide) in paragraph at lines 92--93
- \T1/phv/b/n/10.95 Loss Func-tion[] \T1/ppl/m/n/10.95 Die Loss Func-tion (zu De
-utsch: \T1/ppl/m/it/10.95 Ver-lust-funk-tion\T1/ppl/m/n/10.95 ) evaluiert wie g
-enau
+Overfull \hbox (7.56802pt too wide) in paragraph at lines 88--89
+ \T1/phv/b/n/10.95 Nor-ma-li-za-ti-on Layer[] \T1/ppl/m/n/10.95 Das Nor-ma-li-z
+a-ti-on Layer (zu Deutsch: \T1/ppl/m/it/10.95 Nor-ma-li-sie-rungs-schicht\T1/pp
+l/m/n/10.95 )
  []
 
 
-Overfull \hbox (4.47858pt too wide) in paragraph at lines 92--93
-\T1/ppl/m/n/10.95 ings-daten vorher-sagt. Ihre Auf-gabe besteht darin den Ab-st
-and zwis-chen der ground-
+Overfull \hbox (2.34293pt too wide) in paragraph at lines 88--89
+\T1/ppl/m/n/10.95 fol-gend wird aus-schlieÿ-lich batch nor-ma-li-za-ti-on(BN) g
+e-nutzt, da es so-wohl für fully-
  []
 
 [14 <./pictures/grafiken/Folie4.png>]
@@ -1290,366 +1673,285 @@ m/n/10.95 ) = \OML/cmm/m/it/10.95 softmax\OT1/cmr/m/n/10.95 ([] \OMS/cmsy/m/n/1
 1/cmr/bx/n/10.95 x \OT1/cmr/m/n/10.95 + []) + [])  $ 
  []
 
-
-Overfull \hbox (4.27031pt too wide) in paragraph at lines 127--128
- \T1/phv/b/n/10.95 Con-vo-lu-tional lay-ers[] \T1/ppl/m/n/10.95 Das Con-vo-lu-t
-ional Layer ist einer der Kernbe-standteile eines
+[15] [16]
+Overfull \hbox (1.18298pt too wide) in paragraph at lines 151--152
+\T1/ppl/m/n/10.95 net-works räum-li-che Ab-hän-gig-kei-ten nicht nut-zen, da je
+-des Neu-ron vom je-dem Neu-
  []
 
-[15]
-Overfull \hbox (20.04884pt too wide) in paragraph at lines 129--130
-[]\T1/ppl/m/n/10.95 Während der Fil-ter die Eingabe ve-r-ar-beitet, wird er übe
-r die Eingabe-ma-trix geschoben
- []
-
-[16]
-Overfull \hbox (5.7376pt too wide) in paragraph at lines 151--152
-\T1/ppl/m/n/10.95 Neu-ron des vorheri-gen Lay-ers In-for-ma-tio-nen sam-melt un
-d so im-mer alle Ak-tivierun-
- []
-
-<pictures/grafiken/grafikenmax.png, id=88, 526.96875pt x 264.23718pt>
+<pictures/grafiken/grafikenmax.png, id=86, 526.96875pt x 264.23718pt>
 File: pictures/grafiken/grafikenmax.png Graphic file (type png)
 <use pictures/grafiken/grafikenmax.png>
 Package pdftex.def Info: pictures/grafiken/grafikenmax.png  used on input line 
 159.
 (pdftex.def)             Requested size: 237.13374pt x 118.90562pt.
-
-Underfull \hbox (badness 2351) in paragraph at lines 160--160
-[]\T1/ppl/m/n/10.95 Einfache Ve-r-an-schaulichung des max-pool Lay-ers mit $\OT
-1/cmr/m/n/10.95 2 \OMS/cmsy/m/n/10.95  \OT1/cmr/m/n/10.95 2$ \T1/ppl/m/n/10.95
- stride-
- []
-
-[17 <./pictures/grafiken/grafikenmax.png>]) [18]
+[17]) [18 <./pictures/grafiken/grafikenmax.png>]
 \openout2 = `VerwandteArbeiten.aux'.
 
  (VerwandteArbeiten.tex
-Overfull \hbox (12.98633pt too wide) in paragraph at lines 6--8
-\T1/ppl/m/n/10.95 [15] nutzen un-ter-schiedliche Ma-chine Learn-ing Ver-fahren 
-um Gefechte vorherzusagen. 
- []
-
-
-Overfull \hbox (8.01447pt too wide) in paragraph at lines 9--10
-\T1/ppl/m/n/10.95 sich bringt, auÿer Acht gelassen, fliegende Ein-heiten, sowie
- Ein-heiten, die Fähigkeiten
- []
-
-
-Overfull \hbox (8.6723pt too wide) in paragraph at lines 11--12
-[]\T1/ppl/m/n/10.95 Churchill, Saf-fi-dine, and Buro [2] en-twick-elt einen Suc
-h-Algorithmus, der basierend
- []
-
 [19
 
 
 ]
-Overfull \hbox (12.29707pt too wide) in paragraph at lines 13--14
-[]\T1/ppl/m/n/10.95 Stanescu et al. Stanescu, Bar-riga, and Buro [14] bauen ihr
-en Vorhersage-Algorithmus
- []
-
-
-Overfull \hbox (5.07019pt too wide) in paragraph at lines 13--14
-\T1/ppl/m/n/10.95 auf dem Gesetz von Lanch-ester (auch Lanch-ester's Square Law
- genannt) auf, welches
- []
-
-
-Overfull \hbox (25.38118pt too wide) in paragraph at lines 19--20
-\T1/ppl/m/it/10.95 Bestärk-endes Ler-nen\T1/ppl/m/n/10.95 ) in Star-Craft An-we
-n-dung finden kann [20]. Der von ih-nen vorgestellte
- []
-
-
-Overfull \hbox (5.35402pt too wide) in paragraph at lines 19--20
-\T1/ppl/m/n/10.95 Al-go-rith-mus sollte das Mikro-man-age-ment der Ein-heiten e
-r-ler-nen und schlussendlich
- []
-
-
-Overfull \hbox (0.21857pt too wide) in paragraph at lines 19--20
-\T1/ppl/m/n/10.95 geskriptete Ab-fol-gen ablösen. In ihrem Pa-per zeigten sie, 
-dass Re-in-force-ment Learn-
+Overfull \hbox (9.33543pt too wide) in paragraph at lines 13--14
+[]\T1/ppl/m/n/10.95 Stanescu et al. Sta-nes-cu, Bar-ri-ga und Bu-ro [14] bau-en
+ ih-ren Vorhersage-Algorithmus
  []
 
 [20]) [21]
 \openout2 = `Architekturen.aux'.
 
- (Architekturen.tex
-Overfull \hbox (6.6243pt too wide) in paragraph at lines 7--8
-\T1/ppl/m/n/10.95 twick-lern für eine An-wen-dung im Bere-ich der zwei-di-men-s
-ion-alen Bild-klas-si-fizierung
- []
-
-
-Overfull \hbox (2.39787pt too wide) in paragraph at lines 7--8
-\T1/ppl/m/n/10.95 vorgenom-men wer-den, ohne die grundle-gende Struk-tur der Ar
--chitek-turen zu verän-
- []
-
-
-Overfull \hbox (0.7776pt too wide) in paragraph at lines 9--10
-\T1/ppl/m/n/10.95 Ar-chitek-turen einen ähn-lichen Um-fang -- gemessen an der P
-a-ram-e-ter-an-zahl -- haben.
- []
-
-
-Overfull \hbox (3.05467pt too wide) in paragraph at lines 18--19
-\T1/ppl/m/n/10.95 die gän-zlich auf den Ge-brauch von Max-Pooling Lay-ern verzi
-chtet. Die Re-duzierung
- []
-
-
-Overfull \hbox (28.34898pt too wide) in paragraph at lines 18--19
-\T1/ppl/m/n/10.95 der Di-men-sio-nen wird durch den Ein-satz von \T1/ppl/m/it/1
-0.95 Con-vo-lu-tional Lay-ern \T1/ppl/m/n/10.95 mit einem entsprechen-
- []
-
-
-Overfull \hbox (4.77333pt too wide) in paragraph at lines 18--19
-\T1/ppl/m/n/10.95 Aus-gabe-d-i-men-sion ist im For-mat \T1/ppl/m/it/10.95 chan-
-nels last \T1/ppl/m/n/10.95 (zu Deutsch: \T1/ppl/m/it/10.95 Kanäle zuletzt\T1/p
-pl/m/n/10.95 ) angegeben. 
- []
-
-[22
+ (Architekturen.tex [22
 
 
 ]
-<pictures/Inception/InceptionV4.png, id=110, 877.02657pt x 216.05719pt>
-File: pictures/Inception/InceptionV4.png Graphic file (type png)
-<use pictures/Inception/InceptionV4.png>
-Package pdftex.def Info: pictures/Inception/InceptionV4.png  used on input line
- 55.
-(pdftex.def)             Requested size: 657.76831pt x 162.04248pt.
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+[] $\OML/cmm/m/it/10.95 powervalue:ground \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/1
+0.95 powervalue:ground \OT1/cmr/m/n/10.95 +
+ []
 
-Overfull \hbox (66.23804pt too wide) in paragraph at lines 55--57
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[] $\OML/cmm/m/it/10.95 powervalue:air \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.9
+5 powervalue:air \OT1/cmr/m/n/10.95 +
+ []
+
+[23] [24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+[] \T1/ppl/b/n/10.95 if $\OML/cmm/m/it/10.95 armya:powervalue:ground \OMS/cmsy/
+m/n/10.95  \OML/cmm/m/it/10.95 K \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 arm
+yb:defense:ground \OMS/cmsy/m/n/10.95 ^
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+[] \T1/ppl/b/n/10.95 if $\OML/cmm/m/it/10.95 armyb:powervalue:ground \OMS/cmsy/
+m/n/10.95  \OML/cmm/m/it/10.95 K \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 arm
+ya:defense:ground \OMS/cmsy/m/n/10.95 ^
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 157--158
+[] $\OML/cmm/m/it/10.95 armyvalueb \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 ar
+myb:weightedpowervalue \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 armyb:defense:g
+round \OT1/cmr/m/n/10.95 +
+ []
+
+<pictures/konstantenVollesModell.png, id=119, 615.29875pt x 459.7175pt>
+File: pictures/konstantenVollesModell.png Graphic file (type png)
+<use pictures/konstantenVollesModell.png>
+Package pdftex.def Info: pictures/konstantenVollesModell.png  used on input lin
+e 172.
+(pdftex.def)             Requested size: 492.23967pt x 367.77449pt.
+
+Overfull \hbox (89.91942pt too wide) in paragraph at lines 172--174
+ [][] 
+ []
+
+[26] [27] [28 <./pictures/konstantenVollesModell.png>] [29]
+<pictures/inception/AllConvCNN.png, id=133, 1096.84781pt x 748.29562pt>
+File: pictures/inception/AllConvCNN.png Graphic file (type png)
+<use pictures/inception/AllConvCNN.png>
+Package pdftex.def Info: pictures/inception/AllConvCNN.png  used on input line 
+209.
+(pdftex.def)             Requested size: 1096.84514pt x 748.2938pt.
+
+Overfull \hbox (3.29369pt too wide) in paragraph at lines 216--217
+\T1/ppl/m/n/10.95 ResNet ist ei-ne von He u.a. [4] vor-ge-stell-te Ar-chi-tek-t
+ur, wel-che sich Short-cut Connec-
+ []
+
+[30 <./pictures/inception/AllConvCNN.png>] [31]
+<pictures/Inception/ResNet.png, id=141, 1090.0725pt x 656.4525pt>
+File: pictures/Inception/ResNet.png Graphic file (type png)
+<use pictures/Inception/ResNet.png>
+Package pdftex.def Info: pictures/Inception/ResNet.png  used on input line 223.
+
+(pdftex.def)             Requested size: 1090.06984pt x 656.4509pt.
+
+Overfull \hbox (24.36882pt too wide) in paragraph at lines 223--224
  [][] 
  []
 
 
-Overfull \hbox (9.38379pt too wide) in paragraph at lines 59--60
-\T1/ppl/m/n/10.95 (Vaild) aufge-führt. Sofern Stride und Padding fehlen, gilt S
-tride=1 und Padding=\T1/ppl/m/it/10.95 same\T1/ppl/m/n/10.95 .
+Overfull \vbox (144.6885pt too high) has occurred while \output is active []
+
+
+[32 <./pictures/Inception/ResNet.png>] [33]
+<pictures/inception/InceptionV4.png, id=148, 892.08281pt x 495.35063pt>
+File: pictures/inception/InceptionV4.png Graphic file (type png)
+<use pictures/inception/InceptionV4.png>
+Package pdftex.def Info: pictures/inception/InceptionV4.png  used on input line
+ 262.
+(pdftex.def)             Requested size: 892.08063pt x 495.34943pt.
+
+Overfull \vbox (149.81699pt too high) has occurred while \output is active []
+
+
+[34 <./pictures/inception/InceptionV4.png>]
+Overfull \hbox (11.95056pt too wide) in paragraph at lines 269--270
+\T1/ppl/m/n/10.95 du-ziert wäh-rend sich die An-zahl der Kanä-le von 96 auf 288
+ er-höht. Er fol-gen Inception-
  []
 
-[23] [24 <./pictures/Inception/InceptionV4.png>]
-Overfull \hbox (15.38391pt too wide) in paragraph at lines 61--62
-\T1/ppl/m/n/10.95 Das Inception-Modul ve-r-ar-beitet die Daten auf vier ver-sch
-iede-nen Pfaden und übergibt
- []
-
-<pictures/Inception/STEM.png, id=118, 963.6pt x 274.77657pt>
+[35]
+<pictures/Inception/STEM.png, id=155, 1066.7353pt x 298.86656pt>
 File: pictures/Inception/STEM.png Graphic file (type png)
 <use pictures/Inception/STEM.png>
-Package pdftex.def Info: pictures/Inception/STEM.png  used on input line 66.
-(pdftex.def)             Requested size: 722.69824pt x 206.08191pt.
+Package pdftex.def Info: pictures/Inception/STEM.png  used on input line 274.
+(pdftex.def)             Requested size: 1066.7327pt x 298.86581pt.
 
-Overfull \hbox (131.16797pt too wide) in paragraph at lines 66--68
- [][] 
- []
+Overfull \vbox (129.5195pt too high) has occurred while \output is active []
 
 
-Overfull \hbox (4.77386pt too wide) in paragraph at lines 70--71
-\T1/ppl/m/n/10.95 Nach an-fänglicher Ve-r-ar-beitung durch einige Con-vo-lu-tio
-nal Layer, wer-den die Daten
- []
-
-
-Overfull \hbox (5.60696pt too wide) in paragraph at lines 70--71
-\T1/ppl/m/n/10.95 Beide Wege wer-den vor der Weit-er-gabe an das näch-ste Modul
- ent-lang der Kanalachse
- []
-
-
-Overfull \hbox (14.45421pt too wide) in paragraph at lines 70--71
-\T1/ppl/m/n/10.95 (4. Achse) konkate-niert, so-dass aus den bei-den Aus-gaben m
-it Di-men-sio-nen 8x38x38x24
- []
-
-[25] [26 <./pictures/Inception/STEM.png>]
-<pictures/Inception/InceptionABC.png, id=127, 963.6pt x 542.025pt>
+[36 <./pictures/Inception/STEM.png>]
+<pictures/Inception/InceptionABC.png, id=159, 1122.44344pt x 597.73312pt>
 File: pictures/Inception/InceptionABC.png Graphic file (type png)
 <use pictures/Inception/InceptionABC.png>
 Package pdftex.def Info: pictures/Inception/InceptionABC.png  used on input lin
-e 75.
-(pdftex.def)             Requested size: 385.43317pt x 216.80615pt.
-<pictures/Inception/Reduction.png, id=128, 963.6pt x 542.025pt>
-File: pictures/Inception/Reduction.png Graphic file (type png)
-<use pictures/Inception/Reduction.png>
-Package pdftex.def Info: pictures/Inception/Reduction.png  used on input line 8
-4.
-(pdftex.def)             Requested size: 481.79883pt x 271.01183pt.
+e 283.
+(pdftex.def)             Requested size: 448.96942pt x 239.089pt.
 
-Overfull \hbox (79.47858pt too wide) in paragraph at lines 84--86
+Overfull \hbox (46.64917pt too wide) in paragraph at lines 283--284
  [][] 
  []
 
-[27 <./pictures/Inception/InceptionABC.png>]
-Overfull \hbox (6.97467pt too wide) in paragraph at lines 88--89
-[]\T1/ppl/m/n/10.95 Zur Re-duzierung der Bild-di-men-sio-nen Höhe und Bre-ite n
-utzt In-cep-tion Reduction-
+[37 <./pictures/Inception/InceptionABC.png>]
+<pictures/Inception/Reduction.png, id=164, 1003.49907pt x 641.39626pt>
+File: pictures/Inception/Reduction.png Graphic file (type png)
+<use pictures/Inception/Reduction.png>
+Package pdftex.def Info: pictures/Inception/Reduction.png  used on input line 2
+92.
+(pdftex.def)             Requested size: 451.5704pt x 288.62564pt.
+
+Overfull \hbox (49.25015pt too wide) in paragraph at lines 292--293
+ [][] 
  []
 
 
-Overfull \hbox (11.30003pt too wide) in paragraph at lines 116--117
-\T1/ppl/m/n/10.95 dem Net-zw-erk einzelne gewinnbrin-gende Fea-ture stärker zu 
-gewichten und schwache
+Overfull \hbox (6.97467pt too wide) in paragraph at lines 296--297
+[]\T1/ppl/m/n/10.95 Zur Re-du-zie-rung der Bild-di-men-sio-nen Hö-he und Brei-t
+e nutzt In-cep-ti-on Reduction-
+ []
+
+[38 <./pictures/Inception/Reduction.png>]
+Overfull \hbox (9.02309pt too wide) in paragraph at lines 324--325
+\T1/ppl/m/n/10.95 den kön-nen, wel-che es dem Netz-werk er-mög-li-chen Fea-ture
+ Re-ca-li-bra-ti-on (zu Deutsch:
  []
 
 
-Overfull \hbox (4.18286pt too wide) in paragraph at lines 116--117
-\T1/ppl/m/n/10.95 den die Squeeze-and-Excitation Layer jew-eils nach den In-cep
--tion Mod-ulen angewen-
+Overfull \hbox (13.53746pt too wide) in paragraph at lines 324--325
+\T1/ppl/m/n/10.95 in In-cep-ti-on ein-ge-führt wer-den kann. In der ak-tu-el-le
+n Ar-chi-tek-tur wer-den die Squeeze-
  []
 
-[28 <./pictures/Inception/Reduction.png>]
-Overfull \hbox (17.1794pt too wide) in paragraph at lines 118--119
-\T1/ppl/m/n/10.95 wobei AD für Aus-gabe-d-i-men-sion steht und gle-ich der An-z
-ahl der Kanäle der Inception-
+
+Overfull \hbox (17.1794pt too wide) in paragraph at lines 326--327
+\T1/ppl/m/n/10.95 wo-bei AD für Aus-ga-be-di-men-si-on steht und gleich der An-
+zahl der Kanä-le der Inception-
  []
 
-<pictures/Inception/SqueezeAndExcitation.png, id=137, 304.88907pt x 454.69875pt
+[39] [40]
+<pictures/Inception/SqueezeAndExcitation.png, id=174, 478.78876pt x 755.07094pt
 >
 File: pictures/Inception/SqueezeAndExcitation.png Graphic file (type png)
 <use pictures/Inception/SqueezeAndExcitation.png>
 Package pdftex.def Info: pictures/Inception/SqueezeAndExcitation.png  used on i
-nput line 123.
-(pdftex.def)             Requested size: 274.39761pt x 409.22508pt.
-[29]
-Underfull \hbox (badness 2334) in paragraph at lines 129--129
-[]\T1/ppl/m/n/10.95 Inception-V4-SE-Net: Au-flis-tung der Vari-ablenzahl mit Sq
-ueeze-and-
- []
+nput line 332.
+(pdftex.def)             Requested size: 359.09068pt x 566.30182pt.
+)
+Overfull \vbox (2.45158pt too high) has occurred while \output is active []
 
 
-Overfull \hbox (14.2452pt too wide) in paragraph at lines 151--152
-\T1/ppl/m/n/10.95 nec-tions (zu deutsch etwa: \T1/ppl/m/it/10.95 abkürzende Ver
-bindun-gen\T1/ppl/m/n/10.95 ) zu nutze macht. Mit zunehmender
- []
-
-
-Overfull \hbox (1.45566pt too wide) in paragraph at lines 151--152
-\T1/ppl/m/n/10.95 Tiefe von CNNs wurde bei eini-gen Prob-lem-stel-lun-gen fest-
-gestellt, dass tief-ere CNNs
- []
-
-[30 <./pictures/Inception/SqueezeAndExcitation.png>]
-<pictures/Inception/ResNet.png, id=145, 963.6pt x 542.025pt>
-File: pictures/Inception/ResNet.png Graphic file (type png)
-<use pictures/Inception/ResNet.png>
-Package pdftex.def Info: pictures/Inception/ResNet.png  used on input line 158.
-
-(pdftex.def)             Requested size: 722.69824pt x 406.51775pt.
-
-Overfull \hbox (131.16797pt too wide) in paragraph at lines 158--160
- [][] 
- []
-
-) [31] [32 <./pictures/Inception/ResNet.png>] [33]
+[41 <./pictures/Inception/SqueezeAndExcitation.png>]
 \openout2 = `Evaluation.aux'.
 
- (Evaluation.tex
-Overfull \hbox (0.19759pt too wide) in paragraph at lines 6--7
-\T1/ppl/m/n/10.95 Der Vor-gang der Daten-gener-ierung wurde nach dem in Bild 10
-[] aufgezeigten Schema
- []
-
-
-Overfull \hbox (27.538pt too wide) in paragraph at lines 6--7
-\T1/ppl/m/n/10.95 im-ple-men-tiert. Durch die Ver-wen-dung einer Cus-tom Map (z
-u Deutsch: \T1/ppl/m/it/10.95 be-nutzerdefinierten
- []
-
-
-Overfull \hbox (14.9565pt too wide) in paragraph at lines 6--7
-\T1/ppl/m/n/10.95 kön-nen die bei-den Armeen mit zufäl-lig zusam-mengestell-ten
- Einheiten-Konstellationen
- []
-
-[34
+ (Evaluation.tex [42
 
 
 ]
-<pictures/grafiken/Folie1.png, id=159, 845.40843pt x 541.27219pt>
+[43]
+<pictures/grafiken/Folie1.png, id=185, 1112.65688pt x 703.12688pt>
 File: pictures/grafiken/Folie1.png Graphic file (type png)
 <use pictures/grafiken/Folie1.png>
-Package pdftex.def Info: pictures/grafiken/Folie1.png  used on input line 19.
-(pdftex.def)             Requested size: 845.40636pt x 541.27086pt.
+Package pdftex.def Info: pictures/grafiken/Folie1.png  used on input line 20.
+(pdftex.def)             Requested size: 1112.65417pt x 703.12515pt.
 
-Overfull \hbox (3.63289pt too wide) in paragraph at lines 19--20
+Overfull \hbox (19.55913pt too wide) in paragraph at lines 20--21
  [][] 
  []
 
-[35]
-Overfull \vbox (70.20453pt too high) has occurred while \output is active []
+
+Overfull \vbox (103.74905pt too high) has occurred while \output is active []
 
 
-[36 <./pictures/grafiken/Folie1.png>]
-<pictures/grafiken/Folie2.png, id=166, 910.15031pt x 304.88907pt>
+[44 <./pictures/grafiken/Folie1.png>]
+<pictures/grafiken/Folie2.png, id=189, 1081.03876pt x 358.33875pt>
 File: pictures/grafiken/Folie2.png Graphic file (type png)
 <use pictures/grafiken/Folie2.png>
-Package pdftex.def Info: pictures/grafiken/Folie2.png  used on input line 27.
-(pdftex.def)             Requested size: 910.1481pt x 304.88832pt.
+Package pdftex.def Info: pictures/grafiken/Folie2.png  used on input line 28.
+(pdftex.def)             Requested size: 1081.03612pt x 358.33788pt.
 
-Overfull \vbox (118.76083pt too high) has occurred while \output is active []
+Overfull \vbox (84.77803pt too high) has occurred while \output is active []
 
 
-[37 <./pictures/grafiken/Folie2.png>]) [38]
+[45 <./pictures/grafiken/Folie2.png>]) [46]
 \openout2 = `Konklusion.aux'.
 
- (Konklusion.tex) [39
+ (Konklusion.tex) [47
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 53.
+Overfull \hbox (3.98497pt too wide) in paragraph at lines 62--62
+[]\T1/ppl/m/n/10.95 Ian Good-fel-low, Yos-hua Ben-gio und Aaron Cour-ville. \T1
+/ppl/m/it/10.95 De-ep Lear-ning\T1/ppl/m/n/10.95 . MIT Press,
+ []
 
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 61.
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (9.80458pt too wide) in paragraph at lines 54--54
-[]\T1/ppl/m/n/10.95 Mikayel Samvelyan et al. \T1/ppl/m/it/10.95 The Star-Craft 
-Multi-Agent Chal-lenge\T1/ppl/m/n/10.95 . 2019. arXiv: $\T1/pcr/m/n/10.95 1902 
-.
+Overfull \hbox (6.88881pt too wide) in paragraph at lines 62--62
+[]\T1/ppl/m/n/10.95 Mikayel Sam-ve-ly-an u.a. \T1/ppl/m/it/10.95 The Star-Craft
+ Multi-Agent Chal-len-ge\T1/ppl/m/n/10.95 . 2019. ar-Xiv: $\T1/pcr/m/n/10.95 19
+02 .
  []
 
 
-Overfull \hbox (19.99371pt too wide) in paragraph at lines 54--54
-[]\T1/ppl/m/n/10.95 Christian Szegedy, Sergey Ioffe, and Vin-cent Van-houcke. `
-`Inception-v4, Inception-
+Overfull \hbox (17.16655pt too wide) in paragraph at lines 62--62
+[]\T1/ppl/m/n/10.95 Christian Sze-ge-dy, Ser-gey Iof-fe und Vin-cent Van-hou-ck
+e. ``Inception-v4, Inception-
  []
 
 
-Overfull \hbox (43.47913pt too wide) in paragraph at lines 54--54
-\T1/ppl/m/n/10.95 ResNet and the Im-pact of Resid-ual Con-nec-tions on Learn-in
-g''. In: \T1/ppl/m/it/10.95 CoRR \T1/ppl/m/n/10.95 abs/1602.07261
+Overfull \hbox (43.47913pt too wide) in paragraph at lines 62--62
+\T1/ppl/m/n/10.95 ResNet and the Im-pact of Re-si-du-al Connec-ti-ons on Lear-n
+ing''. In: \T1/ppl/m/it/10.95 CoRR \T1/ppl/m/n/10.95 abs/1602.07261
  []
 
 
-Overfull \hbox (29.1602pt too wide) in paragraph at lines 54--54
-[]\T1/ppl/m/n/10.95 Christian Szegedy et al. ``Go-ing Deeper with Con-vo-lu-tio
-ns''. In: \T1/ppl/m/it/10.95 CoRR \T1/ppl/m/n/10.95 abs/1409.4842
+Overfull \hbox (26.24443pt too wide) in paragraph at lines 62--62
+[]\T1/ppl/m/n/10.95 Christian Sze-ge-dy u.a. ``Going De-e-per with Con-vo-lu-ti
+-ons''. In: \T1/ppl/m/it/10.95 CoRR \T1/ppl/m/n/10.95 abs/1409.4842
  []
 
-[40
+[48
 
-] [41] (Bachelorarbeit.aux (Motivation.aux) (TheoretischerHintergrund.aux)
+] [49] (Bachelorarbeit.aux (Motivation.aux) (TheoretischerHintergrund.aux)
 (VerwandteArbeiten.aux) (Architekturen.aux) (Evaluation.aux) (Konklusion.aux))
 Package logreq Info: Writing requests to 'Bachelorarbeit.run.xml'.
 \openout1 = `Bachelorarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13917 strings out of 493313
- 243644 string characters out of 3130168
- 784688 words of memory out of 3000000
- 17153 multiletter control sequences out of 15000+200000
- 44704 words of font info for 82 fonts, out of 3000000 for 9000
+ 25102 strings out of 493313
+ 490786 string characters out of 3130168
+ 986495 words of memory out of 3000000
+ 28273 multiletter control sequences out of 15000+200000
+ 579086 words of font info for 104 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 48i,10n,53p,8841b,1817s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,10n,53p,10367b,1819s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Frank/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Frank/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Frank/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
@@ -1673,9 +1975,9 @@ s/type1/urw/courier/ucrr8a.pfb><C:/Users/Frank/AppData/Local/Programs/MiKTeX 2.
 KTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Frank/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Frank/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Bachelorarbeit.pdf (41 pages, 988407 bytes).
+Output written on Bachelorarbeit.pdf (49 pages, 1438709 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
+ 269 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

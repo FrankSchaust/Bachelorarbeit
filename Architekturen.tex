@@ -13,138 +13,165 @@ Viele gängige Implementationen der vorgestellten Architekturen setzen zudem Glo
 \subsection{Baseline}
 Um die Effektivität der Architekturen zu überprüfen wurde eine Baseline implementiert, welche nach einer festen Implementierung die Gefechts-Ausgänge berechnet. Die Baseline berücksichtigt sowohl die Offensive Kampfkraft der beiden Armeen, als auch die defensiven Eigenschaften jeder Armee. 
 
-Die Offensive Kampfkraft der Armeen wird durch einen \textit{Powervalue} dargestellt. Der Powervalue errechnet sich aus dem Angriffswert folgend Damage-per-second (DPS, zu Deutsch: Schaden pro Sekunde) zusammen mit sämtlichen Boni, welche durch die unterschiedlichen Einheitenklassen hinzukommen. So sind manche Einheiten beispielsweise effektiver gegen Einheiten welche dem mechanischen Typ angehören. 
+Die Offensive Kampfkraft der Armeen wird durch einen \textit{Powervalue} dargestellt. Der Powervalue errechnet sich aus dem Angriffswert folgend Damage-per-second (DPS, zu Deutsch: Schaden pro Sekunde) zusammen mit sämtlichen Boni, welche durch die unterschiedlichen Einheitenklassen hinzukommen. So sind manche Einheiten beispielsweise effektiver gegen Einheiten welche dem mechanischen Typ angehören. Die Berechnung des Powervalues einer einzelnen Einheit wird in Algorithmus \ref{alg:powervalue} veranschaulicht. Die Prozedur Powervalue wird für jede Einheit einer Armee ausgeführt und erhält die Spezifika der Einheit wie auch die Spezifika der gegnerischen Armee als Eingabewerte. Der Bonusschaden \textit{bonus} wird durch den Grundbonus, den die Einheit gegen einen speziellen Typ erhält und den Anteil der relevanten Einheiten in der gegnerischen Armee berechnet und auf den Grundschaden der Einheit addiert. Die Berechnung der Bonusschäden bringt keine nennenswerte Steigerung der Accuracy (zu Deutsch: Genauigkeit), wurde aber der Vollständigkeit halber implementiert. 
 
-Der Powervalue errechnet sich in etwa wie folgt:
+
+\begin{algorithm}
 \begin{algorithmic}[1]
-\Procedure {PowervalueMitBoni}{$einheit$, $gegner$}
-	\State \Comment jeder Bonustyp beinhaltet einen Wert typ, als Identifikator und einen Wert Schaden.
-	\State $bonustyp \leftarrow einheit[bonustyp]$
-	\State \Comment Für jeden Bonustyp, den die Einheit beinhaltet..
-	\ForAll {$bt \in bonustyp$}
-		\If {$gegner[bonustyp] = bt[typ]$}
-			\State \Comment berechne anteilig den Bonusschaden der aktuellen Einheit
-			\State $faktor \leftarrow anzahl(gegner[bt]) \div anzahl(gegner)$
-			\State $bonus \leftarrow bonus + bt[schaden] \times faktor$
+\Procedure {Powervalue}{$unit$, $enemies$}
+\LeftComment*{jeder Bonustyp beinhaltet einen Wert type, als Identifikator und einen Wert damage, der den Bonusschaden spezifiziert.}
+	\ForAll {$bt \in unit.bonustype$}
+		\If {$Anzahl\,der\,Gegner\,mit\,Bonustyp\,bt.type > 0$}
+			\LeftComment{berechne anteilig den Bonusschaden der aktuellen Einheit}
+			\State $factor \leftarrow Anzahl\,Gegner\,mit\,bt.type \div Gesamtzahl\,Gegner$
+			\State $bonus \leftarrow bonus + bt.damage \times factor$
 		\EndIf
 	\EndFor
-	\State $schaden = einheit[basisschaden] + bonus$
-	\State \textbf{return} $schaden$
+	\State \textbf{return} $ unit.basedamage + bonus$
 \EndProcedure
 \end{algorithmic}
+\caption{Berechnung des Powervalues für jede Einheit.}
+\label{alg:powervalue}
+\end{algorithm}
 
-Da Einheiten immer nur eine bestimmte Art von Einheiten angreifen können, errechnet der Algorithmus insgesamt 4 Werte. Für jedes der beiden Teams wird der Wert für Schaden an Bodeneinheiten und der Wert für Schaden an Lufteinheiten errechnet. Zusätzlich wird ein Powervalue in Relation zur Einheiten Verteilung Luft-Boden errechnet:
+Da Einheiten immer nur eine bestimmte Art von Einheiten angreifen können, errechnet der Algorithmus \ref{alg:powervalue_anteilig} insgesamt 6 Werte. Für jedes der beiden Teams wird der Wert für Schaden an Bodeneinheiten und der Wert für Schaden an Lufteinheiten errechnet. Zusätzlich wird ein Powervalue in Relation zur Einheiten Verteilung Luft-Boden errechnet:
+\begin{algorithm}
 \begin{algorithmic}[1]
-\State $Boden\_Faktor = anzahl(gegner['Boden']) \div anzahl(gegner)$
-\State $Luft\_Faktor = anzahl(gegner['Luft']) \div anzahl(gegner)$
-\State $powervalue\_gesamt \leftarrow schaden['Boden'] * Boden\_Faktor + schaden['Luft'] * Luft\_Faktor$ 
+\Procedure {Armypowervalues}{$army$, $opposingarmy$}
+	\ForAll {$unit \in army$}
+		\If {$unit.attacktype = 'Ground'$}
+		\State $powervalue.ground \leftarrow powervalue.ground+\textsc{Powervalue}(unit, opposingarmy)$	
+		\Else
+			\State $powervalue.air \leftarrow powervalue.air+\textsc{Powervalue}(unit, opposingarmy)$	
+		\EndIf	
+	\EndFor
+\LeftComment{powervalue enthält die Werte für ground und air}
+\State \textbf{return} powervalue
+\EndProcedure	
+\State $powervalues = \textsc{Armypowervalues}(army, opposingarmy)$
+\State $groundshare = Anzahl\,Gegner\,Typ\,Boden \div Gesamtzahl\,Gegner$
+\State $airshare = Anzahl\,Gegner\,Typ\,Luft \div Gesamtzahl\,Gegner$
+\State $weightedpowervalue \leftarrow powervalue.ground * groundshare + powervalue.air * airshare$ 
 \end{algorithmic}
+\caption{Berechnung der Powervalues nach Angriffs-Typen und des gewichteten Powervalues}
+\label{alg:powervalue_anteilig}
+\end{algorithm}
 
 
 
-Um die Überlebensfähigkeit der Armeen zu bestimmen werden die Hitpoints der Einheiten sowie deren Schilde herangezogen. Auch hier wird bei beiden Armeen zwischen Luft und Bodeneinheiten unterschieden. Somit wird eine Vergleichbarkeit zwischen dem Durchhaltevermögen eigener Luft- bzw. Bodentruppen und Luft- bzw. Boden-DPS der Gegenseite geschaffen.
+Um die Überlebensfähigkeit der Armeen zu bestimmen werden die Hitpoints (zu Deutsch: Lebenspunkte) der Einheiten sowie deren Schilde in Algorithmus \ref{alg:leben} herangezogen. Auch hier wird bei beiden Armeen zwischen Luft und Bodeneinheiten unterschieden. Somit wird eine Vergleichbarkeit zwischen dem Durchhaltevermögen eigener Luft- bzw. Bodentruppen und Luft- bzw. Boden-DPS der Gegenseite geschaffen.
 
+\begin{algorithm}
 \begin{algorithmic}[1]
-\Procedure {Überlebensfähigkeit}{einheiten}
-	\ForAll {$einheit \in einheiten$}
-		\If {$einheit[typ] = "Boden"$}
-			\State $abwehr[Boden] \leftarrow abwehr[Boden] + einheit[leben] + einheit[schild]$
+\Procedure {Survivability}{$units$}
+	\ForAll {$unit \in units$}
+		\If {$unit.type = 'Ground'$}
+			\State $defense.ground \leftarrow defense.ground + unit.hitpoints + unit.shield$
 		\EndIf
-		\If {$einheit[typ] = "Luft"$}
-			\State $abwehr[Luft] \leftarrow abwehr[Luft] + einheit[leben] + einheit[schild]$
+		\If {$unit.type = 'Air'$}
+			\State $defense.air \leftarrow defense.air + unit.hitpoints + unit.shield$
 		\EndIf
 	\EndFor 
-	\State \textbf{return} $abwehr[Boden], abwehr[Luft]$
+	\State \textbf{return} $defense$
 \EndProcedure
 \end{algorithmic}
+\caption{Berechnung der Überlebensfähigkeit nach Typen}
+\label{alg:leben}
+\end{algorithm}
 
 Die beiden letzten Charakteristika bzgl. beider Armeen sind Aufklärung und Unsichtbarkeit. Sie werden durch boolsche Werte ausgedrückt, welche dann Wahr sind wenn mindestens eine Einheit in der Armee über die entsprechende Fähigkeit verfügt. Die Werte fließen in den Wert \textit{fightable} mit ein, welcher bestimmt, ob eine Armee überhaupt in der Lage ist alle Einheiten der anderen Seite zu attackieren. Fightable ist dann Wahr, wenn die Armee alle in der Gegnerarmee enthaltenen Einheitentypen (Luft/Boden) angreifen kann. Sollte der Gegner über Unsichtbare Einheiten verfügen, so ist fightable genau dann Wahr, wenn die Armee über Einheiten verfügt, die aufklären können.
 
-Als Entscheider-Funktion wurden zunächst lediglich die beiden Team\_Werte aus der Prozedur \textbf{Entscheider} Zeile 19 folgend verglichen. In Tabelle \ref{classficationohneremis} wird der aus den berechneten Labeln und mit Scikit-Learn erstellte Classification-Report veranschaulicht. Es ist sowohl eine F1-Score von 0.67 abzulesen. Der Nachteil der Methode ist, dass Remis als Ausgang nicht in Betracht gezogen werden.  
+Als Entscheider-Funktion wurden zunächst lediglich die beiden Team\_Werte aus der Prozedur \textbf{Decider} (Algorithmus \ref{alg:decider}) Zeile 19 folgend verglichen. In Tabelle \ref{tb:classificationohneremis} wird der aus den berechneten Labeln und mit Scikit-Learn erstellte Classification-Report veranschaulicht. Es ist sowohl eine F1-Score von 0.67 abzulesen. Der Nachteil der Methode ist, dass Remis als Ausgang nicht in Betracht gezogen werden.  
 
 \begin{table}
 \centering
-\caption{Classification-Report ohne Remis}
+\caption{Classification-Report ohne Remis.}
 \begin{tabular}{@{}lllll@{}}
 \hline
 & precision & recall & f1-score & support\\
-Minerals & 0.71 & 0.74 & 0.72 & 56027\\
-Vespene & 0.61 & 0.58 & 0.59 & 39921\\
- avg / total & 0.67 & 0.67 & 0.67 & 95948\\
+Minerals & 0,71 & 0,74 & 0,72 & 56.027\\
+Vespene & 0,61 & 0,58 & 0,59 & 39.921\\
+ avg / total & 0,67 & 0,67 & 0,67 & 95.948\\
 \hline
 \end{tabular}
 \label{tb:classificationohneremis}
 \end{table}
 
-Um Remis zu evaluieren müssen zunächst die Gründe für ein Remis erörtert werden. Als naive Grundlage wird zunächst die Annahme herangezogen, dass ein Remis dann auftritt, wenn beide Armeen sich nicht attackieren können. Die Prozedur \textbf{Entscheider} wird und den Zeilen 2-3 modifiziert, indem die Fightable-Variablen beider Teams abgefragt werden. Für den Fall dass beide Seiten ein Falsch zurückgeben, gibt der Entscheider eine 2 für Remis zurück. Tabelle \ref{tb:classificationmitremisnaiv} zeigt den Classification-Report dieses Ansatzes.  precision, recall und f1-score sind für die Siege beider Seiten stark gesunken und die Genauigkeit der Auswertung liegt bei etwa 47,91\%.  
+Um Remis zu evaluieren müssen zunächst die Gründe für ein Remis erörtert werden. Als naive Grundlage wird zunächst die Annahme herangezogen, dass ein Remis dann auftritt, wenn beide Armeen sich nicht attackieren können. Die Prozedur \textbf{Decider} wird und den Zeilen 2-3 modifiziert, indem die Fightable-Variablen beider Teams abgefragt werden. Für den Fall dass beide Seiten ein Falsch zurückgeben, gibt der Entscheider eine 2 für Remis zurück. Tabelle \ref{tb:classificationmitremisnaiv} zeigt den Classification-Report dieses Ansatzes.  precision, recall und f1-score sind für die Siege beider Seiten stark gesunken und die Accuracy der Auswertung liegt bei etwa 47,91\%.  
 
 \begin{table}
 \centering
-\caption{Classification-Report mit naiver Remis-Evaluation}
+\caption{Classification-Report mit naiver Remis-Evaluation.}
 \begin{tabular}{@{}lllll@{}}
 \hline
 & precision & recall & f1-score & support\\
-Minerals & 0.66 & 0.43 & 0.52 & 56027\\
-Vespene & 0.47 & 0.54 & 0.50 & 39921\\
-Remis & 0.32 & 0.50 & 0.39 & 25032\\
- avg / total & 0.53 & 0.48 & 0.49 & 120980\\
+Minerals & 0,66 & 0,43 & 0,52 & 56.027\\
+Vespene & 0,47 & 0,54 & 0,50 & 39.921\\
+Remis & 0,32 & 0,50 & 0,39 & 25.032\\
+ avg / total & 0,53 & 0,48 & 0,49 & 120.980\\
 \hline
 \end{tabular}
 \label{tb:classificationmitremisnaiv}
 \end{table}
 
-Bei genauer Beobachtung der Gefechte fällt in der Folge auf, dass Gefechte nicht nur Unentschieden ausgehen, wenn beide Teams nicht angreifen können, sondern auch wenn beide Teams sich durch töten einiger Einheiten eines bestimmten Typs in ein Remis kämpfen. Ein weiterer Fall für ein Remis ist durch die zeitliche Einschränkung der Replay-Generierung gegeben. Sollte ein Team nur über wenige Einheiten eines bestimmten Typs verfügen, so kann es sein, dass diese Einheiten fightable zu Wahr evaluieren lassen. Da es aber zu wenige Einheiten sind, schaffen sie es nicht die relevanten Gegnereinheiten in der vorgegebenen Zeit zu töten und der Generator bricht das Gefecht mit einem Remis als Ergebnis ab. Daher wird der Entscheider um die Zeilen 5 bis 17 erweitert. Hier wird die Fähigkeit bestimmt eine Armee in gegebener Zeit zu vernichten. Die Gleichung tritt in Kraft, sobald eine Armee -- durch die Zusammensetzung der beiden Armeen -- nicht komplett zerstört werden kann. In diesem Fall bestimmt der Algorithmus, ob diese Armee im Rahmen der zeitlichen Vorgaben den Sieg erringen kann, sprich genug Schaden verursachen kann um die andere Armee zeitnah zu zerstören. Die Konstante in der Berechnung der Schadenswerte in der Zeilen 6 und 13 wurde durch empirisch durch Ausprobieren ermittelt. Abbildung \ref{fig:konstante_baseline} zeigt den F1-Score und die Genauigkeit unter Berücksichtigung verschiedener Werte für die Konstante. Das Maximum wird beider Werte liegt bei ca. 21. Der Classification-Report für Konstante=21 ist in Tabelle \ref{tb:classificationcomplete} dargestellt. Die Genauigkeit für diese Variante liegt bei ca. 51\% und bringt somit einen Zugewinn von 3,09 Prozentpunkten.
+Bei genauer Beobachtung der Gefechte fällt in der Folge auf, dass Gefechte nicht nur Unentschieden ausgehen, wenn beide Teams nicht angreifen können, sondern auch wenn beide Teams sich durch töten einiger Einheiten eines bestimmten Typs in ein Remis kämpfen. Ein weiterer Fall für ein Remis ist durch die zeitliche Einschränkung der Replay-Generierung gegeben. Sollte ein Team nur über wenige Einheiten eines bestimmten Typs verfügen, so kann es sein, dass diese Einheiten fightable zu Wahr evaluieren lassen. Da es aber zu wenige Einheiten sind, schaffen sie es nicht die relevanten Gegnereinheiten in der vorgegebenen Zeit zu töten und der Generator bricht das Gefecht mit einem Remis als Ergebnis ab. Daher wird der Entscheider um die Zeilen 5 bis 17 erweitert. Hier wird die Fähigkeit bestimmt eine Armee in gegebener Zeit zu vernichten. Die Gleichung tritt in Kraft, sobald eine Armee -- durch die Zusammensetzung der beiden Armeen -- nicht komplett zerstört werden kann. In diesem Fall bestimmt der Algorithmus, ob diese Armee im Rahmen der zeitlichen Vorgaben den Sieg erringen kann, sprich genug Schaden verursachen kann um die andere Armee zeitnah zu zerstören. Die Konstante \textit{K} in der Berechnung der Schadenswerte in der Zeilen 6 und 13 wurde durch empirisch durch Ausprobieren ermittelt. Abbildung \ref{fig:konstante_baseline} zeigt den F1-Score und die Accuracy unter Berücksichtigung verschiedener Werte für die Konstante. Das Maximum wird beider Werte liegt bei ca. 21. Der Classification-Report für Konstante=21 ist in Tabelle \ref{tb:classificationcomplete} dargestellt. Die Accuracy für diese Variante liegt bei ca. 51\% und bringt somit einen Zugewinn von 3,09 Prozentpunkten.
 
 \begin{table}
 \centering
-\caption{Classification-Report mit kompletter Remis-Evaluation}
+\caption{Classification-Report mit kompletter Remis-Evaluation.}
 \begin{tabular}{@{}lllll@{}}
 \hline
 & precision & recall & f1-score & support\\
-Minerals & 0.70 & 0.48 & 0.57 & 56027\\
-Vespene & 0.54 & 0.51 & 0.53 & 39921\\
-Remis & 0.32 & 0.58 & 0.41 & 25032\\
- avg / total & 0.57 & 0.51 & 0.52 & 120980\\
+Minerals & 0,70 & 0,48 & 0,57 & 56.027\\
+Vespene & 0,54 & 0,51 & 0,53 & 39.921\\
+Remis & 0,32 & 0,58 & 0,41 & 25.032\\
+ avg / total & 0,57 & 0,51 & 0,52 & 120.980\\
 \hline
 \end{tabular}
 \label{tb:classificationcomplete}
 \end{table}
 
+\begin{algorithm}
 \begin{algorithmic}[1]
-\Procedure {Entscheider}{schaden, abwehr, fightable}
-\If {$\neg fightable['A'] \land \neg fightable['B']$}
-	\State \textbf{return} 2 \Comment Beide Armeen können sich nicht angreifen -> Remis
+\Procedure {Decider}{$armya$, $armyb$}
+\If {$\neg armya.fightable \land \neg armya.fightable$}
+	\State \textbf{return} 'Remis' 
 \EndIf
-\If {$fightable['A']  \land \neg fightable['B']$}
-	\If {$schaden['A'][Boden] * 21 \geq abwehr['B'][Boden] \land schaden['A'][Luft] * 21 \geq abwehr['B'][Luft]$}
-		\State \textbf{return} 0 \Comment Team A siegt
+\If {$armya.fightable  \land \neg armyb.fightable$}
+	\If {$armya.powervalue.ground * K \geq armyb.defense.ground \land armya.powervalue.air * K \geq armyb.defense.air$}
+		\State \textbf{return} 'Team A siegt'
 	\Else 
-		\State \textbf{return} 2 \Comment Team A schafft Sieg nicht innerhalb der Zeit
+		\LeftComment {Team A schafft Sieg nicht innerhalb der Zeit}
+		\State \textbf{return} 'Remis'
 	\EndIf
 \EndIf
-\If {$\neg fightable['A'] \land fightable['B']$}
-\If {$schaden['B'][Boden] * 21 \geq abwehr['A'][Boden] \land schaden['B'][Luft] * 21 \geq abwehr['A'][Luft]$}
-	\State \textbf{return} 1 \Comment Team B siegt
+\If {$\neg armya.fightable \land armyb.fightable$}
+\If {$armyb.powervalue.ground * K \geq armya.defense.ground \land armyb.powervalue.air * K \geq armya.defense.air$}
+	\State \textbf{return} 'Team B siegt'
 \Else 
-	\State \textbf{return} 2 \Comment Team B schafft Sieg nicht innerhalb der Zeit
+	\LeftComment {Team B schafft Sieg nicht innerhalb der Zeit}
+	\State \textbf{return} 'Remis' 
 \EndIf
 \EndIf
-\State $team\_wert\_A \leftarrow schaden['A'][Gesamt] + abwehr['A'][Boden] + abwehr['A'][Luft]$
-\State $team\_wert\_B \leftarrow schaden['B'][Gesamt] + abwehr['B'][Boden] + abwehr['A'][Luft]$
+\State $armyvaluea \leftarrow armya.weightedpowervalue + armya.defense.ground + armya.defense.air$
+\State $armyvalueb \leftarrow armyb.weightedpowervalue + armyb.defense.ground + armyb.defense.air$
 
-\If {$team\_wert\_A > team\_wert\_B$}
-	\State \textbf{return} 0 \Comment Team A besiegt Team B
+\If {$armyvaluea > armyvalueb$}
+	\State \textbf{return} 'Team A siegt'
 \Else
-	\State \textbf{return} 1 \Comment Team B besiegt Team A
+	\State \textbf{return} 'Team B siegt'
 \EndIf
 \EndProcedure
 \end{algorithmic}
-
+\caption{Entscheidungsprozedur}
+\label{alg:decider}
+\end{algorithm}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.8]{pictures/konstantenVollesModell}
 \label{fig:konstante_baseline}
+\caption{Accuracy und F1-Score für $K \in [6, 96]$.}
 \end{figure}
  
 \subsection{All-Convolutional Net}
@@ -152,13 +179,13 @@ Das All-Convolutional Net von Springenberg et al. \parencite{DBLP:journals/corr/
 
 \begin{table}
 \centering
-\caption{All Convolutional Neural Network - Architektur}
+\caption{All Convolutional Neural Network - Architektur.}
 \begin{tabular}{@{}lll@{}}
 \hline
 Layer & Ausgabedimension & Parameter\\
 \hline
 Eingabe & 8 x 84 x 84 x 1 & \\
-3x3 Conv, 96 & 8 x 84 x 84 x 96 & 960\\
+3x3 Conv, 96 & 8 x 84 x 84 x 96 & 1.152\\
 3x3 Conv, 96 & 8 x 84 x 84 x 96 & 83.232\\ 
 3x3 Conv, 96/s=2 V & 8 x 41 x 41 x 96 & 83.232\\ 
 3x3 Conv, 192 & 8 x 41 x 41 x 192 & 166.464\\
@@ -170,16 +197,17 @@ Eingabe & 8 x 84 x 84 x 1 & \\
 10x10 Average Pooling & 8 x 2 x 2 x 10 & \\
 Output Layer (FCL), Units=3 & & 963\\
 \hline
-Summe Variablen & & 1.371.297\\
+Summe Variablen & & 1.371.489\\
 \hline
 \end{tabular}
 \label{tb:arch_allcnn}
 \end{table}
-
+\newpage
 \begin{figure}[H]
+\thispagestyle{empty}
 \centering
-\caption{Architektur des All-Convolutional CNN}
 \includegraphics[angle=90, scale=0.5]{pictures/inception/AllConvCNN}
+\caption{Architektur des All-Convolutional CNN.}
 \label{fig:arch_allcnn}
 \end{figure}
 
@@ -192,8 +220,8 @@ Abbildung \ref{fig:resnet} zeigt die Implementation eines ResNets mit acht Resid
 \begin{figure}[H]
 \thispagestyle{empty}
 \centering
-\caption[Caption for LOF]{ResNet mit acht Residual Blöcken}
 \includegraphics[angle=90, scale=0.65]{pictures/Inception/ResNet}
+\caption[Caption for LOF]{ResNet mit acht Residual Blöcken.}
 \label{fig:resnet}
 \end{figure}
 
@@ -227,22 +255,24 @@ Summe Variablen & 1.522.307\\
 Inception V4 ist eine CNN-Architektur vorgestellt von \textcite{DBLP:journals/corr/SzegedyIV16}. Sie f\"uhrt drei verschiedene Module, sowie zwei Reduction-Bl\"ocke als Bausteine des Netzes ein. Die Zusammensetzung der Bausteine ist in den folgenden Abbildungen \ref{fig:incv4}, \ref{fig:stem}, \ref{fig:incmod} und \ref{fig:incred} dargestellt.
 
 Im Vergleich zu früheren Versionen der Inception-Architekturen konnte die Trainingsgeschwindigkeit durch das Nutzen von Residual Connections drastisch erhöht werden. Zudem erreichten die neuen Versionen der Architektur verglichen mit Inception-v3 und ResNet-151 bessere Leistungen in Tests auf dem ILSVRC 2012 Datensatz \parencite{DBLP:journals/corr/SzegedyIV16}.
-
+\newpage
 \begin{figure}[H]
 \centering
-\caption[Caption for LOF]{Übersicht der Inception V4-Architektur}
+\thispagestyle{empty}
 \includegraphics[angle=90, scale=0.8]{pictures/inception/InceptionV4}
+\caption[Caption for LOF]{Übersicht der Inception V4-Architektur.}
 \label{fig:incv4}
 \end{figure}
 
 Abbildung \ref{fig:incv4} zeigt den allgemeinen Aufbau der Inception V4 Netzwerkes. Filter sind mit der Filtergröße und Filteranzahl, sowie gegebenenfalls Stride (s) und Padding (Vaild) aufgeführt. Sofern Stride und Padding fehlen, gilt Stride=1 und Padding=\textit{same}. Die Dimensionen sind an den Pfeilen zwischen den Layern aufgeführt und nach dem Format \textit{channels last} formatiert. Im Vergleich zu der Vorlage von \textcite{DBLP:journals/corr/SzegedyIV16} wurde Filteranzahl eines jeden Layers durch 4 geteilt um die Parameterzahl in dem Bereich der anderen Architekturen zu halten. Zur Normalisierung wird im Allgemeinen Batch Normalization genutzt, welches nach der Konkatenation in jedem Block zur Anwendung kommt. 
 
 Die Eingabe wird zunächst vom STEM-Block verarbeitet, welcher in Abbildung \ref{fig:stem} detailliert erläutert wird. Er dient im Netzwerk als Eingabelayer und dient der ersten Verarbeitung der Daten sowie der Reduktion der Bilddimensionen durch Pooling und entsprechende Padding-Einstellungen. Daraufhin werden die Daten an das erste Inception-Modul (Inception-A Abbildung \ref{fig:incmod}) übergeben. Das Inception-A-Modul wird von einer Residual Connection überbrückt. Das Verfahren ist der ResNet-Architektur aus Sektion \ref{sek:resnet} entlehnt. In dieser Architektur wird die Residual Connection mittels eines 1x1 Convolutional Filters auf die passende Anzahl an Kanälen dimensioniert. Das Inception-A-Modul in Verbindung mit der Residual Connection kann beliebig oft hintereinander gereiht werden, um die gewünschte Tiefe des Netzwerks zu erlangen, da sich die Dimensionen mit fortlaufender Aneinanderreihung nicht verändern. Unter Berücksichtigung der Parameterzahl des Netzwerks, verfügt das Netzwerk jedoch nur über ein Inception-A-Modul, bevor es in das Reduction-A-Modul (Abbildung \ref{fig:incred}) übergeht. Im Reduction-A-Modul werden die Dimensionen der Eingabedaten entlang der zweiten und dritten Achse reduziert während sich die Anzahl der Kanäle von 96 auf 288 erhöht. Er folgen Inception-B (Abbildung \ref{fig:incmod}) und Reduction-B (Abbildung \ref{fig:incred}), welche nach dem selben Muster verfahren. Das Inception-Modul verarbeitet die Daten auf vier verschiedenen Pfaden und übergibt diese an das Reduction-Modul um erneut die Dimensionen der Höhe und Breite auf 8x8 zu reduzieren. Auch das Inception-B-Modul wird von einer Residual Connection überbrückt und kann zusammen mit dieser Verbindung beliebig oft in Reihe geschaltet werden. Den Abschluss der Convolutional Layer bildet das Inception-C-Modul (Abbildung \ref{fig:incmod}). Nachfolgend wird mittels Average Pooling die Eingabe auf 8x2x2x384 reduziert und als Vektor an den FCL übergeben. Die Auswertung zu den drei Klassen findet in dem zweiten FCL statt, welcher lediglich aus drei Einheiten besteht. 
-
+\newpage
 \begin{figure}[H]
 \centering
-\caption[Caption for LOF]{STEM-Modul}
+\thispagestyle{empty}
 \includegraphics[angle=90, scale=0.65]{pictures/Inception/STEM}
+\caption[Caption for LOF]{Aufbau des STEM-Moduls.}
 \label{fig:stem}
 \end{figure}
 
@@ -250,8 +280,8 @@ Der STEM-Block aus Abbildung \ref{fig:stem} bildet die Eingabeschicht der Archit
 
 \begin{figure}[H]
 \centering
-\caption[Caption for LOF]{Übersicht der Inception V4-Module A,B und C}
-\includegraphics[scale=0.3]{pictures/Inception/InceptionABC}
+\includegraphics[scale=0.4]{pictures/Inception/InceptionABC}
+\caption[Caption for LOF]{Übersicht der Inception V4-Module A,B und C.}
 \label{fig:incmod}
 \end{figure}
 
@@ -259,9 +289,8 @@ Die Inception-Module (Abbildung \ref{fig:incmod}) sind speziell für ihre Eingab
 
 \begin{figure}[H]
 \centering
-\caption[Caption for LOF]{Übersicht der Inception V4-Reduktions-Module A und B}
-\includegraphics[scale=0.3]{pictures/Inception/Reduction}
-\label{fig:incred}
+\includegraphics[scale=0.45]{pictures/Inception/Reduction}
+\caption[Caption for LOF]{Übersicht der Inception V4-Reduktions-Module A und B.}\label{fig:incred}
 \end{figure}
 
 Zur Reduzierung der Bilddimensionen Höhe und Breite nutzt Inception Reduction-Module (Abbildung \ref{fig:incred}). Beide Module nutzen sowohl Max-Pooling als auch Convolutional Layer mit Stride=2 um die Dimensionen der Eingabedaten entsprechend zu reduzieren. Reduction-A nutzt lediglich auf der rechten Seite des Moduls einen 1x1 Filter um die Dimensionen der Daten zu reduzieren. Bei Reduction-B kommt diese Methode bei den drei rechten Wegen zum Einsatz. In beiden Modulen wird mit 3x3 Filtern gearbeitet. Diese Filter reduzieren die Größe der Eingabedaten bzlg. Höhe $H^i$ und Breite $W^i$ wie folgt: $W^o = W^i / 2 - 1$ und $H^o = H^i / 2 - 1$. $W^o$ und $H^o$ stehen hier entsprechend für die Breite und Höhe der Ausgabe. Auch in den Reduction-Modulen werden die Ergebnisse der einzelnen Berechnungspfade zuletzt entlang der Kanalachse konkateniert. 
@@ -296,9 +325,11 @@ Summe Variablen & 2.027.147 & 1.866.563\\
 
 Squeeze-and-Excitation Layer bestehen -- wie in Abbildung \ref{fig:sae} dargestellt -- aus vier zusätzlichen Elementen. Zunächst wird Global Average Pooling auf die Matrizen angewandt. Die Dimensionen der Ausgabe entsprechen in der Folge 1x1x1xAD, wobei AD für Ausgabedimension steht und gleich der Anzahl der Kanäle der Inception-Ausgabe ist. Als nächstes wird ein FCL genutzt für den ein neuer Hyperparameter Reduction-Ratio (RR, zu Deutsch: \textit{Reduktionsverhältnis}) eingeführt wird. Dieser Hyperparameter erlaubt es die Kapazität und Berechnungskosten der Squeeze-and-Excitation Layer zu beeinflussen, je höher der Wert gewählt ist, desto weniger Parameter fügen die Squeeze-and-Excitation Layer dem Netzwerk hinzu. Auf den FCL folgt eine ReLU-Aktivierung und dann erneut ein FCL, bei dem die Anzahl der Einheiten der AD entspricht. Das Ergebnis wird in die Ausgabe des Inception-Moduls integriert, indem die Werte des FCL kanalweise mit der Ausgabe multipliziert werden.  Die exakte Anzahl der Parameter dieser Version sind in der zweiten Spalte von Tabelle \ref{tb:var_inc4} aufgelistet, wobei die Parameter der Squeeze-and-Excitation Layer in die Parameterzahl, der drei Inception Module eingerechnet sind.
 
+\newpage
 \begin{figure}[H]
 \centering
-\caption[Caption for LOF]{Der Squeeze-and-Excitation-Block}
+\thispagestyle{empty}
 \includegraphics[scale=0.75]{pictures/Inception/SqueezeAndExcitation}
+\caption[Caption for LOF]{Der Squeeze-and-Excitation-Block.}
 \label{fig:sae}
 \end{figure}

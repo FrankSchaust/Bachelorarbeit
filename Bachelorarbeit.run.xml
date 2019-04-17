@@ -82,7 +82,7 @@
       <file>Bachelorarbeit.bcf</file>
     </requires>
     <requires type="editable">
-      <file>BAZitate.bib</file>
+      <file>BAZitationen.bib</file>
     </requires>
   </external>
 </requests>

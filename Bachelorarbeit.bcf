@@ -1920,7 +1920,7 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">BAZitate.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">BAZitationen.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">DBLP:journals/corr/SzegedyLJSRAEVR14</bcf:citekey>
@@ -1984,19 +1984,19 @@
     <bcf:citekey order="39">samvelyan2019starcraft</bcf:citekey>
     <bcf:citekey order="40">samvelyan2019starcraft</bcf:citekey>
     <bcf:citekey order="41">DBLP:journals/corr/SpringenbergDBR14</bcf:citekey>
-    <bcf:citekey order="42">DBLP:journals/corr/SzegedyIV16</bcf:citekey>
-    <bcf:citekey order="43">DBLP:journals/corr/SzegedyIV16</bcf:citekey>
+    <bcf:citekey order="42">He_2016</bcf:citekey>
+    <bcf:citekey order="43">He_2016</bcf:citekey>
     <bcf:citekey order="44">DBLP:journals/corr/SzegedyIV16</bcf:citekey>
     <bcf:citekey order="45">DBLP:journals/corr/SzegedyIV16</bcf:citekey>
     <bcf:citekey order="46">DBLP:journals/corr/SzegedyIV16</bcf:citekey>
     <bcf:citekey order="47">DBLP:journals/corr/SzegedyIV16</bcf:citekey>
     <bcf:citekey order="48">DBLP:journals/corr/SzegedyIV16</bcf:citekey>
-    <bcf:citekey order="49">DBLP:journals/corr/abs-1709-01507</bcf:citekey>
-    <bcf:citekey order="50">DBLP:journals/corr/abs-1709-01507</bcf:citekey>
+    <bcf:citekey order="49">DBLP:journals/corr/SzegedyIV16</bcf:citekey>
+    <bcf:citekey order="50">DBLP:journals/corr/SzegedyIV16</bcf:citekey>
     <bcf:citekey order="51">DBLP:journals/corr/abs-1709-01507</bcf:citekey>
     <bcf:citekey order="52">DBLP:journals/corr/abs-1709-01507</bcf:citekey>
-    <bcf:citekey order="53">He_2016</bcf:citekey>
-    <bcf:citekey order="54">He_2016</bcf:citekey>
+    <bcf:citekey order="53">DBLP:journals/corr/abs-1709-01507</bcf:citekey>
+    <bcf:citekey order="54">DBLP:journals/corr/abs-1709-01507</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

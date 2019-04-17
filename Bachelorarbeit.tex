@@ -16,15 +16,23 @@
   \usepackage[T1]{fontenc} 				% correct output encoding
   \usepackage{booktabs}
   \usepackage{algpseudocode}
+  \usepackage[Algorithmus]{algorithm}
+  \usepackage{siunitx}
 
   \selectlanguage{ngerman}
-  \addbibresource{BAZitate.bib}
+  \addbibresource{BAZitationen.bib}
   
   \newcommand{\vect}[1]{\textbf{#1}} 
   \newcommand{\mat}[1]{\textbf{\MakeUppercase{#1}}}
 
   \renewcommand{\arraystretch}{1.3}
   \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+  
+  \usepackage{xparse}
+  \makeatletter
+  \NewDocumentCommand{\LeftComment}{s m}{%
+    \Statex \IfBooleanF{#1}{\hspace*{\ALG@thistlm}}\(\triangleright\) #2}
+  \makeatother
   
 \begin{document}
 

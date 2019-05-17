@@ -77,10 +77,18 @@
 }
 
 @book{Goodfellow-et-al-2016,
-    title={Deep Learning},
-    author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
-    publisher={MIT Press},
-    year={2016}
+  author    = {Ian J. Goodfellow and
+               Yoshua Bengio and
+               Aaron C. Courville},
+  title     = {Deep Learning},
+  series    = {Adaptive computation and machine learning},
+  publisher = {{MIT} Press},
+  year      = {2016},
+  url       = {http://www.deeplearningbook.org/},
+  isbn      = {978-0-262-03561-3},
+  timestamp = {Sat, 25 Mar 2017 20:16:59 +0100},
+  biburl    = {https://dblp.org/rec/bib/books/daglib/0040158},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @article{DBLP:journals/corr/JanaiGBG17,
@@ -244,71 +252,102 @@ for Novel Software Technology Nanjing University, China.},
 
 
 @inproceedings{AIIDE137381,
-	author = {Marius Stanescu and Sergio Poo Hernandez and Graham Erickson and Russel Greiner and Michael Buro},
-	title = {Predicting Army Combat Outcomes in StarCraft},
-	conference = {AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
-	year = {2013},
-	keywords = {AI, RTS, StarCraft, Combat},
-	abstract = {Smart decision making at the tactical level is important for Artificial Intelligence (AI) agents to perform well in the domain of real-time strategy (RTS) games.  This paper presents a Bayesian model that can be used to predict the outcomes of isolated battles, as well as predict what units are needed to defeat a given army.  Model parameters are learned from simulated battles, in order to minimize the dependency on player skill.  We apply our model to the game of StarCraft,  with the end-goal of using the predictor as a module for making high-level combat decisions, and show that the model is capable of making accurate predictions. },
-
-	url = {https://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7381}
+  author    = {Marius Stanescu and
+               Sergio Poo Hernandez and
+               Graham Erickson and
+               Russel Greiner and
+               Michael Buro},
+  title     = {Predicting Army Combat Outcomes in StarCraft},
+  booktitle = {Proceedings of the Ninth {AAAI} Conference on Artificial Intelligence
+               and Interactive Digital Entertainment, AIIDE-13, Boston, Massachusetts,
+               USA, October 14-18, 2013},
+  year      = {2013},
+  crossref  = {DBLP:conf/aiide/2013},
+  url       = {http://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7381},
+  timestamp = {Mon, 16 Dec 2013 15:22:28 +0100},
+  biburl    = {https://dblp.org/rec/bib/conf/aiide/StanescuHEGB13},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 	
-@inproceedings{AIIDE125469,
-	author = {David Churchill and Abdallah Saffidine and Michael Buro},
-	title = {Fast Heuristic Search for RTS Game Combat Scenarios},
-	conference = {AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
-	year = {2012},
-	keywords = {Heuristic Search; Durative Actions; Real-Time Strategy Games;},
-	abstract = {Heuristic search has been very successful in abstract game domains such as Chess and Go. In video games, however, adoption has been slow due to the fact that state and move spaces are much larger, real-time constraints are harsher, and constraints on computational resources are tighter. In this paper we present a fast search method — Alpha-Beta search for durative moves— that can defeat commonly used AI scripts in RTS game combat scenarios of up to 8 vs. 8 units running on a single core in under 5ms per search episode. This performance is achieved by using standard search enhancements such as transposition tables and iterative deepening, and novel usage of combat AI scripts for sorting moves and state evaluation via playouts. We also present evidence that commonly used combat scripts are highly exploitable — opening the door for a promising line of research on opponent combat modelling.},
-
-	url = {https://www.aaai.org/ocs/index.php/AIIDE/AIIDE12/paper/view/5469}
+@inproceedings{DBLP:conf/aiide/ChurchillSB12,
+  author    = {David Churchill and
+               Abdallah Saffidine and
+               Michael Buro},
+  title     = {Fast Heuristic Search for {RTS} Game Combat Scenarios},
+  booktitle = {Proceedings of the Eighth {AAAI} Conference on Artificial Intelligence
+               and Interactive Digital Entertainment, AIIDE-12, Stanford, California,
+               USA, October 8-12, 2012},
+  year      = {2012},
+  crossref  = {DBLP:conf/aiide/2012},
+  url       = {http://www.aaai.org/ocs/index.php/AIIDE/AIIDE12/paper/view/5469},
+  timestamp = {Thu, 21 Jun 2018 07:19:55 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/aiide/ChurchillSB12},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @inproceedings{AIIDE1511531,
-	
-	title = {Using Lanchester Attrition Laws for Combat Prediction in StarCraft},
-	author = {Marius Stanescu and Nicolas Barriga and Michael Buro},
-	conference = {AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
-	year = {2015},
-	keywords = {Artificia Intelligence; Real-Time Strategy; StarCraft; RTS; Lanchester; Games},
-	abstract = {Smart decision making at the tactical level is important for Artificial Intelligence (AI) agents to perform well in the domain of real-time strategy (RTS) games. Winning battles is crucial in RTS games, and while humans can decide when and how to attack based on their experience, it is challenging for AI agents to estimate combat outcomes accurately.A few existing models address this problem in the game of StarCraft but present many restrictions, such as not modeling injured units, supporting only a small number of unit types, or being able to predict the winner of a fight but not the remaining army. Prediction using simulations is a popular method, but generally slow and requires extensive coding to model the game engine accurately.This paper introduces a model based on Lanchester's attrition laws which addresses the mentioned limitations while being faster than running simulations. Unit strength values are learned using maximum likelihood estimation from past recorded battles. We present experiments that use a StarCraft simulator for generating battles for both training and testing, and show that the model is capable of making accurate predictions. Furthermore, we implemented our method in a StarCraft bot that uses either this or traditional simulations to decide when to attack or to retreat. We present tournament results (against top bots from 2014 AIIDE competition) comparing the performances of the two versions, and show increased winning percentages for our method.},
-
-	url = {https://www.aaai.org/ocs/index.php/AIIDE/AIIDE15/paper/view/11531}
+  author    = {Marius Adrian Stanescu and
+               Nicolas A. Barriga and
+               Michael Buro},
+  title     = {Using Lanchester Attrition Laws for Combat Prediction in StarCraft},
+  booktitle = {Proceedings of the Eleventh {AAAI} Conference on Artificial Intelligence
+               and Interactive Digital Entertainment, {AIIDE} 2015, November 14-18,
+               2015, University of California, Santa Cruz, CA, {USA.}},
+  pages     = {86--92},
+  year      = {2015},
+  crossref  = {DBLP:conf/aiide/2015},
+  url       = {http://www.aaai.org/ocs/index.php/AIIDE/AIIDE15/paper/view/11531},
+  timestamp = {Tue, 20 Jun 2017 13:07:34 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/aiide/StanescuBB15},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
-	
+
 @inproceedings{SnchezRuizGranados2015PredictingTO,
-  title={Predicting the Outcome of Small Battles in StarCraft},
-  author={Antonio A. S{\'a}nchez-Ruiz-Granados},
-  booktitle={ICCBR},
-  year={2015}
+  author    = {Antonio A. S{\'{a}}nchez{-}Ruiz},
+  title     = {Predicting the Outcome of Small Battles in StarCraft},
+  booktitle = {Workshop Proceedings from The Twenty-Third International Conference
+               on Case-Based Reasoning {(ICCBR} 2015), Frankfurt, Germany, September
+               28-30, 2015.},
+  pages     = {33--42},
+  year      = {2015},
+  crossref  = {DBLP:conf/iccbr/2015w},
+  url       = {http://ceur-ws.org/Vol-1520/paper3.pdf},
+  timestamp = {Mon, 30 May 2016 16:28:37 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/iccbr/Sanchez-Ruiz15},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@INPROCEEDINGS{6374183,
-author={S. {Wender} and I. {Watson}},
-booktitle={2012 IEEE Conference on Computational Intelligence and Games (CIG)},
-title={Applying reinforcement learning to small scale combat in the real-time strategy game StarCraft:Broodwar},
-year={2012},
-volume={},
-number={},
-pages={402-408},
-keywords={computer games;software agents;unsupervised learning;small scale combat;real-time strategy game StarCraft:Broodwar;reinforcement learning algorithms;micro-managing combat units;RTS game SC:BW;complex environment;unsupervised learning;nonadaptive deterministic game AI;RL algorithms;one-step Q-learning;Sarsa(λ) algorithm;Games;Learning systems;Learning;Planning;Machine learning;Machine learning algorithms},
-doi={10.1109/CIG.2012.6374183},
-ISSN={2325-4270},
-month={Sep.},}
+@inproceedings{6374183,
+  author    = {Stefan Wender and
+               Ian D. Watson},
+  title     = {Applying reinforcement learning to small scale combat in the real-time
+               strategy game StarCraft: Broodwar},
+  booktitle = {2012 {IEEE} Conference on Computational Intelligence and Games, {CIG}               2012, Granada, Spain, September 11-14, 2012},
+  pages     = {402--408},
+  year      = {2012},
+  crossref  = {DBLP:conf/cig/2012},
+  url       = {https://doi.org/10.1109/CIG.2012.6374183},
+  doi       = {10.1109/CIG.2012.6374183},
+  timestamp = {Tue, 23 May 2017 01:06:43 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/cig/WenderW12},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
 
-@INPROCEEDINGS{6633643,
-author={D. {Churchill} and M. {Buro}},
-booktitle={2013 IEEE Conference on Computational Inteligence in Games (CIG)},
-title={Portfolio greedy search and simulation for large-scale combat in starcraft},
-year={2013},
-volume={},
-number={},
-pages={1-8},
-keywords={computer games;greedy algorithms;multi-agent systems;search problems;real-time search constraint;StarCraft combat scenario;UCT search method;Alpha-Beta;playout-based evaluation;hill climbing;greedy search algorithm;durative actions;simultaneous actions;UCT algorithm;visualization;commercial RTS game combat;RTS AI system;human players;real-time constraint;action space;state space;artificial intelligence;real-time strategy video games;large-scale combat;portfolio simulation;portfolio greedy search;Games;Artificial intelligence;Portfolios;Real-time systems;Planning;Approximation methods;Weapons},
-doi={10.1109/CIG.2013.6633643},
-ISSN={2325-4289},
-month={Aug},}
+@inproceedings{6633643,
+  author    = {David Churchill and
+               Michael Buro},
+  title     = {Portfolio greedy search and simulation for large-scale combat in starcraft},
+  booktitle = {2013 {IEEE} Conference on Computational Inteligence in Games (CIG),
+               Niagara Falls, ON, Canada, August 11-13, 2013},
+  pages     = {1--8},
+  year      = {2013},
+  crossref  = {DBLP:conf/cig/2013},
+  url       = {https://doi.org/10.1109/CIG.2013.6633643},
+  doi       = {10.1109/CIG.2013.6633643},
+  timestamp = {Tue, 23 May 2017 01:06:43 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/cig/ChurchillB13},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
 	
 @article{DBLP:journals/corr/HelmkeKW14,
   author    = {Ian Helmke and
@@ -327,12 +366,18 @@ month={Aug},}
 }
 
 @article{AAAI:aimag/Robertson14,
-  author    = {Glen Robertson and Ian Watson},
-  title     = {A Review of Real-Time Strategy Game AI},
-  journal   = {AI magazine},
+  author    = {Glen Robertson and
+               Ian D. Watson},
+  title     = {A Review of Real-Time Strategy Game {AI}},
+  journal   = {{AI} Magazine},
+  volume    = {35},
+  number    = {4},
+  pages     = {75--104},
   year      = {2014},
-  url       = {https://aaai.org/ojs/index.php/aimagazine/article/view/2478},
-  biburl    = {https://aaai.org/ojs/index.php/aimagazine/article/view/2478}
+  url       = {http://www.aaai.org/ojs/index.php/aimagazine/article/view/2478},
+  timestamp = {Mon, 19 Jan 2015 17:53:28 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/aim/RobertsonW14},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @article{Kilmer.1996,
@@ -350,25 +395,44 @@ month={Aug},}
  doi = {\url{10.1016/0895-7177(95)00220-0}}
 }
 
-@misc{samvelyan2019starcraft,
-    title={The StarCraft Multi-Agent Challenge},
-    author={Mikayel Samvelyan and Tabish Rashid and Christian Schroeder de Witt and Gregory Farquhar and Nantas Nardelli and Tim G. J. Rudner and Chia-Man Hung and Philip H. S. Torr and Jakob Foerster and Shimon Whiteson},
-    year={2019},
-    eprint={1902.04043},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+@article{samvelyan2019starcraft,
+  author    = {Mikayel Samvelyan and
+               Tabish Rashid and
+               Christian Schr{\"{o}}der de Witt and
+               Gregory Farquhar and
+               Nantas Nardelli and
+               Tim G. J. Rudner and
+               Chia{-}Man Hung and
+               Philip H. S. Torr and
+               Jakob N. Foerster and
+               Shimon Whiteson},
+  title     = {The StarCraft Multi-Agent Challenge},
+  journal   = {CoRR},
+  volume    = {abs/1902.04043},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1902.04043},
+  archivePrefix = {arXiv},
+  eprint    = {1902.04043},
+  timestamp = {Sat, 02 Mar 2019 16:35:38 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1902-04043},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @article{He_2016,
-   title={Deep Residual Learning for Image Recognition},
-   ISBN={9781467388511},
-   url={http://dx.doi.org/10.1109/CVPR.2016.90},
-   DOI={10.1109/cvpr.2016.90},
-   journal={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-   publisher={IEEE},
-   author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
-   year={2016},
-   month={Jun}
+  author    = {Kaiming He and
+               Xiangyu Zhang and
+               Shaoqing Ren and
+               Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  journal   = {CoRR},
+  volume    = {abs/1512.03385},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.03385},
+  archivePrefix = {arXiv},
+  eprint    = {1512.03385},
+  timestamp = {Wed, 17 Apr 2019 17:23:45 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/HeZRS15},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 
@@ -387,4 +451,27 @@ month={Aug},}
   timestamp = {Mon, 13 Aug 2018 16:48:39 +0200},
   biburl    = {https://dblp.org/rec/bib/journals/corr/SzegedyIV16},
   bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{DBLP:journals/corr/KingmaB14,
+  author    = {Diederik P. Kingma and
+               Jimmy Ba},
+  title     = {Adam: {A} Method for Stochastic Optimization},
+  booktitle = {3rd International Conference on Learning Representations, {ICLR} 2015,
+               San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year      = {2015},
+  crossref  = {DBLP:conf/iclr/2015},
+  url       = {http://arxiv.org/abs/1412.6980},
+  timestamp = {Fri, 29 Mar 2019 10:36:36 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/KingmaB14},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@book{Jeevanjee2011,
+title={An Introduction to Tensors and Group Theory for Physicists},
+author={Nadir Jeevanjee},
+publisher={Birkhäuser, Boston},
+year={2011}, 
+ISBN={978-0-8176-4714-8},
+page={ S. 242}
 }

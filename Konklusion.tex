@@ -1,3 +1,13 @@
 \section{Konklusion}
+**TBD** FAZIT **TBD**
 
-\subsection{Fazit und Ausblick}
+Ausblick
+Ein Großteil der Trainingsvorgänge neigte zum Overfitting ab der 60\%-Grenze. In einer Fortführung der Arbeit kann mit einem größeren Datensatz und mehr Rechenleistung untersucht werden, ob die 60\%-Grenze ohne Overfitting übertreten werden kann. 
+
+Der stärkere Einsatz von dreidimensionalen Convolutions, kann in weiteren Versuchen untersucht werden. In den gelaufenen Trainings waren alle Convolutions mit einem Filter der Dimension mit Tiefe 1 konfiguriert. Eine Untersuchung, ob eine Filtertiefe $>1$ eine Steigerung der Accuracy liefert steht noch aus. Aufbauend auf variablen Größen der Filtertiefe könnte   eine Unterteilung nach semantischen Gemeinsamkeiten in kleinere Blöcke eine Steigerung der Performance mit sich bringen, indem man gezielt z.B. alle Feature Layer die Einheitenwerte betreffen zusammen evaluiert. So könnten die Layer Einheiten-Typ, Lebenspunkte und Schild zusammen verarbeitet werden und Layer, welche die Einheiten einem Spieler zuordnen im späteren Verlauf separat verrechnet werden.
+
+In den Untersuchungen von \textcite{SnchezRuizGranados2015PredictingTO} zeigt dieser klar eine starke Verbesserung der Vorhersagegenauigkeit mit fortschreitendem Verlauf des Gefechts auf. Eine Untersuchung der Gefechte auf Basis einer Zeitreihe der ersten 5-10 Sekunden, könnte z.B. mit einem Long short-term memory network (LSTM-Network, zu Deutsch: langes Kurzzeitgedächtnis Netzwerk) analysiert werden und damit die Accuracy der Vorhersage verbessern. 
+
+Aktuell beziehen sich die Vorhersagen noch auf den Bildschirm, welcher dem Spieler zur Verfügung steht und finden basierend auf Daten von einem neutralen Beobachter statt, der alle Einheiten -- auch die unsichtbaren -- sehen kann. Als nächsten Schritt kann die Minimap einbezogen werden, welche einen Überblick über das gesamte Sichtfeld der Spieler liefert. Zusätzlich kann die Rolle eines Spieler eingenommen werden, der nur die Einheiten in seinem Sichtfeld sieht. Außerdem können Höhenunterschiede in die Custom Map eingebaut werden, welche die Ausgangssituation des Gefechts verändern. 
+
+Einhergehend mit einer Erweiterung der Modelle kann die Performance mit der Implementation in einen Bot evaluiert und mit gängigen und bereits implementierten Entscheidungsalgorithmen verglichen werden. Unter Einbindung von Bots oder Scripts können die Modelle zusätzlich um den Einsatz von Fähigkeiten und das Nutzen von Micromanagement erweitert werden. 

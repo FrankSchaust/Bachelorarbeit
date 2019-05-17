@@ -1,29 +1,50 @@
-\section{Architekturen}
-\label{Archs}
+\section{Methodologie}
+\label{Meth}
 
-In diesem Abschnitt werden die verwendeten Architekturen vorgestellt.
-
-\subsection{Problemstellung}
-Alle in dieser Bachelorarbeit verwendeten Architekturen, wurden von ihren Entwicklern für eine Anwendung im Bereich der zweidimensionalen Bildklassifizierung implementiert. Die Eingabedaten liegen in diesem Fall allerdings als vierdimensionaler Tensor mit Abmessung 8x84x84x1 vor. Dadurch mussten in den problemspezifischen Implementationen dieser Arbeit Anpassungen an Filtereinstellungen vorgenommen werden, ohne die grundlegende Struktur der Architekturen zu verändern. In den vorgestellten Modellen wird die Tiefe in den Convolutional Layern ignoriert und jede der 8 Schichten wird einzeln von den Filtern bearbeitet, daher verfügen alle Pooling und Convolutional Filter über Dimension des Schemas [1,X,X], wobei gilt $X \in \mathbb{N}$, $X \geq 1$. Erst in den Fully-Connected Layern werden alle Schichten zusammen betrachtet. 
+In diesem Abschnitt werden die verwendeten Architekturen vorgestellt. Alle in dieser Bachelorarbeit verwendeten Architekturen, wurden von ihren Entwicklern für eine Anwendung im Bereich der zweidimensionalen Bildklassifizierung implementiert. Die Eingabedaten liegen in diesem Fall allerdings als vierdimensionaler Tensor vor. Dadurch mussten in den problemspezifischen Implementationen dieser Arbeit Anpassungen an Filtereinstellungen vorgenommen werden, ohne die grundlegende Struktur der Architekturen zu verändern. In den vorgestellten Modellen wird die Tiefe in den Convolutional Layern ignoriert und jede der 8 Schichten wird einzeln von den Filtern bearbeitet, daher verfügen alle Pooling und Convolutional Filter über Dimension des Schemas [1,X,X], wobei gilt $X \in \mathbb{N}$, $X \geq 1$. Erst in den Fully-Connected Layern werden alle Schichten zusammen betrachtet. 
 
 Da die Architekturen über stark variierende Parameterzahlen verfügen und durch sehr tiefe Strukturen mitunter zu Umfangreich für die vorhandenen Rechenressourcen sind, wurden die Parameter einiger Architekturen angepasst, sodass alle Architekturen einen ähnlichen Umfang -- gemessen an der Parameteranzahl -- haben. Dieser Umstand schafft gleichzeitig eine bessere Vergleichbarkeit der Strukturen aller Architekturen, da Abweichungen durch wesentlich höhere Parameterzahlen ausgeschlossen werden können. 
 
 Viele gängige Implementationen der vorgestellten Architekturen setzen zudem Global Average Pooling vor den Fully-Connected Layern ein. Da in dieser Arbeit jedoch zwei gegeneinander arbeitende Faktoren in einem Bild miteinander verglichen werden, wird die Matrix lediglich auf $2 \times 2$ durch Average-Pooling reduziert. Infolgedessen erhält der Fully-Connected Layer 2 Werte pro Armee mit denen er weiter rechnen kann. 
  
-\subsection{Baseline}
-Um die Effektivität der Architekturen zu überprüfen wurde eine Baseline implementiert, welche nach einer festen Implementierung die Gefechts-Ausgänge berechnet. Die Baseline berücksichtigt sowohl die Offensive Kampfkraft der beiden Armeen, als auch die defensiven Eigenschaften jeder Armee. 
+\subsection{Problemstellung}
+Diese Arbeit nimmt sich der Frage an, wie gut gängige Bildklassifizierungsalgorithmen auf einer neuen Domäne funktionieren. Hierzu wird untersucht, ob die Architekturen die Ausgänge von StarCraft~II Gefechten vorhersagen können.
 
-Die Offensive Kampfkraft der Armeen wird durch einen \textit{Powervalue} dargestellt. Der Powervalue errechnet sich aus dem Angriffswert folgend Damage-per-second (DPS, zu Deutsch: Schaden pro Sekunde) zusammen mit sämtlichen Boni, welche durch die unterschiedlichen Einheitenklassen hinzukommen. So sind manche Einheiten beispielsweise effektiver gegen Einheiten welche dem mechanischen Typ angehören. Die Berechnung des Powervalues einer einzelnen Einheit wird in Algorithmus \ref{alg:powervalue} veranschaulicht. Die Prozedur Powervalue wird für jede Einheit einer Armee ausgeführt und erhält die Spezifika der Einheit wie auch die Spezifika der gegnerischen Armee als Eingabewerte. Der Bonusschaden \textit{bonus} wird durch den Grundbonus, den die Einheit gegen einen speziellen Typ erhält und den Anteil der relevanten Einheiten in der gegnerischen Armee berechnet und auf den Grundschaden der Einheit addiert. Die Berechnung der Bonusschäden bringt keine nennenswerte Steigerung der Accuracy (zu Deutsch: Genauigkeit), wurde aber der Vollständigkeit halber implementiert. 
+Die Ausgabe des Netzwerkes stellt einen Vektor mit drei Elementen in Form eines Arrays dar. Die Werte des Vektors beziehen sich auf die Ausgänge der Gefechte, wobei der erste Werte für den Sieg des Teams Minerals steht, der zweite für einen Sieg der Vespene und der dritte Wert steht für ein Unentschieden beider Teams. 
+
+Die Eingabedaten unterscheiden sich stark von den ursprünglich für die Architekturen angedachten Eingabedaten. Während alle Architekturen in ihrem eigentlichen Aufgabenfeld Bilder als dreidimensionalen Tensor (Tiefe $\times$ Höhe $\times$ Breite ) erhalten -- wobei die Tiefe die 3 Farbkanäle enthält -- muss für die Verarbeitung der Gefechte eine weitere Dimension hinzugefügt werden. Es entsteht ein Tensor des vierten Ranges, welcher für jeden der acht Feature Layer einen dreidimensionalen Tensor mit den Dimensionen $84 \times 84$ enthält. Somit wird jedes Gefecht von einem Tensor mit den Dimensionen $8 \times 84 \times 84$ abgebildet. In dem Anwendungsfall dieser Arbeit werden Feature Layer genutzt, um jeweils einen bestimmten Aspekt des Spielzustandes zu Beginn der Simulation darzustellen.
+Die einzelnen Feature Layer enthalten folgende Informationen: 
+
+Der erste Layer enthält das \textit{Player-Relative}-Feature (zu Deutsch etwa: Spieler bezogen). Dieser Layer enthält die Informationen dazu, welche Einheit zu dem betreffenden Spieler gehört. Die Werte geben dem Spieler an, ob es sich um eine freundliche, feindliche oder neutrale Einheit handelt. 
+
+Als zweiten Layer wird das \textit{Unit-Type}-Feature (zu Deutsch: Einheiten-Typ) verwendet. Dieser Layer enthält die eindeutigen IDs der Einheiten-Typen, sodass alle Einheiten auf der Karte klar zu identifizieren sind.
+
+Die Layer drei bis fünf enthalten die Lebenspunkte, Energie und Schildpunkte der Einheiten. Die Energie ist relevant um Fähigkeiten zu nutzen, da diese Energie kosten. Das ist in dieser Version allerdings noch nicht relevant, da die Einheiten in den Simulation lediglich Angreifen und auf den Einsatz von Fähigkeiten verzichten. Die Layer geben Aufschluss darüber wie die Lebens- und Schildpunkte auf der Karte verteilt sind.
+
+Im sechsten Layer befinden sich die Informationen über die Spieler IDs. Während Player-Relative den Zustand der Einheiten aus Sicht eines Spieler wiedergibt, kann mit den Informationen aus dem \textit{Player-ID} Feature Layer auch ein außenstehender Beobachter die Einheiten eindeutig zuordnen.
+
+Der siebte Layer enthält die \textit{Height Map} (zu Deutsch: Höhenkarte), welche die Struktur der Karte abbildet. Der Layer ist besonders relevant, bei Karten mit Höhenunterschieden, da fliegende Einheiten diese leicht überbrücken können. Bodeneinheiten müssen diese entweder umlaufen, oder haben genug Angriffsreichweite um trotzdem angreifen zu können. 
+
+Zuletzt wird als achter Layer die \textit{Unit Density} (zu Deutsch: Einheitendichte) genutzt. Der Layer enthält für jeden Pixel der Karte Informationen darüber, wie viele Einheiten sich gleichzeitig darauf befinden. 
+
+Da diese acht Layer den Neural Networks ohne Kontext als ein Tensor übergeben werden, stellt sich die Frage, ob die Neural Networks mit dem unterschiedlichen Informationsgehalt der Layer arbeiten können und z.B. Abhängigkeiten ableiten können, oder bestimmten Layern besondere Wichtigkeit zuordnen. Zusätzlich stellt sich die Frage, ob  Neural Network mit den Unit-Ids effektiv lernen können. Hierzu werden die Daten der Feature Layer gespiegelt, sodass Sieger- und Verlierer-Seite tauschen. Im Anschluss werden zweite identische Netze trainiert. Bei einem Versuch werden die Label mit rotiert, sodass das Netz die Frage beantworten muss, \textit{Welche Spielfeldseite gewinnt}. In dem anderen Durchlauf bleiben die Label gleich, wodurch das Netz die Frage \textit{Welcher Spieler gewinnt?} beantworten muss. Die einhergehende Vergrößerung der Gefechte, bringt gleichzeitig den Vorteil der größeren Datenmenge mit.
+
+
+\subsection{Baseline}
+Um die Effektivität der Architekturen zu überprüfen wurde eine Baseline implementiert, welche nach einer festen Implementierung die Gefechts-Ausgänge berechnet. Die Baseline ist eine eigene Implementation und folgt keinem existierenden Ansatz. Der Algorithmus soll die Gefechte anhand der verwendeten Einheiten möglichst akkurat vorhersagen und einen Vergleichswert für die betrachteten Architekturen bieten. Grundlegend werden Offensiv- und Defensivwerte für jede Armee errechnet und gegeneinander abgewogen.
+
+Die Offensive Kampfkraft der Armeen wird durch einen \textit{Powervalue} dargestellt. Der Powervalue errechnet sich aus dem Angriffswert folgend Damage-per-second (DPS, zu Deutsch: Schaden pro Sekunde) zusammen mit sämtlichen Boni, welche durch die unterschiedlichen Einheitenklassen hinzukommen. Die Berechnung des Powervalues einer einzelnen Einheit wird in Algorithmus \ref{alg:powervalue} veranschaulicht. Die Prozedur Powervalue wird für jede Einheit einer Armee ausgeführt und erhält die Spezifika der Einheit wie auch die Spezifika der gegnerischen Armee als Eingabewerte. Der Bonusschaden \textit{bonus} wird durch den Grundbonus, den die Einheit gegen einen speziellen Typ erhält und den Anteil der relevanten Einheiten in der gegnerischen Armee berechnet und auf den Grundschaden der Einheit addiert. Die Berechnung der Bonusschäden bringt keine nennenswerte Steigerung der Accuracy (zu Deutsch: Genauigkeit), wurde aber der Vollständigkeit halber implementiert. 
 
 
 \begin{algorithm}
 \begin{algorithmic}[1]
-\Procedure {Powervalue}{$unit$, $enemies$}
+\Procedure {Powervalue}{$unit$, $enemyUnits$}
 \LeftComment*{jeder Bonustyp beinhaltet einen Wert type, als Identifikator und einen Wert damage, der den Bonusschaden spezifiziert.}
+	\State $bonus \leftarrow 0$
 	\ForAll {$bt \in unit.bonustype$}
-		\If {$Anzahl\,der\,Gegner\,mit\,Bonustyp\,bt.type > 0$}
+		\If {$Number\,of\,Enemies\,with\,bt.type > 0$}
 			\LeftComment{berechne anteilig den Bonusschaden der aktuellen Einheit}
-			\State $factor \leftarrow Anzahl\,Gegner\,mit\,bt.type \div Gesamtzahl\,Gegner$
+			\State $factor \leftarrow Number\,of\,Enemies\,with\,bt.type \div Number\,of\,Enemies$
 			\State $bonus \leftarrow bonus + bt.damage \times factor$
 		\EndIf
 	\EndFor
@@ -37,21 +58,22 @@ Die Offensive Kampfkraft der Armeen wird durch einen \textit{Powervalue} dargest
 Da Einheiten immer nur eine bestimmte Art von Einheiten angreifen können, errechnet der Algorithmus \ref{alg:powervalue_anteilig} insgesamt 6 Werte. Für jedes der beiden Teams wird der Wert für Schaden an Bodeneinheiten und der Wert für Schaden an Lufteinheiten errechnet. Zusätzlich wird ein Powervalue in Relation zur Einheiten Verteilung Luft-Boden errechnet:
 \begin{algorithm}
 \begin{algorithmic}[1]
-\Procedure {Armypowervalues}{$army$, $opposingarmy$}
-	\ForAll {$unit \in army$}
+\Procedure {Armypowervalues}{$units$, $enemyUnits$}
+	\State $powerGround \leftarrow 0$
+	\State $powerAir \leftarrow 0$
+	\ForAll {$unit \in units$}
 		\If {$unit.attacktype = 'Ground'$}
-		\State $powervalue.ground \leftarrow powervalue.ground+\textsc{Powervalue}(unit, opposingarmy)$	
+		\State $powerGround \leftarrow powerGround+\textsc{Powervalue}(unit, enemyUnits)$	
 		\Else
-			\State $powervalue.air \leftarrow powervalue.air+\textsc{Powervalue}(unit, opposingarmy)$	
+			\State $powerAir \leftarrow powerAir+\textsc{Powervalue}(unit, enemyUnits)$	
 		\EndIf	
 	\EndFor
-\LeftComment{powervalue enthält die Werte für ground und air}
-\State \textbf{return} powervalue
+\State \textbf{return} powerGround, powerAir
 \EndProcedure	
-\State $powervalues = \textsc{Armypowervalues}(army, opposingarmy)$
-\State $groundshare = Anzahl\,Gegner\,Typ\,Boden \div Gesamtzahl\,Gegner$
-\State $airshare = Anzahl\,Gegner\,Typ\,Luft \div Gesamtzahl\,Gegner$
-\State $weightedpowervalue \leftarrow powervalue.ground * groundshare + powervalue.air * airshare$ 
+\State $powerGround, powerAir = \textsc{Armypowervalues}(units, enemyUnits)$
+\State $groundShare = Number\,of\,Enemies\,Type\,Ground \div Number\,of\,Enemies$
+\State $airShare = Number\,of\,Enemies\,Type\,Air \div Number\,of\,Enemies$
+\State $weightedPower \leftarrow powerGround * groundShare + powerAir * airShare$ 
 \end{algorithmic}
 \caption{Berechnung der Powervalues nach Angriffs-Typen und des gewichteten Powervalues}
 \label{alg:powervalue_anteilig}
@@ -64,15 +86,17 @@ Um die Überlebensfähigkeit der Armeen zu bestimmen werden die Hitpoints (zu De
 \begin{algorithm}
 \begin{algorithmic}[1]
 \Procedure {Survivability}{$units$}
+	\State $defenseGround \leftarrow 0$
+	\State $defenseAir \leftarrow 0$
 	\ForAll {$unit \in units$}
 		\If {$unit.type = 'Ground'$}
-			\State $defense.ground \leftarrow defense.ground + unit.hitpoints + unit.shield$
+			\State $defenseGround \leftarrow defenseGround + unit.hitpoints + unit.shield$
 		\EndIf
 		\If {$unit.type = 'Air'$}
-			\State $defense.air \leftarrow defense.air + unit.hitpoints + unit.shield$
+			\State $defenseAir \leftarrow defenseAir + unit.hitpoints + unit.shield$
 		\EndIf
 	\EndFor 
-	\State \textbf{return} $defense$
+	\State \textbf{return} $defenseGround, defenseAir$
 \EndProcedure
 \end{algorithmic}
 \caption{Berechnung der Überlebensfähigkeit nach Typen}
@@ -133,30 +157,30 @@ Remis & 0,32 & 0,58 & 0,41 & 25.032\\
 
 \begin{algorithm}
 \begin{algorithmic}[1]
-\Procedure {Decider}{$armya$, $armyb$}
-\If {$\neg armya.fightable \land \neg armya.fightable$}
+\Procedure {Decider}{$teamA$, $teamB$}
+\If {$\neg teamA.fightable \land \neg teamB.fightable$}
 	\State \textbf{return} 'Remis' 
 \EndIf
-\If {$armya.fightable  \land \neg armyb.fightable$}
-	\If {$armya.powervalue.ground * K \geq armyb.defense.ground \land armya.powervalue.air * K \geq armyb.defense.air$}
+\If {$teamA.fightable  \land \neg teamB.fightable$}
+	\If {$teamA.powerGround * K \geq teamB.defenseGround \land teamA.powerAir * K \geq teamB.defenseAir$}
 		\State \textbf{return} 'Team A siegt'
 	\Else 
 		\LeftComment {Team A schafft Sieg nicht innerhalb der Zeit}
 		\State \textbf{return} 'Remis'
 	\EndIf
 \EndIf
-\If {$\neg armya.fightable \land armyb.fightable$}
-\If {$armyb.powervalue.ground * K \geq armya.defense.ground \land armyb.powervalue.air * K \geq armya.defense.air$}
+\If {$\neg teamA.fightable \land teamB.fightable$}
+\If {$teamB.powerGround * K \geq teamA.defenseGround \land teamB.powerAir * K \geq teamA.defenseAir$}
 	\State \textbf{return} 'Team B siegt'
 \Else 
 	\LeftComment {Team B schafft Sieg nicht innerhalb der Zeit}
 	\State \textbf{return} 'Remis' 
 \EndIf
 \EndIf
-\State $armyvaluea \leftarrow armya.weightedpowervalue + armya.defense.ground + armya.defense.air$
-\State $armyvalueb \leftarrow armyb.weightedpowervalue + armyb.defense.ground + armyb.defense.air$
+\State $teamAPower \leftarrow teamA.weightedPower + teamA.defenseGround + teamA.defenseAir$
+\State $teamBPower \leftarrow teamB.weightedPower + teamB.defenseGround + teamB.defenseAir$
 
-\If {$armyvaluea > armyvalueb$}
+\If {$teamAPower > teamBPower$}
 	\State \textbf{return} 'Team A siegt'
 \Else
 	\State \textbf{return} 'Team B siegt'

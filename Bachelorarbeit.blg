@@ -1,20 +1,24 @@
 [0] Config.pm:302> INFO - This is Biber 2.10
 [0] Config.pm:305> INFO - Logfile is 'Bachelorarbeit.blg'
-[34] biber-MSWIN32:313> INFO - === 
-[66] Biber.pm:371> INFO - Reading 'Bachelorarbeit.bcf'
-[176] Biber.pm:857> INFO - Found 21 citekeys in bib section 0
-[192] Biber.pm:3976> INFO - Processing section 0
-[208] Biber.pm:4136> INFO - Looking for bibtex format file 'BAZitate.bib' for section 0
-[219] bibtex.pm:1490> INFO - LaTeX decoding ...
-[288] bibtex.pm:1306> INFO - Found BibTeX data source 'BAZitate.bib'
-[400] Utils.pm:193> WARN - month field 'Aug' in entry '6633643' is not an integer - this will probably not sort properly.
-[405] Utils.pm:193> WARN - month field 'Sep.' in entry '6374183' is not an integer - this will probably not sort properly.
-[462] Utils.pm:193> WARN - month field 'Jun' in entry 'He_2016' is not an integer - this will probably not sort properly.
-[483] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/icml/2015' in entry 'DBLP:conf/icml/IoffeS15' - ignoring (section 0)
-[513] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[514] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[514] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[514] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[547] bbl.pm:617> INFO - Writing 'Bachelorarbeit.bbl' with encoding 'UTF-8'
-[560] bbl.pm:720> INFO - Output to Bachelorarbeit.bbl
-[564] Biber.pm:110> INFO - WARNINGS: 4
+[40] biber-MSWIN32:313> INFO - === 
+[103] Biber.pm:371> INFO - Reading 'Bachelorarbeit.bcf'
+[205] Biber.pm:857> INFO - Found 22 citekeys in bib section 0
+[219] Biber.pm:3976> INFO - Processing section 0
+[245] Biber.pm:4136> INFO - Looking for bibtex format file 'BAZitationen.bib' for section 0
+[254] bibtex.pm:1490> INFO - LaTeX decoding ...
+[323] bibtex.pm:1306> INFO - Found BibTeX data source 'BAZitationen.bib'
+[537] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/icml/2015' in entry 'DBLP:conf/icml/IoffeS15' - ignoring (section 0)
+[538] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/aiide/2013' in entry 'AIIDE137381' - ignoring (section 0)
+[538] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/aiide/2012' in entry 'DBLP:conf/aiide/ChurchillSB12' - ignoring (section 0)
+[538] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/aiide/2015' in entry 'AIIDE1511531' - ignoring (section 0)
+[538] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/iccbr/2015w' in entry 'SnchezRuizGranados2015PredictingTO' - ignoring (section 0)
+[538] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/cig/2013' in entry '6633643' - ignoring (section 0)
+[538] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/cig/2012' in entry '6374183' - ignoring (section 0)
+[539] Utils.pm:193> WARN - I didn't find a database entry for crossref 'DBLP:conf/iclr/2015' in entry 'DBLP:journals/corr/KingmaB14' - ignoring (section 0)
+[566] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[567] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[567] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[567] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[621] bbl.pm:617> INFO - Writing 'Bachelorarbeit.bbl' with encoding 'UTF-8'
+[632] bbl.pm:720> INFO - Output to Bachelorarbeit.bbl
+[636] Biber.pm:110> INFO - WARNINGS: 8

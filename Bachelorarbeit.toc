@@ -1,0 +1,35 @@
+\babel@toc {ngerman}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}
+\babel@toc {english}{}
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Motivation}{10}
+\contentsline {subsection}{\numberline {1.1}StarCraft~II}{11}
+\contentsline {subsection}{\numberline {1.2}Kontributionen}{13}
+\contentsline {section}{\numberline {2}Theoretischer Hintergrund}{14}
+\contentsline {subsection}{\numberline {2.1}Artificial Neural Networks}{14}
+\contentsline {paragraph}{\nonumberline Fully-Connected Layer}{15}
+\contentsline {paragraph}{\nonumberline Rectified Linear Units Layer}{16}
+\contentsline {paragraph}{\nonumberline Normalization Layer}{16}
+\contentsline {paragraph}{\nonumberline Loss Function}{17}
+\contentsline {paragraph}{\nonumberline Softmax-Funktion}{17}
+\contentsline {subsection}{\numberline {2.2}Convolutional Neural Networks}{18}
+\contentsline {paragraph}{\nonumberline Tensor}{18}
+\contentsline {paragraph}{\nonumberline Convolutional Layer}{19}
+\contentsline {paragraph}{\nonumberline Pooling layers}{21}
+\contentsline {section}{\numberline {3}Verwandte Arbeiten}{23}
+\contentsline {section}{\numberline {4}Methodologie}{26}
+\contentsline {subsection}{\numberline {4.1}Problemstellung}{26}
+\contentsline {subsection}{\numberline {4.2}Baseline}{28}
+\contentsline {subsection}{\numberline {4.3}All-Convolutional Net}{33}
+\contentsline {subsection}{\numberline {4.4}ResNet}{36}
+\contentsline {subsection}{\numberline {4.5}Inception V4}{38}
+\contentsline {subsection}{\numberline {4.6}Inception mit Squeeze-and-Excitation Layer}{44}
+\contentsline {section}{\numberline {5}Evaluation}{47}
+\contentsline {subsection}{\numberline {5.1}Datengenerierung}{47}
+\contentsline {subsection}{\numberline {5.2}Evaluationsmetriken}{52}
+\contentsline {subsection}{\numberline {5.3}Trainingsmethodik}{55}
+\contentsline {subsection}{\numberline {5.4}Resultate}{60}
+\contentsline {section}{\numberline {6}Konklusion}{64}

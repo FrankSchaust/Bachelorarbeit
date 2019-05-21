@@ -1,4 +1,5 @@
 \section{Evaluation}
+\label{Eval}
 
 \subsection{Datengenerierung}
 \label{datagen}
@@ -11,7 +12,7 @@ Abbildung \ref{fig:overview1} zeigt den Generierungsprozess in Gänze. Die Custo
 
 Die Entscheidung mehrere Gefechte auf einmal zu generieren wurde getroffen, da die Custom Map bei jedem Start das Spiel neu laden muss und somit der zeitliche Overhead bei Einzelgenerierung der Replays wesentlich größer wäre. Die Anzahl der in einem Replay generierten Gefechte wurde auf 25 gesetzt, da bei zu vielen Iterationen der Gefechtsgenerierung die Replay-Datei zu groß wurde und das Spiel beim Schließen der Custom Map abstürzte. Der Absturz resultierte in jedem Fall in einem Datenverlust. Bei 25 Gefechten pro Replay liegt die Absturzrate derzeit immer noch bei ca. 50\%, jedoch resultierte das weitere Senken der Gefechte pro Replay nicht in einem stabileren Generationsprozess. 
 
-Die Generierung der Gefechte findet auf der schnellsten Spieleinstellung statt, damit in gleicher Zeit mehr Gefechte simuliert werden können. Dadurch ist es aktuell möglich in einem Zeitraum von acht Stunden ca. 250 valide (500 Generierungen inklusive der Abstürze) Replays zu produzieren, welche nach der Feature Extraktion (Zeitaufwand erneut ca. drei bis vier Stunden) in 6250 Samples resultieren. 
+Die Generierung der Gefechte findet auf der schnellsten Spieleinstellung statt, damit in gleicher Zeit mehr Gefechte simuliert werden können. Das Laden der Karten und das speichern der Replays, sowie die Auswertung dieser wird mittels PySC2, dem StarCraft~II Learning Environment von Deepmind, ausgeführt \parencite{DBLP:journals/corr/abs-1708-04782}. Dadurch ist es aktuell möglich in einem Zeitraum von acht Stunden ca. 250 valide (500 Generierungen inklusive der Abstürze) Replays zu produzieren, welche nach der Feature Extraktion (Zeitaufwand erneut ca. drei bis vier Stunden) in 6250 Samples resultieren. 
 
 \newpage
 \begin{figure}[H]
@@ -30,37 +31,37 @@ Die Generierung der Gefechte findet auf der schnellsten Spieleinstellung statt, 
 \label{fig:overview1}
 \end{figure}
 
-Die Abbildungen \ref{fig:suppvert}, \ref{fig:siegvert} und \ref{fig:siegsupp} zeigen die Zusammensetzung der simulierten Gefechte auf. Abbildung \ref{fig:suppvert} zeigt die absolute Anzahl der Gefechte unter Berücksichtigung der Supply-Differenz. Die X-Achse trägt die Supply-Differenz in 0,5er-Schritten auf und auf der Y-Achse befindet sich die absolute Anzahl der entsprechenden Gefechte. Um die reelle Differenz der Gefechte zu erhalten muss man den Wert der X-Achse durch zwei teilen. Es sind drei klare Abstufungen zu erkennen. Die meisten Gefechte wurden mit einer Supply-Differenz $sd \leq 5$ generiert. Das zweite Plateau bilden die Gefechte $5 < sd \leq 10$ und das dritte Plateau wird von den Gefechten mit $10 < sd \leq 15$  gebildet. Die Bildung der Plateau ist durch den Generierungsprozess zu erklären. Es wurden mittels drei unterschiedlicher Custom Maps Daten generiert, welche in Versionen unterteilt wurden. Die erste Version lässt die Generierung von Gefecht mit einer Differenz von bis zu 5 zu. Version 2 lässt eine Differenz von 10 zu und Version 3 dementsprechend von 15. Da engere Gefechte nicht ausgeschlossen wurden, ist die Anzahl der engen Differenzen folglich höher. Die starken Einbrücke in jedem zweiten Balken werden von der Rasse \textit{Zerg} hervorgerufen, da diese die einzige Rasse sind deren Einheiten eine Supply-Anforderung von 0,5 haben können. Somit sind auch Differenzen mit X,5 nur möglich bei einer Beteiligung der Zerg an dem Gefecht. Auch wenn die Versionen nur Gefechte mit einer Differenz von maximal 15 zulassen, wurden dennoch Gefechte mit teilweise deutlich höheren Differenzen generiert. Dieser Umstand ist der Tatsache geschuldet, dass die Custom Maps während der Generierung bei einer zu großen Supply-Differenz die Armeen neu würfeln. Wenn dieser Vorgang zu oft wiederholt werden muss, kommt es zu einem Absturz der Custom Map, weshalb nach 8  Wiederholungen das Gefecht ohne Berücksichtigung der Supply-Differenz generiert wird um einem Absturz zu verhindern. Da die Supplies auch gespeichert werden, können diese Gefechte beim Training der Modelle problemlos herausgefiltert werden. 
+Die Abbildungen \ref{fig:suppvert}, \ref{fig:siegvert} und \ref{fig:siegsupp} zeigen die Zusammensetzung der simulierten Gefechte auf. Abbildung \ref{fig:suppvert} zeigt die absolute Anzahl der Gefechte unter Berücksichtigung der Supply-Differenz. Die X-Achse trägt die Supply-Differenz in 0,5er-Schritten auf und auf der Y-Achse befindet sich die absolute Anzahl der entsprechenden Gefechte. Um die reelle Differenz der Gefechte zu erhalten muss man den Wert der X-Achse durch zwei teilen. Es sind drei klare Abstufungen zu erkennen. Die meisten Gefechte wurden mit einer Supply-Differenz $sd \leq 5$ generiert. Das zweite Plateau bilden die Gefechte $5 < sd \leq 10$ und das dritte Plateau wird von den Gefechten mit $10 < sd \leq 15$  gebildet. Die Bildung der Plateau ist durch den Generierungsprozess zu erklären. Es wurden mittels drei unterschiedlicher Custom Maps Daten generiert, welche in Versionen unterteilt wurden. Die erste Version lässt die Generierung von Gefecht mit einer Differenz von bis zu 5 zu. Version 2 lässt eine Differenz von 10 zu und Version 3 dementsprechend von 15. Da engere Gefechte nicht ausgeschlossen wurden, ist die Anzahl der engen Differenzen folglich höher. Die starken Einbrüche in jedem zweiten Balken werden von der Rasse \textit{Zerg} hervorgerufen, da diese die einzige Rasse ist deren Einheiten eine Supply-Anforderung von 0,5 haben können. Somit sind auch Differenzen mit 0,5er-Schritten nur möglich bei einer Beteiligung der Zerg an dem Gefecht. Auch wenn die Versionen nur Gefechte mit einer Differenz von maximal 15 zulassen, wurden dennoch Gefechte mit teilweise deutlich höheren Differenzen generiert. Dieser Umstand ist der Tatsache geschuldet, dass die Custom Maps während der Generierung bei einer zu großen Supply-Differenz die Armeen neu würfeln. Wenn dieser Vorgang zu oft wiederholt werden muss, kommt es zu einem Absturz der Custom Map, weshalb nach 8 Wiederholungen das Gefecht ohne Berücksichtigung der Supply-Differenz generiert wird um einem Absturz zu verhindern. Da die Supplies auch gespeichert werden, können diese Gefechte beim Training der Modelle problemlos herausgefiltert werden. 
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
-\includegraphics[scale=0.4]{pictures/Match_verteilung}
+\includegraphics[scale=0.3]{pictures/Match_verteilung}
 \caption{Verteilung der generierten Gefechte nach Supply-Differenz.}
 \label{fig:suppvert}
 \end{figure}
 
-Abbildung \ref{fig:siegvert} zeigt die Anzahl der Gefechte, sowie die Anzahl der Siege insgesamt und nach gegnerischer Rasse. Die drei Balkengruppen sind nach Rassen aufgeteilt und zeigen für jede Rasse jeweils die Anzahl der Gefechte, Siege, Siegen gegen Zerg, Protoss und Terran. Die Anzahl der Gefechte ist für alle Rassen in etwa gleich und liegt zwischen 81.000 (Zerg) und 85.500 (Terran). Die Siege sind auch in ähnlichen Dimensionen, wobei Protoss und Terran mit jeweils 38.000 Siegen sehr nah beieinander liegen und Zerg mit 44.000 etwas darüber. Die Siege nach Rassen weisen im allgemeinen eine gleichmäßige Verteilung auf. Lediglich beim Aufeinandertreffen von Protoss und Terran scheinen die Protoss einen Vorteil zu haben, da die Terraner nur einen Bruchteil der Siege gegen Protoss haben. Protoss gewann 15.719 mal gegen Terran, Terran hingegen nur 4263 mal gegen Protoss.
+Abbildung \ref{fig:siegvert} zeigt die Anzahl der Gefechte, sowie die Anzahl der Siege insgesamt und nach gegnerischer Rasse. Die drei Balkengruppen sind nach Rassen aufgeteilt und zeigen für jede Rasse jeweils die Anzahl der Gefechte, Siege, Siege gegen Zerg, Protoss und Terran. Die Anzahl der Gefechte ist für alle Rassen in etwa gleich und liegt zwischen 81.000 (Zerg) und 85.500 (Terran). Die Siege sind auch in ähnlichen Dimensionen, wobei Protoss und Terran mit jeweils 38.000 Siegen sehr nah beieinander liegen und Zerg mit 44.000 etwas darüber. Die Siege nach Rassen weisen im Allgemeinen eine gleichmäßige Verteilung auf. Lediglich beim Aufeinandertreffen von Protoss und Terran scheinen die Protoss einen Vorteil zu haben, da die Terraner nur einen Bruchteil der Siege gegen Protoss haben. Protoss gewann 15.719 mal gegen Terran, Terran hingegen nur 4263 mal gegen Protoss.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
-\includegraphics[scale=0.4]{pictures/Graph_Matches_2}
+\includegraphics[scale=0.3]{pictures/Graph_Matches_2}
 \caption{Verteilung der Siege nach Rasse und Gegnerrasse.}
 \label{fig:siegvert}
 \end{figure}
 
-In Abbildung \ref{fig:siegsupp} werden die Siege nach Supply-Differenz und Rasse grob unterteilt analysiert. Die Balkengruppen auf der X-Achse bilden die unterschiedlichen Supply-Differenzen ab. Auf der Y-Achse sind die Siege in absoluten  Zahlen aufgetragen. \textit{Sieg bei kleiner Differenz} umfasst alle Siege, bei denen der Sieger einen Supply-Vorteil $sv$ von $ 0 < sv \leq 5$ hatte. \textit{Sieg trotz Nachteil} beinhaltet alle Siege, bei denen der Sieger weniger Supply genutzt hat als der Verlierer. \textit{Siege mit hoher Differenz} zählt alle Siege mit einer Differenz größer 5 auf, bei denen der Sieger im Vorteil war und \textit{Siege bei gleichem Supply} umfasst alle Siege bei denen der Supply exakt gleich war. Anhand der Verteilung der Siege lässt sich ablesen, dass Zerg bei einem Supply-Vorteil zum Sieg tendieren, während Protoss die Besten darin sind, aus einem Nachteil einen Sieg zu machen. Bei gleichem Supply sind die Zerg am schwächsten und Protoss am erfolgreichsten. 
+In Abbildung \ref{fig:siegsupp} werden die Siege nach Supply-Differenz und Rasse grob unterteilt und analysiert. Die Balkengruppen auf der X-Achse bilden die unterschiedlichen Supply-Differenzen ab. Auf der Y-Achse sind die Siege in absoluten  Zahlen aufgetragen. \textit{Sieg bei kleiner Differenz} umfasst alle Siege, bei denen der Sieger einen Supply-Vorteil $sv$ von $ 0 < sv \leq 5$ hatte. \textit{Sieg trotz Nachteil} beinhaltet alle Siege, bei denen der Sieger weniger Supply genutzt hat als der Verlierer. \textit{Siege mit hoher Differenz} zählt alle Siege mit einer Differenz größer 5 auf, bei denen der Sieger im Vorteil war und \textit{Siege bei gleichem Supply} umfasst alle Siege bei denen der Supply exakt gleich war. Anhand der Verteilung der Siege lässt sich ablesen, dass Zerg bei einem Supply-Vorteil zum Sieg tendieren, während Protoss die Besten darin sind, aus einem Nachteil einen Sieg zu machen. Bei gleichem Supply sind die Zerg am schwächsten und Protoss am erfolgreichsten. 
 
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
-\includegraphics[scale=0.4]{pictures/Graph_Supp_Wins}
+\includegraphics[scale=0.3]{pictures/Graph_Supp_Wins}
 \caption{Verteilung der Siege nach Supply-Differenz und Rasse.}
 \label{fig:siegsupp}
 \end{figure}
 
 \subsection{Evaluationsmetriken}
 \label{Metriken}
-Die Leistungsfähigkeit der einzelnen Architekturen wird Anhand verschiedener Metriken bestimmt. Die TOP-1 error rate (zu Deutsch: Top-1 Fehlerrate) wird in der aktuellen Forschung häufig zum Vergleich unterschiedlicher Machine Learning Methoden  verwendet. Bei der Klassifizierung von Datensätzen mit einer Vielzahl an Klassen wird im Regelfall die TOP-5 zusätzlich verwendet. Da sich das Klassifizierungsproblem in dieser Arbeit auf drei Klassen beschränkt, entfällt diese Möglichkeit. Die TOP-1 error rate beschreibt bei wie vielen Klassifizierungen das Neural Network die falsche Klasse vorhergesagt hat und steht im direkten Verhältnis zur Accuracy, welche beschreibt wie viele Klassen korrekt vorhergesagt wurden. Es gilt also:
+Die Leistungsfähigkeit der einzelnen Architekturen wird Anhand verschiedener Metriken bestimmt. Die TOP-1 error rate (zu Deutsch: \textit{Top-1 Fehlerrate}) wird in der aktuellen Forschung häufig zum Vergleich unterschiedlicher Machine Learning Methoden  verwendet. Bei der Klassifizierung von Datensätzen mit einer Vielzahl an Klassen wird im Regelfall die TOP-5 zusätzlich verwendet. Da sich das Klassifizierungsproblem in dieser Arbeit auf drei Klassen beschränkt, entfällt diese Möglichkeit. Die TOP-1 error rate beschreibt bei wie vielen Klassifizierungen das Neural Network die falsche Klasse vorhergesagt hat und steht im direkten Verhältnis zur Accuracy, welche beschreibt wie viele Klassen korrekt vorhergesagt wurden. Es gilt also:
 \begin{equation}
 TOP\text{-}1 = Vorhersagen_{Falsch} \div Vorhersagen_{Gesamt}
 \end{equation}
@@ -71,7 +72,7 @@ Accuracy = Vorhersagen_{Wahr} \div Vorhersagen_{Gesamt}
 Accuracy = 1 \; - \; TOP\text{-}1
 \end{equation}
 
-Neben der TOP-1 error rate wird die Leistung der Architekturen auch mit den Metriken Precision (zu Deutsch: Präzision), Recall (zu Deutsch etwa: Widerruf) und F1-Score bemessen. Die für diese Metriken relevanten Teile der Klassifizierung sind in den Abbildungen \ref{fig:prerec} und \ref{fig:prerecacc} dargestellt. Abbildung \ref{fig:prerec} zeigt die Verteilung der Daten nach der Vorhersage durch den Klassifizierungsalgorithmus. Im Kreis berfinden sich alle Datenpunkte, welche der Algorithmus als \textit{Wahr} vorhergesagt hat. Außerhalb finden sich alle Punkte wieder, die als \textit{Falsch} klassifiziert wurden. Alle Punkte auf der linken Hälfte des Bildes sind eigentlich \textit{Wahr} und somit relevant für die Klassifizierung, während sich auf der rechten Seite ausschließlich falsche und somit irrelevante Datenpunkte befinden. Daher gelten alle Punkte auf der linken Seite  außerhalb des Kreises als (\textit{False negative}) und alle Punkte innerhalb des Kreises als (\textit{True positive}). Auf der rechten Seite gilt dementsprechend, dass die Daten im Kreis (\textit{False positive}) und die Punkte außerhalb  (\textit{True negative}) sind. Abbildung \ref{fig:prerecacc} zeigt nun die daraus resultierende Berechnung der unterschiedlichen Metriken. Precision errechnet sich aus dem Verhältnis der \textit{True positive} Daten zu der Gesamtheit der positiven Daten $True\,positive + False\,positive$. Die Metrik spiegelt daher wieder sicher ein Algorithmus darin ist Daten richtig zu evaluieren. Die Metrik vernachlässigt jedoch wie hoch der Anteil der positiven Daten ist, der gefunden wird. Beispielsweise könnte ein Algorithmus eine Klasse lediglich ein Mal als richtig bewerten. Liegt er damit richtig so wäre der Precision-Wert 1, da ein \textit{True positive} zusammen mit keinem \textit{False positive} $1 \div (1+0) = 1$ ergibt. Daher wird als zweite Metrik der Recall herangezogen. Dieser errechnet sich aus dem Verhältnis der Anzahl an \textit{True postive} Datenpunkten zu der Anzahl der relevanten Daten $True\,positive + False\,negative$ und veranschaulicht somit wie gut der Algorithmus die richtigen Klassen wiedererkennt. Der Abbildung der Accuracy dient zur Veranschaulichung der Unterschiede der drei Metriken, da in jedem Fall unterschiedliche Datenmengen herangezogen werden. Der F1-Score dient der Zusammenfassung beider Metriken (Precision und Recall), indem er das gewichtete harmonische Mittel abbildet. Der F1-Score errechnet sich wie in Gleichung \ref{eq:f1} beschrieben für $\alpha = 1$ (Gleichung \ref{eq:f1b}). 
+Neben der TOP-1 error rate wird die Leistung der Architekturen auch mit den Metriken Precision (zu Deutsch: \textit{Präzision}), Recall (zu Deutsch etwa: \textit{wieder aufrufen}) und F1-Score bemessen. Die für diese Metriken relevanten Teile der Klassifizierung sind in den Abbildungen \ref{fig:prerec} und \ref{fig:prerecacc} dargestellt. Abbildung \ref{fig:prerec} zeigt die Verteilung der Daten nach der Vorhersage durch den Klassifizierungsalgorithmus. Im Kreis befinden sich alle Datenpunkte, welche der Algorithmus als \textit{Wahr} vorhergesagt hat. Außerhalb finden sich alle Punkte wieder, die als \textit{Falsch} klassifiziert wurden. Alle Punkte auf der linken Hälfte des Bildes sind eigentlich \textit{Wahr} und somit relevant für die Klassifizierung, während sich auf der rechten Seite ausschließlich falsche und somit irrelevante Datenpunkte befinden. Daher gelten alle Punkte auf der linken Seite  außerhalb des Kreises als (\textit{False negative}) und alle Punkte innerhalb des Kreises als (\textit{True positive}). Auf der rechten Seite gilt dementsprechend, dass die Daten im Kreis (\textit{False positive}) und die Punkte außerhalb  (\textit{True negative}) sind. Abbildung \ref{fig:prerecacc} zeigt nun die daraus resultierende Berechnung der unterschiedlichen Metriken. Precision errechnet sich aus dem Verhältnis der \textit{True positive} Daten zu der Gesamtheit der positiven Daten $True\,positive + False\,positive$. Die Metrik spiegelt daher wieder sicher ein Algorithmus darin ist Daten richtig zu evaluieren. Die Metrik vernachlässigt jedoch wie hoch der Anteil der positiven Daten ist, der gefunden wird. Beispielsweise könnte ein Algorithmus eine Klasse lediglich ein Mal als richtig bewerten. Liegt er damit richtig so wäre der Precision-Wert 1, da ein \textit{True positive} zusammen mit keinem \textit{False positive} $1 \div (1+0) = 1$ ergibt. Daher wird als zweite Metrik der Recall herangezogen. Dieser errechnet sich aus dem Verhältnis der Anzahl an \textit{True postive} Datenpunkten zu der Anzahl der relevanten Daten $True\,positive + False\,negative$ und veranschaulicht somit wie gut der Algorithmus die richtigen Klassen wiedererkennt. Der Abbildung der Accuracy dient zur Veranschaulichung der Unterschiede der drei Metriken, da in jedem Fall unterschiedliche Datenmengen herangezogen werden. Der F1-Score dient der Zusammenfassung beider Metriken (Precision und Recall), indem er das gewichtete harmonische Mittel abbildet. Der F1-Score errechnet sich wie in Gleichung \ref{eq:f1} beschrieben für $\alpha = 1$ (Gleichung \ref{eq:f1b}). 
 
 \begin{equation}
 F_\alpha = (1 + \alpha^2) \cdot (Precision \cdot Recall) \div (\alpha^2 \cdot Precision + Recall) 
@@ -83,37 +84,28 @@ F_1 = 2 \cdot (Precision \cdot Recall) \div (Precision + Recall)
 \end{equation}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{pictures/grafiken/PrecisionRecall}
+\includegraphics[scale=0.25]{pictures/grafiken/PrecisionRecall}
 \caption{Verteilung der relevanten Elemente als Grundlage für Precision und Recall.}
 \label{fig:prerec}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{pictures/grafiken/prerecacc}
+\includegraphics[scale=0.25]{pictures/grafiken/prerecacc}
 \caption{Schematische Darstellung der Errechnung von Precision, Recall und Accuracy.}
 \label{fig:prerecacc}
 \end{figure}
 
 \subsection{Trainingsmethodik}
+\label{sek:trainmeth}
 
-CNNs können sich diverse Hyperparameter zu nutze machen um den Trainingserfolg zu erhöhen. Außerdem kann mit der Auswahl des Optimierungsalgorithmus (folgend Optimizer) auch Einfluss auf das Lernverhalten der Neural Networks genommen werden. Alle Architekturen verwenden den Adam-Optimizer, welcher in der gängigen Literatur immer wieder Anwendung findet. Der Adam-Optimizer ist ein Algorithmus der die Vorteile von AdaGrad und RMSProp kombiniert \parencite{DBLP:journals/corr/KingmaB14}, indem er jedem Parameter eine Learning Rate (zu Deutsch: Lernrate) zuweist und diese im Verlauf des Trainings anpasst. Der wichtigste Hyperparameter in dieser Arbeit ist die Learning Rate. Sie bestimmt den Faktor, der bei der Errechnung der Gewichtsanpassungen durch Backpropagation genutzt wird und somit wie stark der Optimizer die Gewichte verändern kann. Die Learning Rate wurde je nach Modell und Aufbau etwas variiert und liegt aber stets zwischen 0,01 und 0,001. Im Laufe des Trainings werden alle Layer mittels der sogenannten \textit{Kernel Regularization} (zu Deutsch etwa: Kern-Normalisierung) normalisiert. Kernel Regularization entspricht einem Hyperparameter, der für jeden Layer eines Neural Networks definiert wird. Dieser Hyperparameter ist ein festgelegter Wert auf die Loss Function addiert wird und die damit die Anpassung der Gewichte beeinflusst. Er soll unter anderem Overfitting verhindern. Für alle Netze wird in jedem Layer die Regularizierung mittels L2 regularization mit dem Wert  $1\times e^{-4}$. Für alle K Die Inception-SE-Architektur fordert zudem mit der Reduction Ratio (Reduktionsverhältnis) einen weiteren Hyperparameter. Dieser steuert den Zuwachs an Parametern durch die Fully-Connected Layer im Squeeze-and-Excitation Block der Architektur und sein Wert liegt in dieser bei 4. Das bedeutet, dass in dem ersten Fully-Connected Layer die Anzahl der Channel durch 4 geteilt wird um die Dimensionen der Ausgabe zu reduzieren und somit die Anzahl der benötigten Parameter zu verkleinern. 
+CNNs können sich diverse Hyperparameter zu nutze machen um den Trainingserfolg zu erhöhen. Außerdem kann mit der Auswahl des Optimierungsalgorithmus (folgend Optimizer) auch Einfluss auf das Lernverhalten der Neural Networks genommen werden. Alle Architekturen verwenden den Adam-Optimizer, welcher in der gängigen Literatur immer wieder Anwendung findet. Der Adam-Optimizer ist ein Algorithmus der die Vorteile von AdaGrad und RMSProp kombiniert \parencite{DBLP:journals/corr/KingmaB14}, indem er jedem Parameter eine Learning Rate (zu Deutsch: \textit{Lernrate}) zuweist und diese im Verlauf des Trainings anpasst. Der wichtigste Hyperparameter in dieser Arbeit ist die Learning Rate. Sie bestimmt den Faktor, der bei der Errechnung der Gewichtsanpassungen durch Backpropagation genutzt wird und somit wie stark der Optimizer die Gewichte verändern kann. Die Learning Rate wurde je nach Modell und Aufbau etwas variiert und liegt aber stets zwischen 0,01 und 0,001. Im Laufe des Trainings werden alle Layer mit der sogenannten Kernel Regularization (zu Deutsch etwa: \textit{Kernel-Normalisierung}) normalisiert. Kernel Regularization entspricht einem Hyperparameter, der für jeden Layer eines Neural Networks definiert wird. Dieser Hyperparameter ist ein festgelegter Wert, der auf die Loss Function addiert wird und die damit die Anpassung der Gewichte beeinflusst. Er soll unter anderem Overfitting verhindern. Für alle Netze wird in jedem Layer die Regularisierung mittels L2 regularization mit dem Wert  $1\times e^{-4}$ vollzogen. Die Inception-SE-Architektur fordert zudem mit der Reduction Ratio (Reduktionsverhältnis) einen weiteren Hyperparameter. Dieser steuert den Zuwachs an Parametern durch die Fully-Connected Layer im Squeeze-and-Excitation Block der Architektur und sein Wert liegt in dieser Implementation bei 4. Das bedeutet, dass in dem ersten Fully-Connected Layer die Anzahl der Channel durch 4 geteilt wird um die Dimensionen der Ausgabe zu reduzieren und somit die Anzahl der benötigten Parameter zu verkleinern. 
 
-In dem Trainingsvorgang wird Data Augmentation (zu Deutsch: Datenvermehrung) verwendet. Dieser Vorgang verfolgt zwei Ziele. Zum einen soll die Anzahl der verfügbaren Daten erhöht werden, zum anderen sollen die Architekturen die Stärke der Armeen unabhängig von ihrer Lage auf dem Schlachtfeld evaluieren können. Beides wird angegangen indem alle Eingabematrizen in vier Versionen jeweils 90 Grad rotiert in den Datensatz eingespeist werden (folgend: Rotated-Variante). So muss die Architektur das Gefecht in vier Richtungen analysieren und ist gezwungen den Werten der Armeen eine höhere Aufmerksamkeit zu schenken. Als zweite Augmentierungsmethode wurden die Matrizen nur einmal dupliziert und um 180 Grad rotiert (folgend: Mirrored-Variante). Zusätzlich wurden die Label getauscht. Neben der Datenvermehrung, soll so überprüft werden, ob sich die Architekturen bei der Vorhersage der Gewinnerseite anders verhalten, oder ob ähnliche Ergebnisse zu erwarten sind.
+In dem Trainingsvorgang wurde Data Augmentation (zu Deutsch: \textit{Datenvermehrung}) verwendet. Das Vorgehen verfolgte zwei Ziele. Zum einen sollte die Anzahl der verfügbaren Daten erhöht werden, zum anderen sollten die Architekturen die Stärke der Armeen unabhängig von ihrer Lage auf dem Schlachtfeld evaluieren können. Beides wurde angegangen, indem alle Eingabematrizen in vier Versionen jeweils 90 Grad rotiert in den Datensatz eingespeist wurden (folgend: Rotated-Variante). So musste die Architektur das Gefecht in vier Richtungen analysieren und war gezwungen den Werten der Armeen eine höhere Aufmerksamkeit zu schenken. Als zweite Augmentierungsmethode wurden die Matrizen nur einmal dupliziert und um 180 Grad rotiert (folgend: Mirrored-Variante). Zusätzlich wurden die Label getauscht. Neben der Datenvermehrung, sollte so überprüft werden, ob sich die Architekturen bei der Vorhersage der Gewinnerseite anders verhalten, oder ob ähnliche Ergebnisse zu erwarten sind.
 
 
-Im Zuge der Evaluierung aller Architekturen wurde jede Architektur mit beiden Augmentierungsvarianten und einer Version ohne Augmentierung (folgend: NoAug-Variante) analysiert. 
+Im Zuge der Evaluierung aller Architekturen wurde jede Architektur mit beiden Augmentierungsvarianten und einer Version ohne Augmentierung (folgend: NoAug-Variante) trainiert. 
 
-Die vorgestellte ResNet-Architektur wurde mit jeweils 90.000 Datensätzen für die Rotated-Variante und 30.000 Datensätzen für die Mirrored-Variante und die NoAug-Variante trainiert. Die NoAug-Variante wurde mit einer Learning Rate von 0,001 trainiert, die Rotated-Variante mit 0,01 und die Mirrored-Variante mit 0,005. Abbildung \ref{fig:resnet_loss} zeigt den Verlauf der Verlustfunktion während des Trainings für alle drei Varianten. Sowohl bei der Rotated- als auch bei der Mirrored-Variante findet man einen plötzlichen Anstieg der Verlustwerte im Verlauf des Trainings. Dieser Ausschlag geht damit einher, dass das Netz ab einem bestimmten Zeitpunkt alle Daten zur selben Klasse evaluiert. Da die Mirrored-Variante vor dem Ausschlag die höchste Accuracy aufweist, wird das Modell aus Epoche 17 zur weiteren Auswertung genutzt.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{pictures/Auswertung/resnet_loss}
-
-\caption{Verlustwerte der drei ResNet-Varianten.}
-\label{fig:resnet_loss}
-\end{figure}
-
-Das All-Convolutional Net wurde in allen Varianten mit einer Learning Rate von 0,005 trainiert. Die Rotated-Variante und die Mirrored-Variante wurden mit 90.000 Datensätzen trainiert, die NoAug-Variante wurde aus Zeitgründen mit 30.000 Datensätzen. In Abbildung \ref{fig:loss_allconv} werden die Verlustwerte aller Versionen dargestellt. Es zeigt sich ein fortlaufender Abstieg der Verlustwerte, was andeutet das, alle Varianten auf den Trainingsdaten gute Ergebnisse erzielen. Zieht man mit Abbildung \ref{fig:acc_allconv} allerdings die Accuracy der Testdaten mit in Betracht, so zeigt sich dass alle Varianten nach der 10 Epoche zum Overfitten neigen. Es wird die Mirrored-Variante, zur weiteren Evaluierung herangezogen, da sie auf den Testdaten die beste Accuracy aufwies. 
+Das All-Convolutional Net wurde in allen Varianten mit einer Learning Rate von 0,005 trainiert. Die Rotated-Variante und die Mirrored-Variante wurden mit 90.000 Datensätzen trainiert, die NoAug-Variante wurde aus Zeitgründen mit 30.000 Datensätzen. In Abbildung \ref{fig:loss_allconv} werden die Verlustwerte aller Versionen dargestellt. Es zeigt sich ein fortlaufender Abstieg der Verlustwerte, was andeutet das, alle Varianten auf den Trainingsdaten gute Ergebnisse erzielen. Zog man mit Abbildung \ref{fig:acc_allconv} allerdings die Accuracy der Testdaten mit in Betracht, so zeigte sich dass alle Varianten nach der 10. Epoche zum Overfitten neigten. Der in Abbildung \ref{fig:acc_allconv} gezeigt Verlauf der Accuracy findet sich in ähnlicher Weise auch bei den anderen Architekturen wieder, sodass er hier stellvertretend für alle Architekturen gezeigt wird. Es wurde die Mirrored-Variante, zur weiteren Evaluierung herangezogen, da sie auf den Testdaten die beste Accuracy aufwies. 
 
 \begin{figure}[H]
 \centering
@@ -128,32 +120,104 @@ Das All-Convolutional Net wurde in allen Varianten mit einer Learning Rate von 0
 \label{fig:acc_allconv}
 \end{figure}
 
-\paragraph{Inception V4}
+Die vorgestellte ResNet-Architektur wurde mit jeweils 90.000 Datensätzen für die Rotated-Variante und 30.000 Datensätzen für die Mirrored-Variante und die NoAug-Variante trainiert. Die NoAug-Variante wurde mit einer Learning Rate von 0,001 trainiert, die Rotated-Variante mit 0,01 und die Mirrored-Variante mit 0,005. Abbildung \ref{fig:resnet_loss} zeigt den Verlauf der Verlustfunktion während des Trainings für alle drei Varianten. Sowohl bei der Rotated-Variante als auch bei der Mirrored-Variante wurde ein plötzlicher Anstieg der Verlustwerte im Verlauf des Trainings festgestellt. Dieser Ausschlag ging damit einher, dass das Netz ab einem bestimmten Zeitpunkt alle Daten zur selben Klasse evaluierte. Da die Mirrored-Variante vor dem Ausschlag die höchste Accuracy aufwies, wurde das Modell aus Epoche 17 zur weiteren Auswertung genutzt.
 
-Inception V4 wurde mit der Learning Rate 0,001 trainiert. Auf der Abbildung \ref{}**TBD** sind die Werte der Accuracy aller Versionen eingetragen. Die X-Achse zeigt die Epochen und die Y-Achse stellt die Accuracy-Werte dar. In der Abbildung sind zwei Durchläufe ohne Augmentierung in blau (a) und orange (b) enthalten, sowie ein Durchgang mit 90 Grad Rotation in **TBD** (c) und ein Durchgang mit 180 Grad Rotation in **TBD** (d). Version (a) wurde mit 90.000 Datensätzen trainiert, während (b) lediglich mit 60.000 Datensätzen trainiert wurde. 
-Die Versionen (a) und (b) zeigen einen ähnlichen Verlauf und tendieren zum Overfitten. (a) hat im Testdatensatz sein Maximum in Epoche 10 bei 0,5739. (b) findet sein Maximum eine Epoche später in Epoche 11 mit einem Wert von 0,5690. Beide Durchgänge folgen dem bei All-Convolutional Nets beschriebenen Muster des Overfittens, indem bei beiden Netzen nach erreichen der Maxima Test- und Trainings-Accuracy auseinandergehen. Während sich die Trainings-Accuracy erneut dem Wert 1 annähert schwankt die Test-Accuracy in beiden Fällen zwischen 0,50 und 0,53.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{pictures/Auswertung/resnet_loss}
 
-**TBD**
-Bild mit den Accuracies von Inception V4
-**TBD**
+\caption{Verlustwerte der drei ResNet-Varianten.}
+\label{fig:resnet_loss}
+\end{figure}
+
+Auch für Inception V4 wurden alle drei Varianten trainiert. Die NoAug-Variante und die Mirrored-Variante wurden jeweils mit 30.000 Datensätzen und einer Learning Rate von 0,005 trainiert. Die Rotated-Variante wurde mit 90.000 Datensätzen und einer Learning Rate von 0,001 trainiert. Während man in Abbildung \ref{fig:loss_incv4} bei der NoAug- und der Rotated-Variante einen steten Abstieg der Verlustwerte nach der vierten Epoche feststellt, springt der Verlustwert der Mirrored-Variante zwei mal im Verlauf des Trainings. Nach dem ersten Sprung stabilisiert sich der Wert in Verlauf des Trainings erneut. Nach dem zweiten Sprung beginnt die Mirrored-Variante zu overfitten. Die anderen beiden Varianten overfitten zu früheren Berechnungsschritten. Die Mirrored-Variante konnte den Verlustwert zu keinem Zeitpunkt nach der vierten Epoche niedriger als die Rotated-Variante bringen, erreichte jedoch in der 23. Epoche den höchsten Wert in der Accuracy auf dem Testdatensatz. Daher wurde die Mirrored-Variante zur weiteren Auswertung genutzt.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{pictures/Auswertung/incv4_loss}
+\caption{Entwicklung der Verlustwerte der Inception V4-Varianten.}
+\label{fig:loss_incv4}
+\end{figure}
  
-\paragraph{Inception mit Squeeze-and-Excitation-Layer}
+Die Erweiterung der Inception V4-Architektur durch SE-Layer wurde in allen Varianten mit einer Learning Rate von 0,005 und 30.000 Datensätzen trainiert. Die Verlustwerte der Varianten nähern sich im Verlauf des Trainings der 0,3er-Marke, wobei die NoAug- und die Rotated-Variante wesentlich stabiler sinken als die Mirrored-Variante. Dennoch erreicht die Mirrored-Variante in der 20. Epoche die höchste Accuracy auf dem Testdatensatz mit 0,622, da sowohl die NoAug-Variante als auch die Rotated-Variante ihre Verlustwerte zwar stetig verringern, allerdings im Verlauf des Trainings beide overfitten. Die Mirrored-Variante wird zur weiteren Evaluierung herangezogen. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{pictures/Auswertung/incv4se_loss}
+\caption{Verlustwerte der Inception V4-SE-Varianten.}
+\label{fig:loss_incv4se}
+\end{figure}
+
 
 \subsection{Resultate}
 \label{Resultate}
 
-\begin{table}
+Zur Auswertung der Versuche wurden alle Architekturen Anhand ihrer besten Resultate verglichen. Alle Architekturen zeigten die besten Ergebnisse unter Nutzung der Mirrored Data Augmentation. Die Architekturen funktionierten somit am besten mit der Zielsetzung die gewinnende Seite vorherzusagen. Das gewinnende Team vorherzusagen scheint eine schwerere Aufgabe zu sein, was sich dadurch erklären lässt, dass in dem aktuellen Versuchsaufbau die Zuordnung zu den Spielern ein eigener Feature Layer ist und somit die Komplexität der Aufgabe leicht erhöht. Die besten Ergebnisse wurden auf Netzen erreicht, welche lediglich mit 30.000 Datensätzen trainiert wurden. Die einzige Ausnahme bildet hier das All-Convolutional Net. Es ist daher unrealistisch das in Sektion \ref{sek:trainmeth} beschriebene Problem des Overfittens der Netze mit mehr Daten zu beheben. Tabelle \ref{tb:comp} stellt die einzelnen Kennwerte der Architekturen gegenüber.
+
+\begin{table}[H]
 \centering
-\caption{Auflistung der Accuracy und des F1-Score auf den Testdaten für alle Architekturen.}
-\begin{tabular}{@{}lrr@{}}
+\caption{Auflistung von Accuracy, F1-Score, Precision und Recall auf den Testdaten für alle Architekturen zusammen mit den Ergebnissen der Baseline.}
+\begin{tabular}{@{}lrrrr@{}}
 \hline
-Architektur & Accuracy & F1-Score\\
+Architektur & Accuracy & F1-Score & Precision & Recall\\
 \hline
-All-Convolutional Net & 0,585 & 0,567\\
-ResNet & 0,611 & 0,601\\
-Inception V4 & & \\
-Inception V4 SE & & \\
+All-Convolutional Net & 0,585 & 0,567 & 0,578 & 0,585\\
+ResNet & 0,611 & 0,601 & 0,608 & 0,611\\
+Inception V4 & 0,631 & 0,629 & 0,630 & 0,631 \\
+Inception V4 SE & 0,622 & 0,616 & 0,617 & 0,622\\
+Baseline & 0,51 & 0,52 & 0,57 & 0,51 \\
 \hline
 \end{tabular}
-\label{tb:resnet}
+\label{tb:comp}
 \end{table}
+
+Die Tabelle zeigt, dass alle Architekturen eine bessere Performance liefern, als die naiv implementierte Baseline. Inception V4 erzielt auf den Testdaten die besten Ergebnisse in allen Metriken. Allgemein zeigt sich, dass mit Abnahme der Anzahl an Parametern auch die Resultate schlechter werden. Insgesamt liegen jedoch alle Architekturen hinter den von \textcite{SnchezRuizGranados2015PredictingTO, AIIDE137381, AIIDE1511531} erzielten Ergebnissen. 
+
+In Relation zu den Ergebnissen der Architekturen in ihren eigentlichen Domänen \parencite{DBLP:journals/corr/SpringenbergDBR14, He_2016, DBLP:journals/corr/SzegedyIV16, DBLP:journals/corr/abs-1709-01507}, zeigt sich dass ein Eins-zu-eins-Übertrag der Architektur mit ähnlichen Ergebnissen nicht geglückt ist. Die Problematik des Overfittings zeigt jedoch, dass die Architekturen die Daten richtig interpretieren können. 
+
+Zu beachten ist jedoch, dass StarCraft~II ein Spiel ist in dem der Ablauf eines Gefechtes durch geschicktes Einheiten-Management sehr gut gesteuert werden kann. Daher können Gefechte mit gleicher Ausgangslage unterschiedliche Ergebnisse produzieren, je nach dem in welcher Reihenfolge die Einheiten einander anvisieren. Es kann folglich vorkommen, dass 0,63 sehr nah an eine unbekannte Obergrenze herankommt, über die man ohne Evaluierung des Ablaufs der Gefechte nicht hinaus kommt. 
+
+Durch den Classification-Report, der von dem Python-Paket \textit{Scikit-Learn} geliefert wird, kann die Performance der einzelnen Architekturen auf den einzelnen Labels berechnet werden. Tabelle \ref{tb:classrep} listet alle Werte für die Architekturen auf. Bei der Berechnung wurde ein neuer Datensatz von 15.000 Elementen genutzt, der weder in den Trainings- noch in den Testdaten vorhanden war. Da die Mirrored-Varianten die siegende Seite evaluieren, wird in der Tabelle der Sieger auch jeweils mit seiner Spielfeldseite referenziert. 
+
+\begin{table}[H]
+\centering
+\caption{Auflistung der Classification-Reports für alle Architekturen.}
+\begin{tabular}{@{}lrrrrr@{}}
+\hline
+Architektur & Label & Precision & Recall & F1-Score & Support\\
+\hline
+All-Convolutional Net & Sieg Links & 0,61 & 0,83 & 0,71 & 7082\\
+& Sieg Rechts & 0,59 & 0,54 & 0,56 & 4973 \\
+& Remis & 0,53 & 0,16 & 0,24 & 2945 \\
+\hline
+ResNet & Sieg Links & 0,66 & 0,74 & 0,70 & 7082\\
+& Sieg Rechts & 0,59 & 0,53 & 0,56 & 4973\\
+& Remis & 0,54 & 0,45 & 0,49 & 2945\\
+\hline
+Inception V4 & Sieg Links & 0,61 & 0,87 & 0,72 & 7082 \\
+& Sieg Rechts & 0,75 & 0,25 & 0,38 & 4973 \\
+& Remis & 0,46 & 0,51 & 0,48 & 2945 \\
+\hline
+Inception V4 SE & Sieg Links & 0,62 & 0,77 & 0,69 & 7082\\
+& Sieg Rechts & 0,59 & 0,48 & 0,53 & 4973\\
+& Remis & 0,46 & 0,35 & 0,40 & 2945\\
+\hline
+\end{tabular}
+\label{tb:classrep}
+\end{table}
+
+Anhand der F1-Scores zeigt sich, dass alle Architekturen einen Sieg
+der linken Seite besonders gut vorhersagen können. Der Wert für den Recall zeigt, dass besonders viele Siege der linken Seite auch als solche erkannt werden. Der Precision-Wert liegt bei allen Architekturen etwas tiefer, was daher kommen kann, dass die Netze häufiger \textit{Sieg Links} evaluieren, als sie sollten, bzw. mit ihrer Vorhersage prinzipiell schon zu \textit{Sieg Links} tendieren. Dieser Umstand kann aus dem Ungleichgewicht der Siegesverteilung in den Trainingsdaten abgeleitet werden. Das macht sich auch in den geringeren Recall-Werten der anderen Klassen bemerkbar. Als Extremfälle sind hier \textit{Remis} im All-Convolutional Net und bei Inception V4 SE und \textit{Sieg Rechts} bei Inception V4 zu nennen, welche um ein vielfaches geringer sind als die anderen Klassen. Inception V4 ist dafür jedoch in seinen Vorhersagen bzgl. der rechten Seite außerordentlich präzise und erreicht in diesem Fall den höchsten Precision-Wert aller Architekturen. Im direkten Vergleich von Inception V4 und Inception V4 SE zeigt sich, dass die SE-Variante die Nase leicht vorne hat und in ihren Werten weniger in die Extreme tendiert. Die Vorhersage von Remis scheint für alle Architekturen schwierig zu sein, da es keine über einen F1-Score von 0,5 schafft. Dass die Vorhersage von Remis zu schwierig ist, kann daraus abgeleitet werden, dass ein bestimmtes Set an Voraussetzungen eintreffen muss, damit ein Remis zustande kommt. Die Schwierigkeit der Vorhersage zeigt sich auch darin, dass der F1-Score der Baseline durch das Hinzunehmen des Remis von 0,67 auf 0,52 gesunken ist. 
+
+Zusätzlich zu einer Auswertung nach Label wurden die Ergebnisse der Architekturen nach Supply-Differenzen ausgewertet. \textcite{AIIDE137381} haben in ihrer Arbeit eine Supply-Restriction (zu Deutsch: \textit{Vorratsbegrenzung}) eingeführt, da sie die These aufgestellt haben, dass Gefechte mit großen Unterschieden in der Anzahl der Einheiten für Vorhersage-Algorithmen trivial vorherzusagen sind. Mit der Aufteilung der Ergebnisse nach Supply-Differenz wurde diese These für die genutzten Architekturen überprüft. Abbildung \ref{fig:supp_diff_archs} zeigt die Accuracy aller Architekturen aufgeteilt nach ihrer Supply-Differenz.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.45]{pictures/Auswertung/acc_by_supp}
+\caption{Accuracy der Architekturen aufgeteilt nach Supply.}
+\label{fig:supp_diff_archs}
+\end{figure}
+
+Alle Architekturen zeigen Anhand der Trendlinie eine steigende Tendenz bei höheren Supply-Differenzen. Da die Trendlinien im Bereich zwischen 0,54 und 0,66 bleiben ist der von \textcite{AIIDE137381} prognostizierte Trend in eingetreten. Besonders gut scheinen Inception V4 und Inception V4 SE die Supply-Differenz zur genaueren Vorhersage nutzen zu können, da die Accuracy zwar nahezu immer unter der vom ResNet liegt, die Trendlinie allerdings eine höhere Steigung aufweist. Der Verlauf der Accuracy sowohl bei Inception V4 und Inception V4 SE, als auch bei ResNet im Bereich 0 bis 6 zeigt immer wieder kleinere Täler. Auffallend ist dass diese Täler bei den Supply-Differenzen 0,5, 2,5, 3,5, etc. auftreten, welche gleichzeitig auch Stellen sind, die über nur über wenige Datensätze verfügen. Inception V4, Inception V4 SE und ResNet sind also bei Supply-Differenzen mit vielen Datensätzen wesentlich besser. Das All-Convolutional Net kann aus der höheren Supply-Differenz nicht so viel Accuracy gewinnen, zeigt dafür aber einen generell stabileren Verlauf entlang der Trendlinie. Es scheint eine Art Trade-Off (zu Deutsch: \textit{Austauschbeziehung}) zwischen der Fähigkeit die Supply-Differenz zur besseren Auswertung zu nutzen und der Stabilität der Accuracy zu geben. 
+
+Betrachtet man beide Testläufe kombiniert, so zeigt sich Inception V4 als stärkste Architektur auf den Testdaten während des Trainings und ResNet als beste Variante in der zweiten Auswertung durch den externen Datensatz. Hier konnte ResNet eine Accuracy von 0,62 erreichen und schlug damit Inception V4, welches lediglich einen Wert von 0,59 erreichte. Es zeigt sich also, dass die Architekturen in ihrer Performance sehr nah beieinander liegen und die Zusammensetzung der Testdaten einen nennenswerten Einfluss auf die Auswertungsergebnisse haben kann.

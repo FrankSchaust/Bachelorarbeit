@@ -21,30 +21,28 @@
   \datalist[entry]{nty/global//global/global}
     \entry{6633643}{inproceedings}{}
       \name{author}{2}{}{%
-        {{hash=18ec2245faac312d97815cfcac41abf2}{%
-           family={{Churchill}},
+        {{hash=8f679796bc8ce5a51a1d1f0c66fde935}{%
+           family={Churchill},
            familyi={C\bibinitperiod},
-           given={D.},
+           given={David},
            giveni={D\bibinitperiod}}}%
-        {{hash=c7a2e9eca5a54f324c1707055f9faec1}{%
-           family={{Buro}},
+        {{hash=1d5c128ae3ff1819ea0c2f845dd76536}{%
+           family={Buro},
            familyi={B\bibinitperiod},
-           given={M.},
+           given={Michael},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{2fb64d806ed7cd6844c2088eb5427899}
-      \strng{fullhash}{2fb64d806ed7cd6844c2088eb5427899}
-      \strng{bibnamehash}{2fb64d806ed7cd6844c2088eb5427899}
-      \strng{authorbibnamehash}{2fb64d806ed7cd6844c2088eb5427899}
-      \strng{authornamehash}{2fb64d806ed7cd6844c2088eb5427899}
-      \strng{authorfullhash}{2fb64d806ed7cd6844c2088eb5427899}
+      \strng{namehash}{337ea8517029de73d3914eb9be930c36}
+      \strng{fullhash}{337ea8517029de73d3914eb9be930c36}
+      \strng{bibnamehash}{337ea8517029de73d3914eb9be930c36}
+      \strng{authorbibnamehash}{337ea8517029de73d3914eb9be930c36}
+      \strng{authornamehash}{337ea8517029de73d3914eb9be930c36}
+      \strng{authorfullhash}{337ea8517029de73d3914eb9be930c36}
       \field{sortinit}{C}
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2013 IEEE Conference on Computational Inteligence in Games (CIG)}
-      \field{issn}{2325-4289}
-      \field{month}{8}
+      \field{booktitle}{2013 {IEEE} Conference on Computational Inteligence in Games (CIG), Niagara Falls, ON, Canada, August 11-13, 2013}
       \field{title}{Portfolio greedy search and simulation for large-scale combat in starcraft}
       \field{year}{2013}
       \field{pages}{1\bibrangedash 8}
@@ -52,9 +50,14 @@
       \verb{doi}
       \verb 10.1109/CIG.2013.6633643
       \endverb
-      \keyw{computer games;greedy algorithms;multi-agent systems;search problems;real-time search constraint;StarCraft combat scenario;UCT search method;Alpha-Beta;playout-based evaluation;hill climbing;greedy search algorithm;durative actions;simultaneous actions;UCT algorithm;visualization;commercial RTS game combat;RTS AI system;human players;real-time constraint;action space;state space;artificial intelligence;real-time strategy video games;large-scale combat;portfolio simulation;portfolio greedy search;Games;Artificial intelligence;Portfolios;Real-time systems;Planning;Approximation methods;Weapons}
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/CIG.2013.6633643
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/CIG.2013.6633643
+      \endverb
     \endentry
-    \entry{AIIDE125469}{inproceedings}{}
+    \entry{DBLP:conf/aiide/ChurchillSB12}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=8f679796bc8ce5a51a1d1f0c66fde935}{%
            family={Churchill},
@@ -82,50 +85,57 @@
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Heuristic search has been very successful in abstract game domains such as Chess and Go. In video games, however, adoption has been slow due to the fact that state and move spaces are much larger, real-time constraints are harsher, and constraints on computational resources are tighter. In this paper we present a fast search method — Alpha-Beta search for durative moves— that can defeat commonly used AI scripts in RTS game combat scenarios of up to 8 vs. 8 units running on a single core in under 5ms per search episode. This performance is achieved by using standard search enhancements such as transposition tables and iterative deepening, and novel usage of combat AI scripts for sorting moves and state evaluation via playouts. We also present evidence that commonly used combat scripts are highly exploitable — opening the door for a promising line of research on opponent combat modelling.}
-      \field{title}{Fast Heuristic Search for RTS Game Combat Scenarios}
+      \field{booktitle}{Proceedings of the Eighth {AAAI} Conference on Artificial Intelligence and Interactive Digital Entertainment, AIIDE-12, Stanford, California, USA, October 8-12, 2012}
+      \field{title}{Fast Heuristic Search for {RTS} Game Combat Scenarios}
       \field{year}{2012}
       \verb{urlraw}
-      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE12/paper/view/5469
+      \verb http://www.aaai.org/ocs/index.php/AIIDE/AIIDE12/paper/view/5469
       \endverb
       \verb{url}
-      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE12/paper/view/5469
+      \verb http://www.aaai.org/ocs/index.php/AIIDE/AIIDE12/paper/view/5469
       \endverb
-      \keyw{Heuristic Search; Durative Actions; Real-Time Strategy Games;}
     \endentry
     \entry{Goodfellow-et-al-2016}{book}{}
       \name{author}{3}{}{%
-        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+        {{hash=b8309a3e80e90bd0b1aa74558c5e9741}{%
            family={Goodfellow},
            familyi={G\bibinitperiod},
-           given={Ian},
-           giveni={I\bibinitperiod}}}%
+           given={Ian\bibnamedelima J.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=40a8e4774982146adc2688546f54efb2}{%
            family={Bengio},
            familyi={B\bibinitperiod},
            given={Yoshua},
            giveni={Y\bibinitperiod}}}%
-        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+        {{hash=d4fc395f7b2417c2c944e1a10f7ae5f5}{%
            family={Courville},
            familyi={C\bibinitperiod},
-           given={Aaron},
-           giveni={A\bibinitperiod}}}%
+           given={Aaron\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {MIT Press}%
+        {{MIT} Press}%
       }
-      \strng{namehash}{3ae53fe582e8a815b118d26947eaa326}
-      \strng{fullhash}{3ae53fe582e8a815b118d26947eaa326}
-      \strng{bibnamehash}{3ae53fe582e8a815b118d26947eaa326}
-      \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
-      \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
-      \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{namehash}{3b689b2a14236b22fde06acf2278046e}
+      \strng{fullhash}{3b689b2a14236b22fde06acf2278046e}
+      \strng{bibnamehash}{3b689b2a14236b22fde06acf2278046e}
+      \strng{authorbibnamehash}{3b689b2a14236b22fde06acf2278046e}
+      \strng{authornamehash}{3b689b2a14236b22fde06acf2278046e}
+      \strng{authorfullhash}{3b689b2a14236b22fde06acf2278046e}
       \field{sortinit}{G}
       \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{isbn}{978-0-262-03561-3}
+      \field{series}{Adaptive computation and machine learning}
       \field{title}{Deep Learning}
       \field{year}{2016}
+      \verb{urlraw}
+      \verb http://www.deeplearningbook.org/
+      \endverb
+      \verb{url}
+      \verb http://www.deeplearningbook.org/
+      \endverb
     \endentry
     \entry{He_2016}{article}{}
       \name{author}{4}{}{%
@@ -150,9 +160,6 @@
            given={Jian},
            giveni={J\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
       \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
       \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
       \strng{bibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
@@ -163,19 +170,19 @@
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{9781467388511}
-      \field{journaltitle}{2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
-      \field{month}{6}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
       \field{title}{Deep Residual Learning for Image Recognition}
-      \field{year}{2016}
-      \verb{doi}
-      \verb 10.1109/cvpr.2016.90
+      \field{volume}{abs/1512.03385}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1512.03385
       \endverb
       \verb{urlraw}
-      \verb http://dx.doi.org/10.1109/CVPR.2016.90
+      \verb http://arxiv.org/abs/1512.03385
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.1109/CVPR.2016.90
+      \verb http://arxiv.org/abs/1512.03385
       \endverb
     \endentry
     \entry{DBLP:journals/corr/HelmkeKW14}{article}{}
@@ -321,6 +328,39 @@
       \endverb
       \keyw{Combat;Computer;Metamodel;Neural network;Simulation}
     \endentry
+    \entry{DBLP:journals/corr/KingmaB14}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1e072d74f4ac1094c9c26e1b592cea4a}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{fullhash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{bibnamehash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{authorbibnamehash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{authornamehash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{authorfullhash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{3rd International Conference on Learning Representations, {ICLR} 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings}
+      \field{title}{Adam: {A} Method for Stochastic Optimization}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
+    \endentry
     \entry{DBLP:journals/corr/OSheaN15}{article}{}
       \name{author}{2}{}{%
         {{hash=f92af5765968c6de4c1e42d397224c9c}{%
@@ -356,33 +396,37 @@
            familyi={R\bibinitperiod},
            given={Glen},
            giveni={G\bibinitperiod}}}%
-        {{hash=5dcab082ad3f13c7b1af8618b9dfe341}{%
+        {{hash=8d7e8586f595e855b1c7b605181f6db0}{%
            family={Watson},
            familyi={W\bibinitperiod},
-           given={Ian},
-           giveni={I\bibinitperiod}}}%
+           given={Ian\bibnamedelima D.},
+           giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
       }
-      \strng{namehash}{5e71517d1a6aaff5307471c86f17e75c}
-      \strng{fullhash}{5e71517d1a6aaff5307471c86f17e75c}
-      \strng{bibnamehash}{5e71517d1a6aaff5307471c86f17e75c}
-      \strng{authorbibnamehash}{5e71517d1a6aaff5307471c86f17e75c}
-      \strng{authornamehash}{5e71517d1a6aaff5307471c86f17e75c}
-      \strng{authorfullhash}{5e71517d1a6aaff5307471c86f17e75c}
+      \strng{namehash}{e321f792ae0b594646175ea6a71d4018}
+      \strng{fullhash}{e321f792ae0b594646175ea6a71d4018}
+      \strng{bibnamehash}{e321f792ae0b594646175ea6a71d4018}
+      \strng{authorbibnamehash}{e321f792ae0b594646175ea6a71d4018}
+      \strng{authornamehash}{e321f792ae0b594646175ea6a71d4018}
+      \strng{authorfullhash}{e321f792ae0b594646175ea6a71d4018}
       \field{sortinit}{R}
       \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AI magazine}
-      \field{title}{A Review of Real-Time Strategy Game AI}
+      \field{journaltitle}{{AI} Magazine}
+      \field{number}{4}
+      \field{title}{A Review of Real-Time Strategy Game {AI}}
+      \field{volume}{35}
       \field{year}{2014}
+      \field{pages}{75\bibrangedash 104}
+      \range{pages}{30}
       \verb{urlraw}
-      \verb https://aaai.org/ojs/index.php/aimagazine/article/view/2478
+      \verb http://www.aaai.org/ojs/index.php/aimagazine/article/view/2478
       \endverb
       \verb{url}
-      \verb https://aaai.org/ojs/index.php/aimagazine/article/view/2478
+      \verb http://www.aaai.org/ojs/index.php/aimagazine/article/view/2478
       \endverb
     \endentry
-    \entry{samvelyan2019starcraft}{misc}{}
+    \entry{samvelyan2019starcraft}{article}{}
       \name{author}{10}{}{%
         {{hash=c76172ee0c2ebda81796624b4a81ae54}{%
            family={Samvelyan},
@@ -394,10 +438,10 @@
            familyi={R\bibinitperiod},
            given={Tabish},
            giveni={T\bibinitperiod}}}%
-        {{hash=6f1601d873902309bd691e8ce9f04c58}{%
+        {{hash=2b0b547ed8b39c8d894f38fd033d673c}{%
            family={Witt},
            familyi={W\bibinitperiod},
-           given={Christian\bibnamedelima Schroeder},
+           given={Christian\bibnamedelima Schr{ö}der},
            giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
            prefix={de},
            prefixi={d\bibinitperiod}}}%
@@ -416,21 +460,21 @@
            familyi={R\bibinitperiod},
            given={Tim\bibnamedelimb G.\bibnamedelimi J.},
            giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=ca083f59b63a6ee2837027775301af6b}{%
+        {{hash=144649af5525adc107af58b37a093d8b}{%
            family={Hung},
            familyi={H\bibinitperiod},
-           given={Chia-Man},
-           giveni={C\bibinithyphendelim M\bibinitperiod}}}%
+           given={Chia{-}Man},
+           giveni={C\bibinitperiod}}}%
         {{hash=d76cd9ac847163e992ddb1c39e744459}{%
            family={Torr},
            familyi={T\bibinitperiod},
            given={Philip\bibnamedelimb H.\bibnamedelimi S.},
            giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=d62c75690ab7c754f6e7217a242a4318}{%
+        {{hash=48b592fc3269caa5bb0c48007af5852e}{%
            family={Foerster},
            familyi={F\bibinitperiod},
-           given={Jakob},
-           giveni={J\bibinitperiod}}}%
+           given={Jakob\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
         {{hash=0d05819cf2b4fe22ba972c9b2b5d8c9d}{%
            family={Whiteson},
            familyi={W\bibinitperiod},
@@ -438,44 +482,59 @@
            giveni={S\bibinitperiod}}}%
       }
       \strng{namehash}{db017d19c7fbc59e66933da4bbd4deeb}
-      \strng{fullhash}{d8c8601a9287b064d58798af67f8e8b9}
+      \strng{fullhash}{3b990a8e83c4211f77c8072400f51fa5}
       \strng{bibnamehash}{db017d19c7fbc59e66933da4bbd4deeb}
       \strng{authorbibnamehash}{db017d19c7fbc59e66933da4bbd4deeb}
       \strng{authornamehash}{db017d19c7fbc59e66933da4bbd4deeb}
-      \strng{authorfullhash}{d8c8601a9287b064d58798af67f8e8b9}
+      \strng{authorfullhash}{3b990a8e83c4211f77c8072400f51fa5}
       \field{sortinit}{S}
       \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.LG}
       \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
       \field{title}{The StarCraft Multi-Agent Challenge}
+      \field{volume}{abs/1902.04043}
       \field{year}{2019}
       \verb{eprint}
       \verb 1902.04043
       \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1902.04043
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1902.04043
+      \endverb
     \endentry
     \entry{SnchezRuizGranados2015PredictingTO}{inproceedings}{}
       \name{author}{1}{}{%
-        {{hash=09b43c5820f780a525c16f0e06c450c2}{%
-           family={S{á}nchez-Ruiz-Granados},
-           familyi={S\bibinithyphendelim R\bibinithyphendelim G\bibinitperiod},
+        {{hash=3cceda7679d945659575f1a5d4e91d29}{%
+           family={S{á}nchez{-}Ruiz},
+           familyi={S\bibinitperiod},
            given={Antonio\bibnamedelima A.},
            giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
-      \strng{namehash}{09b43c5820f780a525c16f0e06c450c2}
-      \strng{fullhash}{09b43c5820f780a525c16f0e06c450c2}
-      \strng{bibnamehash}{09b43c5820f780a525c16f0e06c450c2}
-      \strng{authorbibnamehash}{09b43c5820f780a525c16f0e06c450c2}
-      \strng{authornamehash}{09b43c5820f780a525c16f0e06c450c2}
-      \strng{authorfullhash}{09b43c5820f780a525c16f0e06c450c2}
+      \strng{namehash}{3cceda7679d945659575f1a5d4e91d29}
+      \strng{fullhash}{3cceda7679d945659575f1a5d4e91d29}
+      \strng{bibnamehash}{3cceda7679d945659575f1a5d4e91d29}
+      \strng{authorbibnamehash}{3cceda7679d945659575f1a5d4e91d29}
+      \strng{authornamehash}{3cceda7679d945659575f1a5d4e91d29}
+      \strng{authorfullhash}{3cceda7679d945659575f1a5d4e91d29}
       \field{sortinit}{S}
       \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{ICCBR}
+      \field{booktitle}{Workshop Proceedings from The Twenty-Third International Conference on Case-Based Reasoning {(ICCBR} 2015), Frankfurt, Germany, September 28-30, 2015.}
       \field{title}{Predicting the Outcome of Small Battles in StarCraft}
       \field{year}{2015}
+      \field{pages}{33\bibrangedash 42}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb http://ceur-ws.org/Vol-1520/paper3.pdf
+      \endverb
+      \verb{url}
+      \verb http://ceur-ws.org/Vol-1520/paper3.pdf
+      \endverb
     \endentry
     \entry{DBLP:journals/corr/SpringenbergDBR14}{article}{}
       \name{author}{4}{}{%
@@ -517,42 +576,43 @@
     \endentry
     \entry{AIIDE1511531}{inproceedings}{}
       \name{author}{3}{}{%
-        {{hash=1028f902b3924433048dbb6f56521004}{%
+        {{hash=a682100debecae86612460b1680a9816}{%
            family={Stanescu},
            familyi={S\bibinitperiod},
-           given={Marius},
-           giveni={M\bibinitperiod}}}%
-        {{hash=f64594f17a19346da42a2f45d60dd7a7}{%
+           given={Marius\bibnamedelima Adrian},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=bf175c08b50836d67f34d07ee6487391}{%
            family={Barriga},
            familyi={B\bibinitperiod},
-           given={Nicolas},
-           giveni={N\bibinitperiod}}}%
+           given={Nicolas\bibnamedelima A.},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=1d5c128ae3ff1819ea0c2f845dd76536}{%
            family={Buro},
            familyi={B\bibinitperiod},
            given={Michael},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{dbc2856975992914a7305a62ceea8e68}
-      \strng{fullhash}{dbc2856975992914a7305a62ceea8e68}
-      \strng{bibnamehash}{dbc2856975992914a7305a62ceea8e68}
-      \strng{authorbibnamehash}{dbc2856975992914a7305a62ceea8e68}
-      \strng{authornamehash}{dbc2856975992914a7305a62ceea8e68}
-      \strng{authorfullhash}{dbc2856975992914a7305a62ceea8e68}
+      \strng{namehash}{2f415d83d5bfa21c51905d049d739d51}
+      \strng{fullhash}{2f415d83d5bfa21c51905d049d739d51}
+      \strng{bibnamehash}{2f415d83d5bfa21c51905d049d739d51}
+      \strng{authorbibnamehash}{2f415d83d5bfa21c51905d049d739d51}
+      \strng{authornamehash}{2f415d83d5bfa21c51905d049d739d51}
+      \strng{authorfullhash}{2f415d83d5bfa21c51905d049d739d51}
       \field{sortinit}{S}
       \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Smart decision making at the tactical level is important for Artificial Intelligence (AI) agents to perform well in the domain of real-time strategy (RTS) games. Winning battles is crucial in RTS games, and while humans can decide when and how to attack based on their experience, it is challenging for AI agents to estimate combat outcomes accurately.A few existing models address this problem in the game of StarCraft but present many restrictions, such as not modeling injured units, supporting only a small number of unit types, or being able to predict the winner of a fight but not the remaining army. Prediction using simulations is a popular method, but generally slow and requires extensive coding to model the game engine accurately.This paper introduces a model based on Lanchester's attrition laws which addresses the mentioned limitations while being faster than running simulations. Unit strength values are learned using maximum likelihood estimation from past recorded battles. We present experiments that use a StarCraft simulator for generating battles for both training and testing, and show that the model is capable of making accurate predictions. Furthermore, we implemented our method in a StarCraft bot that uses either this or traditional simulations to decide when to attack or to retreat. We present tournament results (against top bots from 2014 AIIDE competition) comparing the performances of the two versions, and show increased winning percentages for our method.}
+      \field{booktitle}{Proceedings of the Eleventh {AAAI} Conference on Artificial Intelligence and Interactive Digital Entertainment, {AIIDE} 2015, November 14-18, 2015, University of California, Santa Cruz, CA, {USA.}}
       \field{title}{Using Lanchester Attrition Laws for Combat Prediction in StarCraft}
       \field{year}{2015}
+      \field{pages}{86\bibrangedash 92}
+      \range{pages}{7}
       \verb{urlraw}
-      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE15/paper/view/11531
+      \verb http://www.aaai.org/ocs/index.php/AIIDE/AIIDE15/paper/view/11531
       \endverb
       \verb{url}
-      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE15/paper/view/11531
+      \verb http://www.aaai.org/ocs/index.php/AIIDE/AIIDE15/paper/view/11531
       \endverb
-      \keyw{Artificia Intelligence; Real-Time Strategy; StarCraft; RTS; Lanchester; Games}
     \endentry
     \entry{AIIDE137381}{inproceedings}{}
       \name{author}{5}{}{%
@@ -592,16 +652,15 @@
       \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Smart decision making at the tactical level is important for Artificial Intelligence (AI) agents to perform well in the domain of real-time strategy (RTS) games. This paper presents a Bayesian model that can be used to predict the outcomes of isolated battles, as well as predict what units are needed to defeat a given army. Model parameters are learned from simulated battles, in order to minimize the dependency on player skill. We apply our model to the game of StarCraft, with the end-goal of using the predictor as a module for making high-level combat decisions, and show that the model is capable of making accurate predictions.}
+      \field{booktitle}{Proceedings of the Ninth {AAAI} Conference on Artificial Intelligence and Interactive Digital Entertainment, AIIDE-13, Boston, Massachusetts, USA, October 14-18, 2013}
       \field{title}{Predicting Army Combat Outcomes in StarCraft}
       \field{year}{2013}
       \verb{urlraw}
-      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7381
+      \verb http://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7381
       \endverb
       \verb{url}
-      \verb https://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7381
+      \verb http://www.aaai.org/ocs/index.php/AIIDE/AIIDE13/paper/view/7381
       \endverb
-      \keyw{AI,RTS,StarCraft,Combat}
     \endentry
     \entry{DBLP:journals/corr/SzegedyIV16}{article}{}
       \name{author}{3}{}{%
@@ -889,38 +948,41 @@
     \endentry
     \entry{6374183}{inproceedings}{}
       \name{author}{2}{}{%
-        {{hash=1b688c13e77d870c72444e94b0f86528}{%
-           family={{Wender}},
+        {{hash=c77a592ee92ce60598a95f0c805c5f42}{%
+           family={Wender},
            familyi={W\bibinitperiod},
-           given={S.},
+           given={Stefan},
            giveni={S\bibinitperiod}}}%
-        {{hash=a526ec7e627c47ebf152ed2e613a65f4}{%
-           family={{Watson}},
+        {{hash=8d7e8586f595e855b1c7b605181f6db0}{%
+           family={Watson},
            familyi={W\bibinitperiod},
-           given={I.},
-           giveni={I\bibinitperiod}}}%
+           given={Ian\bibnamedelima D.},
+           giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
       }
-      \strng{namehash}{f2988df4378c75ffa7e3e2e0731176ff}
-      \strng{fullhash}{f2988df4378c75ffa7e3e2e0731176ff}
-      \strng{bibnamehash}{f2988df4378c75ffa7e3e2e0731176ff}
-      \strng{authorbibnamehash}{f2988df4378c75ffa7e3e2e0731176ff}
-      \strng{authornamehash}{f2988df4378c75ffa7e3e2e0731176ff}
-      \strng{authorfullhash}{f2988df4378c75ffa7e3e2e0731176ff}
+      \strng{namehash}{dd1589c9efcc3a72c9d7f605e34f7157}
+      \strng{fullhash}{dd1589c9efcc3a72c9d7f605e34f7157}
+      \strng{bibnamehash}{dd1589c9efcc3a72c9d7f605e34f7157}
+      \strng{authorbibnamehash}{dd1589c9efcc3a72c9d7f605e34f7157}
+      \strng{authornamehash}{dd1589c9efcc3a72c9d7f605e34f7157}
+      \strng{authorfullhash}{dd1589c9efcc3a72c9d7f605e34f7157}
       \field{sortinit}{W}
       \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2012 IEEE Conference on Computational Intelligence and Games (CIG)}
-      \field{issn}{2325-4270}
-      \field{month}{9}
-      \field{title}{Applying reinforcement learning to small scale combat in the real-time strategy game StarCraft:Broodwar}
+      \field{booktitle}{2012 {IEEE} Conference on Computational Intelligence and Games, {CIG} 2012, Granada, Spain, September 11-14, 2012}
+      \field{title}{Applying reinforcement learning to small scale combat in the real-time strategy game StarCraft: Broodwar}
       \field{year}{2012}
       \field{pages}{402\bibrangedash 408}
       \range{pages}{7}
       \verb{doi}
       \verb 10.1109/CIG.2012.6374183
       \endverb
-      \keyw{computer games;software agents;unsupervised learning;small scale combat;real-time strategy game StarCraft:Broodwar;reinforcement learning algorithms;micro-managing combat units;RTS game SC:BW;complex environment;unsupervised learning;nonadaptive deterministic game AI;RL algorithms;one-step Q-learning;Sarsa(λ) algorithm;Games;Learning systems;Learning;Planning;Machine learning;Machine learning algorithms}
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/CIG.2012.6374183
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/CIG.2012.6374183
+      \endverb
     \endentry
     \entry{Wu.2017}{inproceedings}{}
       \name{author}{1}{}{%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.2.12)  17 APR 2019 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.2.12)  21 MAY 2019 09:22
 entering extended mode
 **./Bachelorarbeit.tex
 (Bachelorarbeit.tex
@@ -1567,16 +1567,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <logos/uni-logo-color.pdf, id=1, 282.05376pt x 46.1725pt>
 File: logos/uni-logo-color.pdf Graphic file (type pdf)
 <use logos/uni-logo-color.pdf>
-Package pdftex.def Info: logos/uni-logo-color.pdf  used on input line 52.
+Package pdftex.def Info: logos/uni-logo-color.pdf  used on input line 66.
 (pdftex.def)             Requested size: 156.42548pt x 25.6073pt.
 <logos/institute-logo-color.pdf, id=2, 759.83875pt x 208.78pt>
 File: logos/institute-logo-color.pdf Graphic file (type pdf)
 <use logos/institute-logo-color.pdf>
-Package pdftex.def Info: logos/institute-logo-color.pdf  used on input line 52.
+Package pdftex.def Info: logos/institute-logo-color.pdf  used on input line 66.
 
 (pdftex.def)             Requested size: 93.19409pt x 25.6073pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 66.
 [1
 
 {C:/Users/Frank/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logos/uni
@@ -1589,52 +1589,83 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 66.
 
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
 [5] [6
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
- [7]
-\openout2 = `Motivation.aux'.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 66.
 
- (Motivation.tex
-LaTeX Font Info:    Try loading font information for T1+phv on input line 1.
+Overfull \hbox (16.63608pt too wide) in paragraph at lines 66--66
+\T1/ppl/m/n/10.95 folg-reich ge-nutzt. Vor al-lem im Be-reich der Bild-klas-si-
+fi-zie-rung er-rei-chen Convolutional-
+ []
+
+
+Overfull \hbox (3.54712pt too wide) in paragraph at lines 66--66
+[]\T1/ppl/m/n/10.95 In die-ser Ar-beit wer-den gän-gi-ge Convlutional-Neural-Ne
+twork-Architekturen aus
+ []
+
+[7] [8
+
+
+]
+LaTeX Font Info:    Try loading font information for T1+phv on input line 69.
 
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 69.
 
-[8
+(Bachelorarbeit.toc)
+\tf@toc=\write5
+\openout5 = `Bachelorarbeit.toc'.
+
+ [9]
+\openout2 = `Motivation.aux'.
+
+ (Motivation.tex
+Overfull \hbox (13.89459pt too wide) in paragraph at lines 11--12
+\T1/ppl/m/n/10.95 weil sie ei-ne her-vor-ra-gen-de Um-ge-bung bie-ten um die Le
+is-tungs-fä-hig-keit von Machine-
+ []
+
+[10
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 15.
- [9]) [10] [11]
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 13.
+
+Overfull \hbox (1.19463pt too wide) in paragraph at lines 16--17
+\T1/ppl/m/n/10.95 Von an-de-ren Aspek-ten des Spiels, wie Ba-sen-bau oder Resso
+urcen-Management wird
+ []
+
+[11] [12]) [13]
 \openout2 = `TheoretischerHintergrund.aux'.
 
  (TheoretischerHintergrund.tex
-<pictures/grafiken/Folie3.png, id=62, 671.50874pt x 686.565pt>
+<pictures/grafiken/Folie3.png, id=69, 671.50874pt x 686.565pt>
 File: pictures/grafiken/Folie3.png Graphic file (type png)
 <use pictures/grafiken/Folie3.png>
 Package pdftex.def Info: pictures/grafiken/Folie3.png  used on input line 23.
 (pdftex.def)             Requested size: 335.75356pt x 343.28166pt.
- [12
+ [14
 
 
 ]
-<pictures/grafiken/Folie4.png, id=66, 557.83406pt x 357.58594pt>
+<pictures/grafiken/Folie4.png, id=73, 557.83406pt x 357.58594pt>
 File: pictures/grafiken/Folie4.png Graphic file (type png)
 <use pictures/grafiken/Folie4.png>
 Package pdftex.def Info: pictures/grafiken/Folie4.png  used on input line 38.
@@ -1642,243 +1673,248 @@ Package pdftex.def Info: pictures/grafiken/Folie4.png  used on input line 38.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 45.
 
-Overfull \hbox (12.0769pt too wide) in paragraph at lines 45--46
- \T1/phv/b/n/10.95 Fully-connected layer[] \T1/ppl/m/n/10.95 Je-der Layer in ei
--nem klas-si-schen ANN ist ein fully-connected
+Overfull \hbox (22.88467pt too wide) in paragraph at lines 45--46
+ \T1/phv/b/n/10.95 Fully-Connected Layer[] \T1/ppl/m/n/10.95 Je-der Layer in ei
+-nem klas-si-schen ANN ist ein Fully-Connected
  []
 
-[13 <./pictures/grafiken/Folie3.png>]
-Overfull \hbox (7.56802pt too wide) in paragraph at lines 88--89
- \T1/phv/b/n/10.95 Nor-ma-li-za-ti-on Layer[] \T1/ppl/m/n/10.95 Das Nor-ma-li-z
+
+Overfull \hbox (5.00948pt too wide) in paragraph at lines 45--46
+\T1/ppl/m/n/10.95 Layer (zu Deutsch et-wa: \T1/ppl/m/it/10.95 voll-stän-dig ver
+-bun-de-ne Schicht\T1/ppl/m/n/10.95 ). Neu-ro-nen in Fully-Connected
+ []
+
+[15 <./pictures/grafiken/Folie3.png>]
+Overfull \hbox (7.0204pt too wide) in paragraph at lines 90--91
+ \T1/phv/b/n/10.95 Nor-ma-li-za-ti-on Layer[] \T1/ppl/m/n/10.95 Der Nor-ma-li-z
 a-ti-on Layer (zu Deutsch: \T1/ppl/m/it/10.95 Nor-ma-li-sie-rungs-schicht\T1/pp
 l/m/n/10.95 )
  []
 
+[16 <./pictures/grafiken/Folie4.png>] [17]
+<pictures/grafiken/bht-erlk.png, id=87, 874.01532pt x 572.89032pt>
+File: pictures/grafiken/bht-erlk.png Graphic file (type png)
+<use pictures/grafiken/bht-erlk.png>
+Package pdftex.def Info: pictures/grafiken/bht-erlk.png  used on input line 154
+.
+(pdftex.def)             Requested size: 349.59993pt x 229.15207pt.
 
-Overfull \hbox (2.34293pt too wide) in paragraph at lines 88--89
-\T1/ppl/m/n/10.95 fol-gend wird aus-schlieÿ-lich batch nor-ma-li-za-ti-on(BN) g
-e-nutzt, da es so-wohl für fully-
+Underfull \hbox (badness 1675) in paragraph at lines 156--156
+[]\T1/ppl/m/n/10.95 Visualisierung ei-nes Ten-sors des 3. Ran-ges mit Zu-ord-nu
+ng der
  []
 
-[14 <./pictures/grafiken/Folie4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 111
- []$[]  \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 x\OT1/cmr/
-m/n/10.95 ) = \OML/cmm/m/it/10.95 softmax\OT1/cmr/m/n/10.95 ([] \OMS/cmsy/m/n/1
-0.95  \OML/cmm/m/it/10.95 relu\OT1/cmr/m/n/10.95 ([] \OMS/cmsy/m/n/10.95  \OT
-1/cmr/bx/n/10.95 x \OT1/cmr/m/n/10.95 + []) + [])  $ 
- []
-
-[15] [16]
-Overfull \hbox (1.18298pt too wide) in paragraph at lines 151--152
-\T1/ppl/m/n/10.95 net-works räum-li-che Ab-hän-gig-kei-ten nicht nut-zen, da je
--des Neu-ron vom je-dem Neu-
- []
-
-<pictures/grafiken/grafikenmax.png, id=86, 526.96875pt x 264.23718pt>
+[18]
+<pictures/grafiken/conv-bsp.png, id=93, 958.3303pt x 666.99188pt>
+File: pictures/grafiken/conv-bsp.png Graphic file (type png)
+<use pictures/grafiken/conv-bsp.png>
+Package pdftex.def Info: pictures/grafiken/conv-bsp.png  used on input line 165
+.
+(pdftex.def)             Requested size: 383.32533pt x 266.79202pt.
+ [19 <./pictures/grafiken/bht-erlk.png>] [20 <./pictures/grafiken/conv-bsp.png>
+]
+<pictures/grafiken/grafikenmax.png, id=101, 526.96875pt x 264.23718pt>
 File: pictures/grafiken/grafikenmax.png Graphic file (type png)
 <use pictures/grafiken/grafikenmax.png>
 Package pdftex.def Info: pictures/grafiken/grafikenmax.png  used on input line 
-159.
+200.
 (pdftex.def)             Requested size: 237.13374pt x 118.90562pt.
-[17]) [18 <./pictures/grafiken/grafikenmax.png>]
+ [21 <./pictures/grafiken/grafikenmax.png>]) [22]
 \openout2 = `VerwandteArbeiten.aux'.
 
  (VerwandteArbeiten.tex
-[19
-
-
-]
-Overfull \hbox (9.33543pt too wide) in paragraph at lines 13--14
-[]\T1/ppl/m/n/10.95 Stanescu et al. Sta-nes-cu, Bar-ri-ga und Bu-ro [14] bau-en
+Overfull \hbox (9.33543pt too wide) in paragraph at lines 17--18
+[]\T1/ppl/m/n/10.95 Stanescu et al. Sta-nes-cu, Bar-ri-ga und Bu-ro [15] bau-en
  ih-ren Vorhersage-Algorithmus
  []
 
-[20]) [21]
-\openout2 = `Architekturen.aux'.
-
- (Architekturen.tex [22
+[23
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-[] $\OML/cmm/m/it/10.95 powervalue:ground \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/1
-0.95 powervalue:ground \OT1/cmr/m/n/10.95 +
+Overfull \hbox (0.88611pt too wide) in paragraph at lines 23--24
+[]\T1/ppl/m/n/10.95 Der Al-go-rith-mus er-setzt un-ter Tur-nier-be-din-gun-gen 
+den si-mu-la-ti-ons-ba-sier-ten Ent-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-[] $\OML/cmm/m/it/10.95 powervalue:air \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.9
-5 powervalue:air \OT1/cmr/m/n/10.95 +
+Overfull \hbox (0.37648pt too wide) in paragraph at lines 25--26
+\T1/ppl/m/n/10.95 Deutsch et-wa: \T1/ppl/m/it/10.95 Stütz-vek-tor-ma-schi-ne\T1
+/ppl/m/n/10.95 ), k-Nearest Neigh-bour (kNN, zu Deutsch: \T1/ppl/m/it/10.95 k n
+ächs-
  []
 
-[23] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-[] \T1/ppl/b/n/10.95 if $\OML/cmm/m/it/10.95 armya:powervalue:ground \OMS/cmsy/
-m/n/10.95  \OML/cmm/m/it/10.95 K \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 arm
-yb:defense:ground \OMS/cmsy/m/n/10.95 ^
+[24]) [25]
+\openout2 = `Architekturen.aux'.
+
+ (Architekturen.tex [26
+
+
+] [27] [28] [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+[] \T1/ppl/b/n/10.95 if $\OML/cmm/m/it/10.95 teamA:powerGround \OMS/cmsy/m/n/10
+.95  \OML/cmm/m/it/10.95 K \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 teamB:def
+enseGround \OMS/cmsy/m/n/10.95 ^
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-[] \T1/ppl/b/n/10.95 if $\OML/cmm/m/it/10.95 armyb:powervalue:ground \OMS/cmsy/
-m/n/10.95  \OML/cmm/m/it/10.95 K \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 arm
-ya:defense:ground \OMS/cmsy/m/n/10.95 ^
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+[] \T1/ppl/b/n/10.95 if $\OML/cmm/m/it/10.95 teamB:powerGround \OMS/cmsy/m/n/10
+.95  \OML/cmm/m/it/10.95 K \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 teamA:def
+enseGround \OMS/cmsy/m/n/10.95 ^
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 157--158
-[] $\OML/cmm/m/it/10.95 armyvalueb \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 ar
-myb:weightedpowervalue \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 armyb:defense:g
-round \OT1/cmr/m/n/10.95 +
+Underfull \hbox (badness 5274) in paragraph at lines 180--181
+[] $\OML/cmm/m/it/10.95 teamAPower \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 te
+amA:weightedPower \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 teamA:defenseGround 
+\OT1/cmr/m/n/10.95 +
  []
 
-<pictures/konstantenVollesModell.png, id=119, 615.29875pt x 459.7175pt>
+
+Underfull \hbox (badness 4479) in paragraph at lines 181--182
+[] $\OML/cmm/m/it/10.95 teamBPower \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 te
+amB:weightedPower \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 teamB:defenseGround 
+\OT1/cmr/m/n/10.95 +
+ []
+
+<pictures/konstantenVollesModell.png, id=136, 615.29875pt x 459.7175pt>
 File: pictures/konstantenVollesModell.png Graphic file (type png)
 <use pictures/konstantenVollesModell.png>
 Package pdftex.def Info: pictures/konstantenVollesModell.png  used on input lin
-e 172.
+e 196.
 (pdftex.def)             Requested size: 492.23967pt x 367.77449pt.
 
-Overfull \hbox (89.91942pt too wide) in paragraph at lines 172--174
+Overfull \hbox (89.91942pt too wide) in paragraph at lines 196--198
  [][] 
  []
 
-[26] [27] [28 <./pictures/konstantenVollesModell.png>] [29]
-<pictures/inception/AllConvCNN.png, id=133, 1096.84781pt x 748.29562pt>
+[31] [32] [33 <./pictures/konstantenVollesModell.png>] [34]
+<pictures/inception/AllConvCNN.png, id=151, 1096.84781pt x 748.29562pt>
 File: pictures/inception/AllConvCNN.png Graphic file (type png)
 <use pictures/inception/AllConvCNN.png>
 Package pdftex.def Info: pictures/inception/AllConvCNN.png  used on input line 
-209.
+233.
 (pdftex.def)             Requested size: 1096.84514pt x 748.2938pt.
 
-Overfull \hbox (3.29369pt too wide) in paragraph at lines 216--217
+Overfull \hbox (3.29369pt too wide) in paragraph at lines 240--241
 \T1/ppl/m/n/10.95 ResNet ist ei-ne von He u.a. [4] vor-ge-stell-te Ar-chi-tek-t
 ur, wel-che sich Short-cut Connec-
  []
 
-[30 <./pictures/inception/AllConvCNN.png>] [31]
-<pictures/Inception/ResNet.png, id=141, 1090.0725pt x 656.4525pt>
+[35 <./pictures/inception/AllConvCNN.png>] [36]
+<pictures/Inception/ResNet.png, id=158, 1090.0725pt x 656.4525pt>
 File: pictures/Inception/ResNet.png Graphic file (type png)
 <use pictures/Inception/ResNet.png>
-Package pdftex.def Info: pictures/Inception/ResNet.png  used on input line 223.
+Package pdftex.def Info: pictures/Inception/ResNet.png  used on input line 247.
 
 (pdftex.def)             Requested size: 1090.06984pt x 656.4509pt.
 
-Overfull \hbox (24.36882pt too wide) in paragraph at lines 223--224
- [][] 
- []
+Overfull \vbox (90.19832pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (144.6885pt too high) has occurred while \output is active []
-
-
-[32 <./pictures/Inception/ResNet.png>] [33]
-<pictures/inception/InceptionV4.png, id=148, 892.08281pt x 495.35063pt>
+[37 <./pictures/Inception/ResNet.png>] [38]
+<pictures/inception/InceptionV4.png, id=166, 892.08281pt x 495.35063pt>
 File: pictures/inception/InceptionV4.png Graphic file (type png)
 <use pictures/inception/InceptionV4.png>
 Package pdftex.def Info: pictures/inception/InceptionV4.png  used on input line
- 262.
+ 289.
 (pdftex.def)             Requested size: 892.08063pt x 495.34943pt.
 
-Overfull \vbox (149.81699pt too high) has occurred while \output is active []
+Overfull \vbox (105.21024pt too high) has occurred while \output is active []
 
 
-[34 <./pictures/inception/InceptionV4.png>]
-Overfull \hbox (11.95056pt too wide) in paragraph at lines 269--270
+[39 <./pictures/inception/InceptionV4.png>]
+Overfull \hbox (11.95056pt too wide) in paragraph at lines 295--296
 \T1/ppl/m/n/10.95 du-ziert wäh-rend sich die An-zahl der Kanä-le von 96 auf 288
  er-höht. Er fol-gen Inception-
  []
 
-[35]
-<pictures/Inception/STEM.png, id=155, 1066.7353pt x 298.86656pt>
+[40]
+<pictures/Inception/STEM.png, id=173, 1066.7353pt x 298.86656pt>
 File: pictures/Inception/STEM.png Graphic file (type png)
 <use pictures/Inception/STEM.png>
-Package pdftex.def Info: pictures/Inception/STEM.png  used on input line 274.
+Package pdftex.def Info: pictures/Inception/STEM.png  used on input line 300.
 (pdftex.def)             Requested size: 1066.7327pt x 298.86581pt.
 
 Overfull \vbox (129.5195pt too high) has occurred while \output is active []
 
 
-[36 <./pictures/Inception/STEM.png>]
-<pictures/Inception/InceptionABC.png, id=159, 1122.44344pt x 597.73312pt>
+[41 <./pictures/Inception/STEM.png>]
+<pictures/Inception/InceptionABC.png, id=177, 1122.44344pt x 597.73312pt>
 File: pictures/Inception/InceptionABC.png Graphic file (type png)
 <use pictures/Inception/InceptionABC.png>
 Package pdftex.def Info: pictures/Inception/InceptionABC.png  used on input lin
-e 283.
+e 309.
 (pdftex.def)             Requested size: 448.96942pt x 239.089pt.
 
-Overfull \hbox (46.64917pt too wide) in paragraph at lines 283--284
+Overfull \hbox (46.64917pt too wide) in paragraph at lines 309--310
  [][] 
  []
 
-[37 <./pictures/Inception/InceptionABC.png>]
-<pictures/Inception/Reduction.png, id=164, 1003.49907pt x 641.39626pt>
+[42 <./pictures/Inception/InceptionABC.png>]
+<pictures/Inception/Reduction.png, id=181, 1003.49907pt x 641.39626pt>
 File: pictures/Inception/Reduction.png Graphic file (type png)
 <use pictures/Inception/Reduction.png>
-Package pdftex.def Info: pictures/Inception/Reduction.png  used on input line 2
-92.
+Package pdftex.def Info: pictures/Inception/Reduction.png  used on input line 3
+18.
 (pdftex.def)             Requested size: 451.5704pt x 288.62564pt.
 
-Overfull \hbox (49.25015pt too wide) in paragraph at lines 292--293
+Overfull \hbox (49.25015pt too wide) in paragraph at lines 318--319
  [][] 
  []
 
 
-Overfull \hbox (6.97467pt too wide) in paragraph at lines 296--297
+Overfull \hbox (6.97467pt too wide) in paragraph at lines 322--323
 []\T1/ppl/m/n/10.95 Zur Re-du-zie-rung der Bild-di-men-sio-nen Hö-he und Brei-t
 e nutzt In-cep-ti-on Reduction-
  []
 
-[38 <./pictures/Inception/Reduction.png>]
-Overfull \hbox (9.02309pt too wide) in paragraph at lines 324--325
+[43 <./pictures/Inception/Reduction.png>]
+Overfull \hbox (9.02309pt too wide) in paragraph at lines 350--351
 \T1/ppl/m/n/10.95 den kön-nen, wel-che es dem Netz-werk er-mög-li-chen Fea-ture
  Re-ca-li-bra-ti-on (zu Deutsch:
  []
 
 
-Overfull \hbox (13.53746pt too wide) in paragraph at lines 324--325
+Overfull \hbox (13.53746pt too wide) in paragraph at lines 350--351
 \T1/ppl/m/n/10.95 in In-cep-ti-on ein-ge-führt wer-den kann. In der ak-tu-el-le
 n Ar-chi-tek-tur wer-den die Squeeze-
  []
 
 
-Overfull \hbox (17.1794pt too wide) in paragraph at lines 326--327
+Overfull \hbox (17.1794pt too wide) in paragraph at lines 352--353
 \T1/ppl/m/n/10.95 wo-bei AD für Aus-ga-be-di-men-si-on steht und gleich der An-
 zahl der Kanä-le der Inception-
  []
 
-[39] [40]
-<pictures/Inception/SqueezeAndExcitation.png, id=174, 478.78876pt x 755.07094pt
+[44] [45]
+<pictures/Inception/SqueezeAndExcitation.png, id=192, 478.78876pt x 755.07094pt
 >
 File: pictures/Inception/SqueezeAndExcitation.png Graphic file (type png)
 <use pictures/Inception/SqueezeAndExcitation.png>
 Package pdftex.def Info: pictures/Inception/SqueezeAndExcitation.png  used on i
-nput line 332.
+nput line 358.
 (pdftex.def)             Requested size: 359.09068pt x 566.30182pt.
 )
 Overfull \vbox (2.45158pt too high) has occurred while \output is active []
 
 
-[41 <./pictures/Inception/SqueezeAndExcitation.png>]
+[46 <./pictures/Inception/SqueezeAndExcitation.png>]
 \openout2 = `Evaluation.aux'.
 
- (Evaluation.tex [42
+ (Evaluation.tex [47
 
 
 ]
-[43]
-<pictures/grafiken/Folie1.png, id=185, 1112.65688pt x 703.12688pt>
+[48]
+<pictures/grafiken/Folie1.png, id=202, 1112.65688pt x 703.12688pt>
 File: pictures/grafiken/Folie1.png Graphic file (type png)
 <use pictures/grafiken/Folie1.png>
-Package pdftex.def Info: pictures/grafiken/Folie1.png  used on input line 20.
+Package pdftex.def Info: pictures/grafiken/Folie1.png  used on input line 21.
 (pdftex.def)             Requested size: 1112.65417pt x 703.12515pt.
 
-Overfull \hbox (19.55913pt too wide) in paragraph at lines 20--21
+Overfull \hbox (19.55913pt too wide) in paragraph at lines 21--22
  [][] 
  []
 
@@ -1886,72 +1922,160 @@ Overfull \hbox (19.55913pt too wide) in paragraph at lines 20--21
 Overfull \vbox (103.74905pt too high) has occurred while \output is active []
 
 
-[44 <./pictures/grafiken/Folie1.png>]
-<pictures/grafiken/Folie2.png, id=189, 1081.03876pt x 358.33875pt>
+[49 <./pictures/grafiken/Folie1.png>]
+<pictures/grafiken/Folie2.png, id=207, 1081.03876pt x 358.33875pt>
 File: pictures/grafiken/Folie2.png Graphic file (type png)
 <use pictures/grafiken/Folie2.png>
-Package pdftex.def Info: pictures/grafiken/Folie2.png  used on input line 28.
+Package pdftex.def Info: pictures/grafiken/Folie2.png  used on input line 29.
 (pdftex.def)             Requested size: 1081.03612pt x 358.33788pt.
 
 Overfull \vbox (84.77803pt too high) has occurred while \output is active []
 
 
-[45 <./pictures/grafiken/Folie2.png>]) [46]
-\openout2 = `Konklusion.aux'.
+[50 <./pictures/grafiken/Folie2.png>]
+<pictures/Match_verteilung.png, id=211, 1156.32pt x 771.1209pt>
+File: pictures/Match_verteilung.png Graphic file (type png)
+<use pictures/Match_verteilung.png>
+Package pdftex.def Info: pictures/Match_verteilung.png  used on input line 38.
+(pdftex.def)             Requested size: 346.89868pt x 231.33806pt.
+<pictures/Graph_Matches_2.png, id=212, 1156.32pt x 771.1209pt>
+File: pictures/Graph_Matches_2.png Graphic file (type png)
+<use pictures/Graph_Matches_2.png>
+Package pdftex.def Info: pictures/Graph_Matches_2.png  used on input line 47.
+(pdftex.def)             Requested size: 346.89868pt x 231.33806pt.
+ [51]
+<pictures/Graph_Supp_Wins.png, id=216, 1156.32pt x 771.1209pt>
+File: pictures/Graph_Supp_Wins.png Graphic file (type png)
+<use pictures/Graph_Supp_Wins.png>
+Package pdftex.def Info: pictures/Graph_Supp_Wins.png  used on input line 57.
+(pdftex.def)             Requested size: 346.89868pt x 231.33806pt.
 
- (Konklusion.tex) [47
-
-
-]
-Overfull \hbox (3.98497pt too wide) in paragraph at lines 62--62
-[]\T1/ppl/m/n/10.95 Ian Good-fel-low, Yos-hua Ben-gio und Aaron Cour-ville. \T1
-/ppl/m/it/10.95 De-ep Lear-ning\T1/ppl/m/n/10.95 . MIT Press,
+Overfull \hbox (2.11281pt too wide) in paragraph at lines 64--65
+\T1/ppl/m/n/10.95 Die Leis-tungs-fä-hig-keit der ein-zel-nen Ar-chi-tek-tu-ren 
+wird An-hand ver-schie-de-ner Me-
  []
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 61.
+[52 <./pictures/Match_verteilung.png>] [53 <./pictures/Graph_Matches_2.png>]
+<pictures/grafiken/PrecisionRecall.png, id=225, 751.30687pt x 734.745pt>
+File: pictures/grafiken/PrecisionRecall.png Graphic file (type png)
+<use pictures/grafiken/PrecisionRecall.png>
+Package pdftex.def Info: pictures/grafiken/PrecisionRecall.png  used on input l
+ine 87.
+(pdftex.def)             Requested size: 187.82625pt x 183.68579pt.
+<pictures/grafiken/prerecacc.png, id=226, 936.49875pt x 691.83469pt>
+File: pictures/grafiken/prerecacc.png Graphic file (type png)
+<use pictures/grafiken/prerecacc.png>
+Package pdftex.def Info: pictures/grafiken/prerecacc.png  used on input line 93
+.
+(pdftex.def)             Requested size: 234.12411pt x 172.95824pt.
+
+[54 <./pictures/Graph_Supp_Wins.png>] [55 <./pictures/grafiken/PrecisionRecall.
+png> <./pictures/grafiken/prerecacc.png>]
+Overfull \hbox (10.03188pt too wide) in paragraph at lines 103--104
+\T1/ppl/m/n/10.95 weils 90 Grad ro-tiert in den Da-ten-satz ein-ge-speist wur-d
+en (fol-gend: Rotated-Variante).
+ []
+
+[56]
+<pictures/Auswertung/all_conv_loss.png, id=238, 718.93594pt x 398.99063pt>
+File: pictures/Auswertung/all_conv_loss.png Graphic file (type png)
+<use pictures/Auswertung/all_conv_loss.png>
+Package pdftex.def Info: pictures/Auswertung/all_conv_loss.png  used on input l
+ine 112.
+(pdftex.def)             Requested size: 359.46709pt x 199.49483pt.
+<pictures/Auswertung/all_conv_acc_.png, id=239, 712.16063pt x 396.7322pt>
+File: pictures/Auswertung/all_conv_acc_.png Graphic file (type png)
+<use pictures/Auswertung/all_conv_acc_.png>
+Package pdftex.def Info: pictures/Auswertung/all_conv_acc_.png  used on input l
+ine 118.
+(pdftex.def)             Requested size: 356.07944pt x 198.3656pt.
+ [57 <./pictures/Auswertung/all_conv_loss.png> <./pictures/Auswertung/all_conv_
+acc_.png>]
+<pictures/Auswertung/resnet_loss.png, id=243, 722.7pt x 383.18156pt>
+File: pictures/Auswertung/resnet_loss.png Graphic file (type png)
+<use pictures/Auswertung/resnet_loss.png>
+Package pdftex.def Info: pictures/Auswertung/resnet_loss.png  used on input lin
+e 127.
+(pdftex.def)             Requested size: 361.3491pt x 191.5903pt.
+<pictures/Auswertung/incv4_loss.png, id=244, 720.44156pt x 395.22656pt>
+File: pictures/Auswertung/incv4_loss.png Graphic file (type png)
+<use pictures/Auswertung/incv4_loss.png>
+Package pdftex.def Info: pictures/Auswertung/incv4_loss.png  used on input line
+ 137.
+(pdftex.def)             Requested size: 360.2199pt x 197.6128pt.
+ [58 <./pictures/Auswertung/resnet_loss.png>]
+<pictures/Auswertung/incv4se_loss.png, id=248, 721.19438pt x 396.7322pt>
+File: pictures/Auswertung/incv4se_loss.png Graphic file (type png)
+<use pictures/Auswertung/incv4se_loss.png>
+Package pdftex.def Info: pictures/Auswertung/incv4se_loss.png  used on input li
+ne 146.
+(pdftex.def)             Requested size: 360.59631pt x 198.3656pt.
+
+Overfull \hbox (0.8579pt too wide) in paragraph at lines 155--156
+\T1/ppl/m/n/10.95 ten mit der Ziel-set-zung die ge-win-nen-de Sei-te vor-her-zu
+-sa-gen. Das ge-win-nen-de Team
+ []
+
+[59 <./pictures/Auswertung/incv4_loss.png> <./pictures/Auswertung/incv4se_loss.
+png>] [60] [61]
+<pictures/Auswertung/acc_by_supp.png, id=259, 982.42032pt x 397.485pt>
+File: pictures/Auswertung/acc_by_supp.png Graphic file (type png)
+<use pictures/Auswertung/acc_by_supp.png>
+Package pdftex.def Info: pictures/Auswertung/acc_by_supp.png  used on input lin
+e 216.
+(pdftex.def)             Requested size: 442.08507pt x 178.8666pt.
+
+Overfull \hbox (39.76482pt too wide) in paragraph at lines 216--217
+ [][] 
+ []
+
+[62 <./pictures/Auswertung/acc_by_supp.png>]) [63]
+\openout2 = `Konklusion.aux'.
+
+ (Konklusion.tex [64
+
+
+])
+[65]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 79.
+
 ("C:\Users\Frank\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (6.88881pt too wide) in paragraph at lines 62--62
-[]\T1/ppl/m/n/10.95 Mikayel Sam-ve-ly-an u.a. \T1/ppl/m/it/10.95 The Star-Craft
- Multi-Agent Chal-len-ge\T1/ppl/m/n/10.95 . 2019. ar-Xiv: $\T1/pcr/m/n/10.95 19
-02 .
- []
+[66
 
-
-Overfull \hbox (17.16655pt too wide) in paragraph at lines 62--62
+]
+Overfull \hbox (17.16655pt too wide) in paragraph at lines 80--80
 []\T1/ppl/m/n/10.95 Christian Sze-ge-dy, Ser-gey Iof-fe und Vin-cent Van-hou-ck
 e. ``Inception-v4, Inception-
  []
 
 
-Overfull \hbox (43.47913pt too wide) in paragraph at lines 62--62
+Overfull \hbox (43.47913pt too wide) in paragraph at lines 80--80
 \T1/ppl/m/n/10.95 ResNet and the Im-pact of Re-si-du-al Connec-ti-ons on Lear-n
 ing''. In: \T1/ppl/m/it/10.95 CoRR \T1/ppl/m/n/10.95 abs/1602.07261
  []
 
 
-Overfull \hbox (26.24443pt too wide) in paragraph at lines 62--62
+Overfull \hbox (26.24443pt too wide) in paragraph at lines 80--80
 []\T1/ppl/m/n/10.95 Christian Sze-ge-dy u.a. ``Going De-e-per with Con-vo-lu-ti
 -ons''. In: \T1/ppl/m/it/10.95 CoRR \T1/ppl/m/n/10.95 abs/1409.4842
  []
 
-[48
-
-] [49] (Bachelorarbeit.aux (Motivation.aux) (TheoretischerHintergrund.aux)
+[67] (Bachelorarbeit.aux (Motivation.aux) (TheoretischerHintergrund.aux)
 (VerwandteArbeiten.aux) (Architekturen.aux) (Evaluation.aux) (Konklusion.aux))
 Package logreq Info: Writing requests to 'Bachelorarbeit.run.xml'.
 \openout1 = `Bachelorarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25102 strings out of 493313
- 490786 string characters out of 3130168
- 986495 words of memory out of 3000000
- 28273 multiletter control sequences out of 15000+200000
+ 25192 strings out of 493313
+ 492423 string characters out of 3130168
+ 986240 words of memory out of 3000000
+ 28346 multiletter control sequences out of 15000+200000
  579086 words of font info for 104 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 48i,10n,53p,10367b,1819s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,10n,53p,10367b,1859s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Frank/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Frank/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Frank/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
@@ -1975,9 +2099,9 @@ s/type1/urw/courier/ucrr8a.pfb><C:/Users/Frank/AppData/Local/Programs/MiKTeX 2.
 KTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Frank/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Frank/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Bachelorarbeit.pdf (49 pages, 1438709 bytes).
+Output written on Bachelorarbeit.pdf (67 pages, 1941815 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
+ 342 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
